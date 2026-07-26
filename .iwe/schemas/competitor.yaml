@@ -1,0 +1,17 @@
+$schema: https://document-schema.org/draft/2026-06/schema
+description: a competitor profile (data/competitors/<slug>.md) — the centralized source of truth for one competitor, refreshed via dated snapshots
+frontmatter:
+  type: object
+  required: [type, status, url, created]
+  additionalProperties: false
+  properties:
+    type: { const: competitor }
+    title: { type: string }
+    status:
+      enum: [active, archived]
+      description: archived when no longer worth tracking
+    url: { type: string }
+    updated: { type: [string, "null"], format: date, description: date of the last snapshot/refresh }
+    notes: { type: string, description: one-line stance — why this competitor matters }
+    created: { type: string, format: date }
+maxDepth: 3

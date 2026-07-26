@@ -1,0 +1,11 @@
+$schema: https://document-schema.org/draft/2026-06/schema
+description: a landing page that inclusion-links related documents (indexes, stage hubs, role hubs)
+frontmatter:
+  type: object
+  required: [type, status, created]
+  additionalProperties: false
+  properties:
+    type: { const: hub }
+    title: { type: string }
+    status: { const: living }
+    created: { type: string, format: date }

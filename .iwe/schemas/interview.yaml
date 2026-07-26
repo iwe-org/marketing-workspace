@@ -1,0 +1,17 @@
+$schema: https://document-schema.org/draft/2026-06/schema
+description: a deliberate research event (data/interviews/YYYY-MM-DD-<slug>.md) — customer interview or survey; spontaneous third-party quotes are type mention instead
+frontmatter:
+  type: object
+  required: [type, status, kind, created]
+  additionalProperties: false
+  properties:
+    type: { const: interview }
+    title: { type: string }
+    status:
+      enum: [planned, done, cancelled]
+    kind:
+      enum: [discovery, new-customer, happy, churned, feature-request, survey]
+      description: which research motion this is — discovery is pre-product problem interviews
+    conducted: { type: [string, "null"], format: date, description: when it happened; null while planned }
+    created: { type: string, format: date }
+maxDepth: 3

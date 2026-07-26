@@ -1,0 +1,27 @@
+$schema: https://document-schema.org/draft/2026-06/schema
+description: a marketing experiment or decision record (data/experiments/<slug>.md) — answers "what have we already tried" permanently
+frontmatter:
+  type: object
+  required: [type, status, hypothesis, metric, created]
+  additionalProperties: false
+  properties:
+    type: { const: experiment }
+    title: { type: string }
+    status:
+      enum: [idea, planned, running, concluded, abandoned]
+    area:
+      type: [string, "null"]
+      description: what it touches — a page, channel, offer, email flow, pricing...
+    hypothesis: { type: string, description: "we believe X will improve Y because Z" }
+    metric: { type: string, description: the primary metric and its target }
+    impact: { type: [integer, "null"], minimum: 1, maximum: 10 }
+    confidence: { type: [integer, "null"], minimum: 1, maximum: 10 }
+    ease: { type: [integer, "null"], minimum: 1, maximum: 10 }
+    verdict:
+      enum: [win, loss, inconclusive, null]
+      description: set when concluded
+    result: { type: [string, "null"], description: the observed numbers, once known }
+    started: { type: [string, "null"], format: date }
+    concluded: { type: [string, "null"], format: date }
+    created: { type: string, format: date }
+maxDepth: 3

@@ -1,0 +1,37 @@
+$schema: https://document-schema.org/draft/2026-06/schema
+description: a promotional post (data/posts, data/drafts)
+frontmatter:
+  type: object
+  required: [type, pillar, status, platform, goal, success, created]
+  additionalProperties: false
+  properties:
+    type: { const: post }
+    title: { type: string }
+    pillar:
+      type: [string, "null"]
+      description: your messaging pillar — define 3-5 in data/product.md; null until then
+    goal:
+      enum: [awareness, conversion, positioning, credibility, retention]
+      description: why this publication exists — the campaign outcome it serves
+    success:
+      type: string
+      minLength: 1
+      description: the observable signal that means it worked ("so what"), distinct from engagement actuals
+    status:
+      enum: [draft, scheduled, published, removed, archived]
+    platform:
+      enum: [reddit, hn, producthunt, dev.to, hashnode, medium, twitter, linkedin, mastodon, bluesky, threads, youtube, tiktok, instagram, facebook, forum, blog, newsletter, github, discord, slack, directory, email, other]
+    created: { type: string, format: date }
+    published:
+      type: [string, "null"]
+      format: date
+      description: ISO date when posted, or null while unpublished
+    url: { type: [string, "null"] }
+    engagement:
+      type: object
+      additionalProperties: false
+      properties:
+        upvotes: { type: [integer, "null"] }
+        comments: { type: [integer, "null"] }
+        views: { type: [integer, "null"] }
+        notes: { type: string }

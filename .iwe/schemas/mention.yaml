@@ -1,0 +1,22 @@
+$schema: https://document-schema.org/draft/2026-06/schema
+description: an atomic third-party mention of your product (data/mentions/*.md) — a comment, thread, or listing; article-length pieces are type external
+frontmatter:
+  type: object
+  required: [type, status, platform, url, author, kind, sentiment, quote, published, created]
+  additionalProperties: false
+  properties:
+    type: { const: mention }
+    title: { type: string, description: kept only when the H1 does not carry the title }
+    status:
+      enum: [published, removed]
+      description: removed when the mention was deleted at the source
+    platform: { type: string, description: where the mention happened (reddit, hn, x.com, ...) }
+    url: { type: string, description: direct link to the comment / thread / listing }
+    author: { type: string, description: handle or name exactly as it appears at the venue }
+    kind:
+      enum: [comment, post, thread, listing, review, video, podcast]
+    sentiment:
+      enum: [positive, neutral, negative, mixed]
+    quote: { type: string, description: the verbatim core line (tight paraphrase only if too long) }
+    published: { type: string, format: date, description: when the mention was made }
+    created: { type: string, format: date, description: when you filed it }

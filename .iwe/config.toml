@@ -1,0 +1,121 @@
+version = 3
+
+[markdown]
+refs_extension = ""
+date_format = "%b %d, %Y"
+
+[markdown.formatting]
+wrap_column = 80
+
+[library]
+path = ""
+date_format = "%Y-%m-%d"
+frontmatter_document_title = "title"
+
+[completion]
+
+[templates.default]
+key_template = "{{slug}}"
+document_template = """
+# {{title}}
+
+{{content}}"""
+
+[actions.extract]
+type = "extract"
+title = "Extract"
+link_type = "markdown"
+key_template = "{{id}}"
+
+[actions.link]
+type = "link"
+title = "Link"
+link_type = "markdown"
+key_template = "{{id}}"
+
+[actions.inline_section]
+type = "inline"
+title = "Inline section"
+inline_type = "section"
+keep_target = false
+
+[actions.sort]
+type = "sort"
+title = "Sort A-Z"
+reverse = false
+
+# Document-schema bindings. Each entry names a schema file in .iwe/schemas/<name>.yaml
+# and a key-glob (or list) that binds it. Bindings are BY PATH, not by frontmatter
+# `type`, and ALL matching schemas apply to a document — globs are written to be
+# mutually exclusive. Run: iwe schema validate  (--explain shows the binding trace).
+
+[schemas.post]
+match = "data/{posts,drafts}/**"
+
+[schemas.template]
+match = "data/evergreen/[a-z]*"
+
+# flat community-* for standalone sites; platform subfolders (communities/reddit/*)
+# group venues that share one platform, mirroring the posts/<platform>/ convention.
+# The extension-less hub key data/communities matches neither glob and binds to hub.
+[schemas.community]
+match = ["data/community-*", "data/communities/*/*"]
+
+# person: everything under data/people/ EXCEPT role-* (hubs). globset has no
+# prefix-negation, so the r-splits exclude only the literal "role-" prefix while
+# still matching people whose slug starts with r.
+[schemas.person]
+match = [
+  "data/people/[a-qs-z]*",
+  "data/people/r[a-np-z]*",
+  "data/people/ro[a-km-z]*",
+  "data/people/rol[a-df-z]*",
+  "data/people/role[a-z0-9]*",
+]
+
+[schemas.mention]
+match = "data/mentions/*"
+
+[schemas.interview]
+match = "data/interviews/*"
+
+[schemas.external]
+match = "data/external-*"
+
+[schemas.plan]
+match = "data/plan/[a-z]*"
+
+[schemas.task]
+match = "data/backlog/[a-z]*"
+
+[schemas.competitor]
+match = "data/competitors/[a-z]*"
+
+[schemas.experiment]
+match = "data/experiments/[a-z]*"
+
+[schemas.hub]
+match = [
+  "data/index",
+  "data/communities",
+  "data/people",
+  "data/mentions",
+  "data/interviews",
+  "data/competitors",
+  "data/experiments",
+  "data/people/role-*",
+  "data/pillars/*",
+]
+
+[schemas.tracker]
+match = [
+  "SCHEMA",
+  "data/product",
+  "data/strategy",
+  "data/plan",
+  "data/backlog",
+  "data/metrics",
+  "data/brand",
+  "data/website",
+  "data/offer",
+]

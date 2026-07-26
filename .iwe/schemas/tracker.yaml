@@ -1,0 +1,11 @@
+$schema: https://document-schema.org/draft/2026-06/schema
+description: a living tracker/reference doc (product, strategy, plan hub, backlog hub, SCHEMA)
+frontmatter:
+  type: object
+  required: [type, status]
+  additionalProperties: false
+  properties:
+    type: { const: tracker }
+    title: { type: string }
+    status: { const: living }
+    created: { type: [string, "null"], format: date }

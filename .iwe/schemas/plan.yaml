@@ -1,0 +1,28 @@
+$schema: https://document-schema.org/draft/2026-06/schema
+description: a campaign plan step (data/plan/<slug>.md) — a campaign-level move, bigger than a task
+frontmatter:
+  type: object
+  required: [type, status, created]
+  additionalProperties: false
+  properties:
+    type: { const: plan }
+    title: { type: string }
+    status:
+      enum: [planned, in-progress, done, discarded]
+    stage:
+      enum: [first-10, first-100, first-1000, null]
+      description: the growth stage this step belongs to, if any
+    estimated: { type: [string, "null"], format: date }
+    completed: { type: [string, "null"], format: date }
+    effort: { type: [string, "null"] }
+    notes: { type: string }
+    created: { type: string, format: date }
+maxDepth: 3
+sections:
+  - header: { pattern: '.' }
+    maxContains: 1
+    sections:
+      - header: { const: Definition of done }
+        description: every plan step states its definition of done
+        maxContains: 1
+additionalSections: false

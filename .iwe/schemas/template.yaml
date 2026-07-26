@@ -1,0 +1,20 @@
+$schema: https://document-schema.org/draft/2026-06/schema
+description: an evergreen platform-independent template post (data/evergreen/*.md)
+frontmatter:
+  type: object
+  required: [type, angle, goal, success]
+  additionalProperties: false
+  properties:
+    type: { const: template }
+    title: { type: string }
+    pillar: { type: [string, "null"] }
+    angle: { type: string, description: reusable angle this template pitches }
+    goal:
+      enum: [awareness, conversion, positioning, credibility, retention]
+    success:
+      type: string
+      minLength: 1
+      description: the observable signal that means a post cut from this template worked
+    created:
+      type: [string, "null"]
+      format: date

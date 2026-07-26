@@ -1,0 +1,21 @@
+$schema: https://document-schema.org/draft/2026-06/schema
+description: article-length third-party content you track (data/external-*.md)
+frontmatter:
+  type: object
+  required: [type, status, source, url, relation, takeaway, created]
+  additionalProperties: false
+  properties:
+    type: { const: external }
+    title: { type: string, description: article title as published }
+    pillar: { type: [string, "null"] }
+    status: { const: published }
+    source: { type: string, description: publication or domain }
+    author: { type: [string, "null"] }
+    url: { type: string }
+    published:
+      type: [string, "null"]
+      format: date
+    relation:
+      enum: [mentions-us, similar-thesis, adjacent, contrasts]
+    takeaway: { type: string, description: one sentence — why you care }
+    created: { type: string, format: date }

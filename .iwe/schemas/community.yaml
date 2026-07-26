@@ -1,0 +1,22 @@
+$schema: https://document-schema.org/draft/2026-06/schema
+description: a venue you target or track (data/community-*.md) — launch platform, directory, subreddit, forum
+frontmatter:
+  type: object
+  required: [type, status, category, url, created]
+  additionalProperties: false
+  properties:
+    type: { const: community }
+    title: { type: string }
+    status:
+      enum: [planned, active, dormant, blocked, cancelled]
+      description: planned = not yet worked; active = you have presence there; cancelled = deliberately written off
+    category:
+      enum: [launch-platform, directory, deals, subreddit, forum, community, social, newsletter, other]
+      description: what kind of venue this is — the axis the agent filters on
+    platform:
+      type: [string, "null"]
+      description: mechanical platform if relevant (reddit, facebook, discord, web...)
+    url: { type: [string, "null"] }
+    size: { type: [string, "null"], description: free text audience size, if known }
+    notes: { type: string, description: posting rules, flair requirements, caveats }
+    created: { type: string, format: date }

@@ -1,0 +1,21 @@
+$schema: https://document-schema.org/draft/2026-06/schema
+description: a person you track (data/people/<slug>.md) — customer, prospect, amplifier, creator, contact
+frontmatter:
+  type: object
+  required: [type, status, created]
+  additionalProperties: false
+  properties:
+    type: { const: person }
+    title: { type: string }
+    status:
+      enum: [active, planned, contacted, replied, declined, inactive]
+    handle: { type: [string, "null"], description: primary social handle }
+    email: { type: [string, "null"] }
+    url: { type: [string, "null"], description: profile URL }
+    platform: { type: [string, "null"], description: where you reach them }
+    reach:
+      enum: [high, medium, low, unknown]
+      description: factual audience size
+    notes: { type: string }
+    created: { type: string, format: date }
+maxDepth: 3
