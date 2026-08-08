@@ -1,7 +1,11 @@
 ---
 type: tracker
-status: living
+description: What is sold and on what terms — the canonical answer for pricing, trial, and guarantee.
+stage: living
 created: 2026-07-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Offer

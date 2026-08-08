@@ -1,7 +1,7 @@
 version = 3
 
 [markdown]
-refs_extension = ""
+refs_extension = ".md"
 date_format = "%b %d, %Y"
 
 [markdown.formatting]
@@ -61,17 +61,11 @@ match = "data/evergreen/[a-z]*"
 [schemas.community]
 match = ["data/community-*", "data/communities/*/*"]
 
-# person: everything under data/people/ EXCEPT role-* (hubs). globset has no
-# prefix-negation, so the r-splits exclude only the literal "role-" prefix while
-# still matching people whose slug starts with r.
+# person: everything under data/people/ EXCEPT role-* (those are hubs). A `!`
+# prefix negates a pattern gitignore-style — within one list the last matching
+# pattern decides.
 [schemas.person]
-match = [
-  "data/people/[a-qs-z]*",
-  "data/people/r[a-np-z]*",
-  "data/people/ro[a-km-z]*",
-  "data/people/rol[a-df-z]*",
-  "data/people/role[a-z0-9]*",
-]
+match = ["data/people/*", "!data/people/role-*"]
 
 [schemas.mention]
 match = "data/mentions/*"
@@ -96,7 +90,6 @@ match = "data/experiments/[a-z]*"
 
 [schemas.hub]
 match = [
-  "data/index",
   "data/communities",
   "data/people",
   "data/mentions",
@@ -119,3 +112,22 @@ match = [
   "data/website",
   "data/offer",
 ]
+
+# OKF v0.2 conformance (SPEC §11). okf stacks on top of the per-type schemas and
+# catches any document arriving without a type; okf-index and okf-log check the
+# body shapes of the reserved files, which a frontmatter-only check cannot see.
+# The bundle root is data/, so these bind under data/ only.
+[schemas.okf]
+match = [
+  "data/**",
+  "!data/index",
+  "!data/**/index",
+  "!data/log",
+  "!data/**/log",
+]
+
+[schemas.okf-index]
+match = ["data/index", "data/**/index"]
+
+[schemas.okf-log]
+match = ["data/log", "data/**/log"]

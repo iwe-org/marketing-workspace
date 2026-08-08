@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: A small offshoot of the build-in-public scene, nominally focused on the growth stage — scaling revenue, hiring, channels — rather than the zero-to-one grind.
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/scaleinpublic/
+resource: https://www.reddit.com/r/scaleinpublic/
 notes: Small spinoff of the build-in-public scene aimed at growth-stage updates; very little organic readership. rules change often — read the sidebar and recent posts before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/scaleinpublic

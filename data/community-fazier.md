@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: Fazier is a newer Product Hunt-style directory that surfaces a batch of products each day with upvotes and daily rankings.
+stage: planned
 category: launch-platform
 platform: web
-url: https://fazier.com/
+resource: https://fazier.com/
 notes: On-site submit link and a launch guide exist, and listings carry vote counts on a daily board, but free-vs-paid terms are not stated on the homepage — rules unverified — check before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Fazier

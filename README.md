@@ -1,9 +1,17 @@
 # marketing-workspace
 
+[![OKF
+v0.2](https://img.shields.io/badge/OKF-v0.2%20conformant-blue)](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
+
 **Memory for your marketing agent.** A plain-markdown campaign graph — your
 positioning, launch venues, people, posts, mentions, plan, and backlog — that
 your AI agent reads to decide what to do next and writes back what happened.
 Part CRM, part editorial calendar, part system of record.
+
+It is also a conformant [Open Knowledge
+Format](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
+v0.2 bundle — an open standard for agent-maintained knowledge — so your campaign
+graph is portable to any OKF consumer, not locked to one tool.
 
 Skill packs like
 [marketingskills](https://github.com/coreyhaines31/marketingskills) teach your
@@ -19,8 +27,11 @@ for the memory:
   **~65 pre-seeded launch venues with posting rules**, a people CRM (customers,
   prospects, amplifiers), the post pipeline (drafts → published, with engagement
   tracking), third-party mentions, a plan, and a backlog.
-- **Typed and validated** — every document carries frontmatter checked by
+- **Typed, validated, portable** — every document carries frontmatter checked by
   `iwe schema validate`, so agent writes stay consistent across sessions.
+  Provenance (`generated`, `sources`) and lifecycle (`status`, `stale_after`)
+  live in frontmatter as OKF families, and CI checks conformance on every
+  commit.
 - **Workspace skills** (`.claude/skills/`) — the state workflows the packs don't
   have: guided setup, internet backfill, venue-aware drafting, engagement
   refresh, a weekly digest.
@@ -28,6 +39,10 @@ for the memory:
 Everything is plain markdown in your repo, managed as a knowledge graph by
 [IWE](https://iwe.md) — queryable, schema-validated, editor-native, and fully
 yours.
+
+Writing code instead of copy? The sibling
+[dev-workspace](https://github.com/iwe-org/dev-workspace) template is the same
+idea for a software project.
 
 ## Quickstart
 
@@ -136,10 +151,10 @@ the questions packs otherwise re-ask every session ("what have you tried?",
 The graph is queryable:
 
 ``` bash
-iwe find --filter '{type: community, category: launch-platform, status: planned}'  # where to launch next
-iwe find --filter '{type: post, status: draft}' -f keys                            # drafts in flight
-iwe find --filter '{type: person, status: contacted}'                              # outreach awaiting reply
-iwe find --filter '{type: task, status: planned, priority: high}'                  # what to do next
+iwe find --filter '{type: community, category: launch-platform, stage: planned}'  # where to launch next
+iwe find --filter '{type: post, stage: draft}' -f keys                            # drafts in flight
+iwe find --filter '{type: person, stage: contacted}'                              # outreach awaiting reply
+iwe find --filter '{type: task, stage: planned, priority: high}'                  # what to do next
 iwe schema validate                                                                # is every doc well-formed?
 ```
 

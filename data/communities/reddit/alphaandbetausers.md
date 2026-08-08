@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: 'A long-running, small subreddit dedicated to one exchange: builders looking for early testers, and people who enjoy trying unfinished software.'
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/alphaandbetausers/
+resource: https://www.reddit.com/r/alphaandbetausers/
 notes: Purpose-built for recruiting alpha/beta testers — promo is the point, but traffic is low; include what you need tested and what testers get. rules change often — read the sidebar and recent posts before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/alphaandbetausers

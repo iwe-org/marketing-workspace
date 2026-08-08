@@ -14,21 +14,25 @@ after the update skill has refreshed engagement.
    `git log --since` on the workspace is a reliable activity source alongside
    frontmatter dates.
 2. **Shipped.** Posts with `published` in the window; tasks flipped to `done`
-   (`completed` in window); plan steps whose status changed; venues newly
+   (`completed` in window); plan steps whose stage changed; venues newly
    worked (`planned` → `active`).
 3. **Engagement.** Current `engagement.*` for posts published in the last ~14
    days, with notable movers called out. If numbers look stale, suggest
    running the update skill first.
-4. **Pipeline & outreach.** Drafts in flight (`status: draft`), scheduled
-   posts, people with `status: contacted` awaiting reply (with days-waiting),
+4. **Pipeline & outreach.** Drafts in flight (`stage: draft`), scheduled
+   posts, people with `stage: contacted` awaiting reply (with days-waiting),
    mentions filed in the window, experiments `running` (and any that should
    have concluded by now).
 5. **Next week.** Ranked shortlist: high-priority `planned` tasks, the active
    plan's unmet Definition-of-done items, and any follow-ups implied by 2–4 (a
    reply to chase, a mention author to contact). Keep it executable — 5 items
    max.
-6. **Print** the digest with those five sections. Write nothing to the
-   workspace.
+6. **Print** the digest with those five sections.
+7. **Log.** Append the week's shipped items to `data/log.md` as bullets under a
+   `## YYYY-MM-DD` group for today (create the group if it isn't there, newest
+   group first). One line per state change, each linking the document it
+   describes — `- **Update**: [Post title](posts/reddit/....md) published.`
+   This is the only write the digest makes.
 
 ## Rules
 

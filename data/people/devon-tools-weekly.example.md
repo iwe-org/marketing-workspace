@@ -1,13 +1,17 @@
 ---
 type: person
-status: contacted
+description: Example CRM record for an amplifier — a newsletter writer with reach over the target audience.
+stage: contacted
 handle: '@devontools'
 email: hello@example-toolsweekly.dev
-url: https://example-toolsweekly.dev
+resource: https://example-toolsweekly.dev
 platform: newsletter
 reach: medium
 notes: Runs a ~9k-subscriber dev-tools newsletter; covers CLI tools monthly. Pitched 2026-07-25, no reply yet.
 created: 2026-07-25
+generated:
+  by: human:author
+  at: 2026-07-25T00:00:00Z
 ---
 
 # Devon (Tools Weekly)

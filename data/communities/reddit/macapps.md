@@ -1,12 +1,17 @@
 ---
 type: community
-status: planned
+description: A community of Mac enthusiasts who actively collect, compare, and buy Mac software — one of the best-converting venues on this list for a good Mac utility.
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/macapps/
+resource: https://www.reddit.com/r/macapps/
 size: ~100k subscribers
 notes: Dev self-promo is accepted within posted limits; the crowd rewards native, lightweight, one-time-purchase apps and is openly hostile to Electron bloat and subscription-first pricing. rules change often — read the sidebar and recent posts before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/macapps

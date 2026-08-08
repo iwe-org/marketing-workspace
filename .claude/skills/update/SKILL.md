@@ -11,17 +11,17 @@ user's judgment work from current numbers.
 ## Steps
 
 1. **Scope.**
-   `iwe find --filter '{type: post, status: published}' --project '$title,platform,url,published' -f json`,
-   keep posts with a non-null `url` published in the last 14 days (or the range
+   `iwe find --filter '{type: post, stage: published}' --project '$title,platform,resource,published' -f json`,
+   keep posts that carry a `resource`, published in the last 14 days (or the range
    the user asked for).
-2. **Fetch.** For each post, fetch its `url` and extract what the platform
+2. **Fetch.** For each post, fetch its `resource` and extract what the platform
    shows: upvotes/points, comment count, views/impressions where visible.
    Platforms differ — read what's actually on the page; if a fetch fails or the
    page hides numbers, record the failure in `engagement.notes` instead of
    guessing. Reddit blocks most server-side fetches: retry the post through
    `https://embed.reddit.com/<post-path>` — the embed route serves score and
    comment count when `reddit.com` refuses. If a post is gone at the source
-   (deleted/removed by moderators), set `status: removed` and say so in the
+   (deleted/removed by moderators), set `stage: removed` and say so in the
    report.
 3. **Write back.** Update each post's `engagement.upvotes`,
    `engagement.comments`, `engagement.views` (only fields you actually

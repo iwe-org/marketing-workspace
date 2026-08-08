@@ -74,7 +74,7 @@ marketing-workspace/
     ├── metrics.md          # FILL-IN: baselines + dated snapshots (tracker)
     ├── website.md          # FILL-IN: page inventory, keyword map, org facts, redirects (tracker)
     ├── communities.md      # hub, grouped: launch platforms / directories / deals / subreddits
-    ├── community-*.md      # SEEDED standalone venues, status: planned, with rule notes
+    ├── community-*.md      # SEEDED standalone venues, stage: planned, with rule notes
     ├── communities/reddit/ # SEEDED subreddits (platform-grouped, mirrors posts/<platform>/)
     ├── competitors.md + competitors/   # one source-of-truth profile per competitor
     ├── experiments.md + experiments/   # everything tried: hypothesis, verdict, learning
@@ -195,7 +195,7 @@ Changes vs. the IWE KB:
 - **Dropped for v1**: `discussion`, `feedback-report`, `weekly-report`,
   `submission`, `audience` types; directory submissions are `task`s against
   seeded directory venues.
-- **Seeds**: ~65 venues (`status: planned`), three stage plan steps, onboarding
+- **Seeds**: ~65 venues (`stage: planned`), three stage plan steps, onboarding
   backlog ("Fill in product.md", "Define pillars", "Prune venues to your ICP",
   "Pick your first launch venue").
 

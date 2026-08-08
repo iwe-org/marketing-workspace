@@ -1,7 +1,11 @@
 ---
 type: tracker
-status: living
+description: What the product is, who it is for, and the messaging pillars every draft derives from.
+stage: living
 created: 2026-07-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Product
@@ -54,7 +58,7 @@ work:*
 
 *The 2–4 alternatives your customers actually weigh (including "do nothing" and
 spreadsheets if honest). One line each: what they're better at, where they fall
-short. Keep the deep profiles in [Competitors](competitors) — link them from
+short. Keep the deep profiles in [Competitors](competitors.md) — link them from
 here.*
 
 ✏️
@@ -80,8 +84,8 @@ skills mine this list.*
 
 *Verbatim phrases customers use for the problem and the outcome — their words,
 not yours. Pull from reviews, support tickets, community threads, and your
-research records (deliberate research lives in [Interviews](interviews);
-spontaneous quotes about your product live in [Mentions](mentions) — this
+research records (deliberate research lives in [Interviews](interviews.md);
+spontaneous quotes about your product live in [Mentions](mentions.md) — this
 section distills the best of both plus problem-space language). Headlines get
 written from this section.*
 

@@ -29,19 +29,19 @@ show.
    most server-side fetches — a thread that refuses to load usually works via
    `https://embed.reddit.com/<post-path>`). Atomic
    comment/thread → `data/mentions/YYYY-MM-DD-<slug>.md` (verbatim `quote`,
-   direct `url`, `author` exactly as displayed, honest `sentiment`);
+   direct `resource`, `author` exactly as displayed, honest `sentiment`);
    article-length piece → `data/external-<slug>.md` with a one-line
    `takeaway`. Link mentions from `data/mentions.md` and the venue's
    `## Mentions` heading; file authors worth following up in `data/people/`
    (roles via the role hubs) — a positive mention is warmed-up outreach.
 4. **Published-post import.** From the user's links and their profile pages,
    file each already-published post as
-   `data/posts/<platform>/YYYY-MM-DD-<slug>.md` (`status: published`, the real
-   `published` date and `url`; body = the actual post text, or a faithful
+   `data/posts/<platform>/YYYY-MM-DD-<slug>.md` (`stage: published`, the real
+   `published` date and `resource`; body = the actual post text, or a faithful
    summary when it's long). Record engagement numbers as displayed. The schema
    requires `goal` and `success` — set them retroactively with the user ("what
    was this post for?"). Link each post from its venue's `## Posts` heading
-   and its pillar hub, and flip the venue's `status` to `active`.
+   and its pillar hub, and flip the venue's `stage` to `active`.
 5. **Competitor snapshots.** For each competitor named, fetch their public
    pages and fill `data/competitors/<slug>.md`: Positioning, Pricing,
    Strengths and Weaknesses honestly, a dated Changelog entry,

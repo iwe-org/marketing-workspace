@@ -1,0 +1,38 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+env:
+  # Negated (`!`) schema-binding globs and `iwe init --okf` landed in 0.19.0.
+  IWE_VERSION: "0.19.0"
+
+jobs:
+  schema:
+    name: OKF conformance and schema validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # The key carries IWE_VERSION so a bump misses the cache and reinstalls,
+      # rather than restoring a stale binary from an earlier version.
+      - name: Cache the iwe binary
+        id: cache-iwe
+        uses: actions/cache@v4
+        with:
+          path: ~/.cargo/bin/iwe
+          key: iwe-${{ runner.os }}-${{ env.IWE_VERSION }}
+
+      - name: Install iwe
+        if: steps.cache-iwe.outputs.cache-hit != 'true'
+        run: cargo install iwe --locked --version ${{ env.IWE_VERSION }}
+
+      - name: Validate every document against its schemas
+        run: iwe schema validate
+
+      - name: Check that normalization is a no-op
+        run: |
+          iwe normalize
+          git diff --exit-code

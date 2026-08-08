@@ -1,8 +1,12 @@
 ---
 type: plan
-status: planned
-stage: first-10
+description: Nothing at this stage scales, and that's the point. The first ten users are found by hand, one conversation at a time — you're validating that the problem is real, the positioning lands, and someone will change their…
+stage: planned
+growth_stage: first-10
 created: 2026-07-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Get the first 10 users

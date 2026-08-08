@@ -45,25 +45,25 @@ you write here — optimize for the founder's own language, not marketing-speak.
    `data/offer.md`, and `data/metrics.md` (what's known; "unknown" is a valid
    value). Delete the italic instruction lines as sections fill. Add a dated
    entry to product.md's Changelog. Create a hub per confirmed pillar at
-   `data/pillars/<slug>.md` (`type: hub`, `status: living`, a one-line
+   `data/pillars/<slug>.md` (`type: hub`, `stage: living`, a one-line
    statement of the messaging claim) and inclusion-link each from the Pillars
    section of `data/index.md` — every future publication gets an inclusion
    link from its pillar hub, which is what keeps posts reachable in the tree.
 4. **Create competitor stubs.** For each competitor named in the interview,
-   create `data/competitors/<slug>.md` (status: active, url, one-line stance
+   create `data/competitors/<slug>.md` (stage: active, resource, one-line stance
    in `notes`) and link it from the competitors hub; deep profiling stays a
    backlog task.
 5. **Prune venues.** Walk
-   `iwe find --filter '{type: community, status: planned}' -f json`
+   `iwe find --filter '{type: community, stage: planned}' -f json`
    against the ICP. Propose a shortlist (~10 to keep) and the cancellations
-   with one-line reasons; on confirmation set `status: cancelled` and append
+   with one-line reasons; on confirmation set `stage: cancelled` and append
    the reason to `notes` for each cut venue
-   (`iwe update -k <venue key> --set status=cancelled` — keys are
+   (`iwe update -k <venue key> --set stage=cancelled` — keys are
    `data/community-<slug>` for standalone sites,
    `data/communities/reddit/<name>` for subreddits).
 6. **Activate the plan.** In `data/plan.md`, put the matching stage plan under
    `## Now` (others under Next/Later in stage order) and set its frontmatter
-   `status: in-progress`.
+   `stage: in-progress`.
 7. **Export the bridge file.** Marketing skill packs (e.g. marketingskills)
    read `.agents/product-marketing.md` before asking questions. Generate it:
    start with the line
@@ -73,7 +73,7 @@ you write here — optimize for the founder's own language, not marketing-speak.
    section from offer.md. Regenerate this file whenever those sections
    materially change.
 8. **Close the loop.** Mark the onboarding tasks done (`fill-product-doc`,
-   `set-strategy`, `prune-venues`): `status: done`, `completed: <today>`, and
+   `set-strategy`, `prune-venues`): `stage: done`, `completed: <today>`, and
    move their links in `data/backlog.md` to the `## Done` section. Delete the
    example docs — every `*.example.md` under `data/` — now that real documents
    replace their job. `iwe delete` removes their inclusion links from hubs

@@ -1,15 +1,25 @@
 ---
 type: external
+description: 'Example third-party article record: a roundup of terminal-first freelance tooling that mentions the product.'
 title: Run your freelance business without leaving the terminal
 pillar: invoice-without-leaving-terminal
-status: published
+stage: published
 source: example-devtools-blog.com
 author: Alex Rivera
-url: https://example-devtools-blog.com/terminal-freelance-stack
+resource: https://example-devtools-blog.com/terminal-freelance-stack
 published: 2026-07-25
 relation: mentions-us
 takeaway: First article-length third-party coverage — frames us as the invoicing piece of a terminal-only stack; author is a potential amplifier.
 created: 2026-07-26
+sources:
+- id: roundup
+  resource: https://example-devtools-blog.com/terminal-freelance-stack
+  title: The terminal-first freelance stack
+  author: human:example-author
+  last_modified: 2026-07-22
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Terminal freelance stack roundup

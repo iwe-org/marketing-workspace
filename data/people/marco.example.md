@@ -1,13 +1,16 @@
 ---
 type: person
-status: inactive
+description: Example CRM record for a churned customer, kept because the churn conversation is worth more than the account was.
+stage: inactive
 handle: null
 email: marco@example-agency.com
-url: null
 platform: email
 reach: unknown
 notes: Churned at first hire — workflow mismatch, not product rejection. Would return for solo work.
 created: 2026-07-24
+generated:
+  by: human:author
+  at: 2026-07-24T00:00:00Z
 ---
 
 # Marco (agency owner)

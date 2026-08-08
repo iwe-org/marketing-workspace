@@ -1,13 +1,17 @@
 ---
 type: person
-status: active
+description: Example CRM record for a customer who became an advocate, linking her interview and her public mention.
+stage: active
 handle: sarahk_dev
 email: sarah@example.com
-url: https://news.ycombinator.com/user?id=sarahk_dev
+resource: https://news.ycombinator.com/user?id=sarahk_dev
 platform: hn
 reach: low
 notes: Happiest customer so far — switched from BillingBear, recommends us unprompted.
 created: 2026-07-21
+generated:
+  by: human:author
+  at: 2026-07-21T00:00:00Z
 ---
 
 # Sarah K.

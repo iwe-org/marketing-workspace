@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: 'LaunchIgniter is a small, newer launch directory in the Product Hunt mold: submit a product, collect upvotes, earn a badge.'
+stage: planned
 category: launch-platform
 platform: web
-url: https://launchigniter.com/
+resource: https://launchigniter.com/
 notes: Product Hunt-style directory with upvoted launches; submission is reportedly free with paid promotion options, but the site blocks automated fetch — rules unverified — check before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # LaunchIgniter

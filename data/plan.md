@@ -1,7 +1,11 @@
 ---
 type: tracker
-status: living
+description: Campaign-level moves, each a plan step with its own definition of done.
+stage: living
 created: 2026-07-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Plan
@@ -20,15 +24,15 @@ evidence, not memory.
 
 ## Now
 
-[Get the first 10 users](plan/first-10-users)
+[Get the first 10 users](plan/first-10-users.md)
 
 ## Next
 
-[Get the first 100 users](plan/first-100-users)
+[Get the first 100 users](plan/first-100-users.md)
 
 ## Later
 
-[Get the first 1000 users](plan/first-1000-users)
+[Get the first 1000 users](plan/first-1000-users.md)
 
 ## Done
 

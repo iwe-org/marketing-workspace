@@ -1,12 +1,17 @@
 ---
 type: community
-status: planned
+description: One of the default places on Reddit to show something you built.
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/SideProject/
+resource: https://www.reddit.com/r/SideProject/
 size: ~400k subscribers
 notes: Self-promo is generally allowed and launch posts are the norm; very high post volume means most launches sink without traction unless the title hooks. rules change often — read the sidebar and recent posts before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/SideProject

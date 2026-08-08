@@ -1,7 +1,11 @@
 ---
 type: hub
-status: living
+description: Everything tried and its verdict — the permanent answer to "what have you already tested".
+stage: living
 created: 2026-07-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Experiments

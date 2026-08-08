@@ -1,11 +1,15 @@
 ---
 type: task
-status: done
+description: 'Example backlog task: thank an amplifier for an unprompted public mention while it is still recent.'
+stage: done
 priority: medium
 effort: 10 min
 completed: 2026-07-24
 notes: She agreed to be quoted — testimonial now on the landing page.
 created: 2026-07-23
+generated:
+  by: human:author
+  at: 2026-07-23T00:00:00Z
 ---
 
 # Thank Sarah for the HN mention

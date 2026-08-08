@@ -1,6 +1,7 @@
 ---
 type: experiment
-status: concluded
+description: 'Example experiment record: testing social proof above the fold on the landing page, hypothesis through verdict.'
+stage: concluded
 area: landing page
 hypothesis: Adding three named-user testimonials above the fold will raise visitor→signup conversion because trial users say they hesitated over whether 'real freelancers' use it.
 metric: Visitor→signup conversion; baseline 2.1%, target 2.6%
@@ -12,6 +13,9 @@ result: 2.1% → 2.9% over 3 weeks (n≈4,100 visitors); largest lift on mobile.
 started: 2026-07-01
 concluded: 2026-07-22
 created: 2026-06-28
+generated:
+  by: human:author
+  at: 2026-06-28T00:00:00Z
 ---
 
 # Landing page social proof above the fold

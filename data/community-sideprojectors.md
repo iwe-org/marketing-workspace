@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: SideProjectors is first and foremost a marketplace where makers sell side projects or look for co-founders, with a showcase option bolted on for projects that are not for sale.
+stage: planned
 category: launch-platform
 platform: web
-url: https://www.sideprojectors.com/
+resource: https://www.sideprojectors.com/
 notes: Primarily a buy/sell marketplace for side projects with a showcase mode; basic listings are free but pass a manual review before going live, with paid upgrades for extra visibility. Use the showcase route only — this is not a launch-day traffic source.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # SideProjectors

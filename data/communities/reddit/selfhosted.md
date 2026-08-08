@@ -1,12 +1,17 @@
 ---
 type: community
-status: planned
+description: A large, genuinely engaged community of people who run software on their own hardware — homelabbers, sysadmins, privacy-minded developers.
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/selfhosted/
+resource: https://www.reddit.com/r/selfhosted/
 size: ~500k subscribers
 notes: Use the Product Announcement flair for anything you built; audience strongly prefers open source, a Docker/compose install path, and no forced cloud account. rules change often — read the sidebar and recent posts before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/selfhosted

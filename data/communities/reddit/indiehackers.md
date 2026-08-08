@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: The Reddit outpost of the indie hacker scene — bootstrapped founders building small software businesses.
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/indiehackers/
+resource: https://www.reddit.com/r/indiehackers/
 notes: Use the Self Promotion flair for launch posts; revenue numbers and journey posts get far more traction than product pitches. rules change often — read the sidebar and recent posts before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/indiehackers

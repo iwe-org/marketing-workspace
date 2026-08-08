@@ -1,8 +1,12 @@
 ---
 type: plan
-status: planned
-stage: first-100
+description: 'The first hundred come from showing up where early adopters already gather: launch platforms, communities, and your own build-in-public trail.'
+stage: planned
+growth_stage: first-100
 created: 2026-07-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Get the first 100 users

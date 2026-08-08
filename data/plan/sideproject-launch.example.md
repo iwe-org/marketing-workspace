@@ -1,12 +1,16 @@
 ---
 type: plan
-status: done
-stage: first-10
+description: 'Example plan step: a single campaign-level move, launching on r/SideProject, with its own definition of done.'
+stage: done
+growth_stage: first-10
 estimated: 2026-07-20
 completed: 2026-07-21
 effort: 1 week
 notes: First public launch — produced the first paying user.
 created: 2026-07-10
+generated:
+  by: human:author
+  at: 2026-07-10T00:00:00Z
 ---
 
 # Launch on r/SideProject

@@ -1,15 +1,19 @@
 ---
 type: hub
-status: living
+description: Deliberate research events — customer interviews and surveys, one dated record each.
+stage: living
 created: 2026-07-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Interviews
 
 Deliberate research events — customer interviews and surveys — one dated record
 each (`data/interviews/YYYY-MM-DD-<slug>.md`). Spontaneous third-party quotes
-are [Mentions](mentions); this is where you file what you *went and asked*. Link
-the interviewee's person doc inline in the body; capture verbatim quotes
+are [Mentions](mentions.md); this is where you file what you *went and asked*.
+Link the interviewee's person doc inline in the body; capture verbatim quotes
 generously, then distill the best language into `data/product.md` (Customer
 language, Objections, Switching forces) — headlines get written from what people
 said here.

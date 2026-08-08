@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: A small community of startup founders mixing discussion threads — hiring, fundraising, growth tactics — with product show-and-tell under a Show flair.
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/TheFounders/
+resource: https://www.reddit.com/r/TheFounders/
 notes: Use the Show flair for product posts; small founder community, more discussion-oriented than the pure promo dumps but still limited reach. rules change often — read the sidebar and recent posts before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/TheFounders

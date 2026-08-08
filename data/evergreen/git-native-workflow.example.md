@@ -1,10 +1,14 @@
 ---
 type: template
+description: 'Example evergreen template: the git-native angle, reusable as a post on any platform.'
 pillar: invoice-without-leaving-terminal
 angle: git-native-workflow
 goal: positioning
 success: Readers repeat the 'invoices version like code' framing back in comments.
 created: 2026-07-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Your invoices should live in git, like everything else you make

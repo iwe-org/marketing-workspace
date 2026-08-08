@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: A veteran open-source hosting site that has grown a large B2B software comparison directory on top.
+stage: planned
 category: directory
 platform: web
-url: https://sourceforge.net/
+resource: https://sourceforge.net/
 notes: 'Two tracks: free self-serve hosting/listing for open-source projects, and an ''Add Your Software'' vendor route for commercial products on a freemium model with paid promotion options. Vendor pages carry user reviews.'
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # SourceForge

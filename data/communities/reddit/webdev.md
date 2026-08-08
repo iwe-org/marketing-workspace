@@ -1,12 +1,17 @@
 ---
 type: community
-status: planned
+description: One of the biggest developer communities on Reddit, full of working web developers discussing careers, frameworks, and industry news.
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/webdev/
+resource: https://www.reddit.com/r/webdev/
 size: ~2M subscribers
 notes: Self-promo is confined to Showoff Saturday — posting your product any other day gets it removed; repeated attempts risk a ban. rules change often — read the sidebar and recent posts before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/webdev

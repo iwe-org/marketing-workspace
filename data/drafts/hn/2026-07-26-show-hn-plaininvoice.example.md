@@ -1,13 +1,17 @@
 ---
 type: post
+description: 'Example unpublished draft: a Show HN post held until the launch sequence reaches its Hacker News day.'
 pillar: invoice-without-leaving-terminal
 goal: awareness
 success: Front page for 2+ hours; 20+ substantive comments; 300+ site visits from HN.
+stage: draft
 status: draft
 platform: hn
 created: 2026-07-26
 published: null
-url: null
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Show HN: PlainInvoice – invoicing for freelance developers, entirely in the terminal

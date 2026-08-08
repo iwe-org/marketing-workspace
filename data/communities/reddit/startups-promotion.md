@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: 'Exactly what the name says: a subreddit that exists so founders have somewhere to drop promotional posts without being removed.'
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/startups_promotion/
+resource: https://www.reddit.com/r/startups_promotion/
 notes: Explicit promo dump — anything goes, nobody reads; only marginal value is the backlink and launch-sweep completeness. rules change often — read the sidebar and recent posts before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/startups_promotion

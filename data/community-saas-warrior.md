@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: A Facebook group where lifetime-deal buyers discuss, vet, and share SaaS deals.
+stage: planned
 category: deals
 platform: facebook
-url: https://www.facebook.com/groups/2179325755493302
+resource: https://www.facebook.com/groups/2179325755493302
 notes: Facebook group — promo posts generally require admin approval and often a paid or negotiated promotion arrangement; group not fetchable from here, rules unverified — check before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # SaaS Warrior

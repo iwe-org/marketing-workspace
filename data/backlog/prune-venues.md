@@ -1,9 +1,14 @@
 ---
 type: task
-status: planned
+description: 'Walk the seeded venues (iwe find --filter ''{type: community, status: planned}'') against your ideal customer profile.'
+stage: planned
 priority: high
 effort: 20 min once product.md is filled
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Prune the venue list to your ICP

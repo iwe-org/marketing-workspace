@@ -1,7 +1,12 @@
 ---
 type: tracker
-status: living
+description: The campaign's baseline numbers and the dated snapshots that show movement.
+stage: living
 created: 2026-07-26
+stale_after: 2026-10-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Metrics

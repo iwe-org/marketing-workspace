@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: A directory of open-source alternatives to popular proprietary software.
+stage: planned
 category: directory
 platform: web
-url: https://openalternative.co/
+resource: https://openalternative.co/
 notes: Free submission via the /submit page; open-source-only — a public GitHub repo is effectively required since listings display stars, forks, and last-commit stats.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # OpenAlternative

@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: A smaller lifetime-deal storefront in the long tail of LTD platforms.
+stage: planned
 category: deals
 platform: web
-url: https://saaszilla.co/
+resource: https://saaszilla.co/
 notes: Small lifetime-deal platform; founders arrange deals with the operators, presumably on the standard discount-plus-revenue-share model. Site blocks automated fetching; rules unverified — check before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # SaasZilla

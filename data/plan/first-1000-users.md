@@ -1,8 +1,12 @@
 ---
 type: plan
-status: planned
-stage: first-1000
+description: 'Getting to a thousand means adding channels that compound or scale: search (classic and AI answer engines), content with real distribution, email lifecycle, referrals, and — once unit economics allow — paid acquisition.'
+stage: planned
+growth_stage: first-1000
 created: 2026-07-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Get the first 1000 users

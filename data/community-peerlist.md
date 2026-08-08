@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: Peerlist is a professional network for tech people (a designer/developer-flavored LinkedIn alternative), and its Launchpad feature runs weekly product launch cycles where the community upvotes entries and winners get…
+stage: planned
 category: launch-platform
 platform: web
-url: https://peerlist.io/
+resource: https://peerlist.io/
 notes: Launchpad runs weekly launch cycles tied to your Peerlist profile (account required); launching is free and weekly winners earn badges. Site blocked automated fetch — rules unverified — check before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Peerlist

@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: A small subreddit for people building SaaS products, where launch and progress posts are the default content.
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/saasbuild/
+resource: https://www.reddit.com/r/saasbuild/
 notes: Small SaaS-founder sub where promotion is tolerated by default; low readership — mostly founders posting launches at each other. rules change often — read the sidebar and recent posts before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/saasbuild

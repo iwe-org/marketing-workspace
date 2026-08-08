@@ -1,12 +1,17 @@
 ---
 type: community
-status: planned
+description: 'The Reddit home of the build-in-public movement that started on Twitter/X: founders sharing revenue numbers, milestones, failures, and lessons as they go.'
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/buildinpublic/
+resource: https://www.reddit.com/r/buildinpublic/
 size: ~50k subscribers
 notes: Progress updates with real numbers fit the culture; bare launch posts without a journey attached read as spam here. rules change often — read the sidebar and recent posts before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/buildinpublic

@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: An aggregator of lifetime deals and founder-provided discounts for SaaS and AI tools.
+stage: planned
 category: deals
 platform: web
-url: https://saaspirate.com/
+resource: https://saaspirate.com/
 notes: Founders submit via a 'Submit a Deal' option; deals are often coupon/discount-style arranged directly with founders rather than platform-hosted checkout, so terms are negotiated per deal.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # SaaSPirate

@@ -1,12 +1,17 @@
 ---
 type: community
-status: planned
+description: A serious community of iOS developers discussing Swift, SwiftUI, App Store review pain, and the craft of shipping iOS software.
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/iOSProgramming/
+resource: https://www.reddit.com/r/iOSProgramming/
 size: ~150k subscribers
 notes: App promotion only on Saturdays under the App Saturday convention; any other day it is removed on sight. rules change often — read the sidebar and recent posts before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/iOSProgramming

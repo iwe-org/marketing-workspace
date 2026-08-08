@@ -1,9 +1,19 @@
 ---
 type: interview
-status: done
+description: 'Example churn interview: why an agency owner stopped using the product after two months.'
+stage: done
 kind: churned
 conducted: 2026-07-24
 created: 2026-07-24
+sources:
+- id: call
+  resource: churn interview call with Marco, 2026-07-24
+  title: Churn interview, 25 minutes
+  author: human:author
+  last_modified: 2026-07-24
+generated:
+  by: human:author
+  at: 2026-07-24T00:00:00Z
 ---
 
 # Marco (agency owner) — churned after two months

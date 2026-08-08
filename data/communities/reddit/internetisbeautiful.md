@@ -1,12 +1,17 @@
 ---
 type: community
-status: planned
+description: A former default subreddit with an enormous general audience that exists to surface delightful, free, instantly usable websites.
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/InternetIsBeautiful/
+resource: https://www.reddit.com/r/InternetIsBeautiful/
 size: ~17M subscribers
 notes: 'Strictest venue on this list: websites only, free to use, no signup walls, no promotion of paid tools; self-promo limits are tight and mods remove aggressively — treat it as a one-shot. rules change often — read the sidebar and recent posts before submitting.'
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/InternetIsBeautiful

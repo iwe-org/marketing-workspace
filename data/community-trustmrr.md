@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: 'Less a software directory than a marketplace of verified-revenue SaaS businesses: startups connect a payment provider and their MRR, growth rate, and valuation multiples are shown publicly, including to prospective…'
+stage: planned
 category: directory
 platform: web
-url: https://trustmrr.com/
+resource: https://trustmrr.com/
 notes: Founders list via an 'Add startup' flow; revenue is verified through connected payment providers (Stripe, RevenueCat, Superwall, Creem) and displayed publicly with MRR and growth. Listing cost not stated on the homepage — rules unverified — check before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # TrustMRR

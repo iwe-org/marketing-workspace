@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: A lifetime- and annual-deal marketplace for business software, pitching one-time payment access instead of subscriptions.
+stage: planned
 category: deals
 platform: web
-url: https://productcanyon.com/
+resource: https://productcanyon.com/
 notes: Vendors join via a 'Become a Seller' program; submission specifics and revenue-share terms aren't published on the homepage — rules unverified — check before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # ProductCanyon

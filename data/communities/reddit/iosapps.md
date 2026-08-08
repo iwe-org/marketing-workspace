@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: An app-discovery sub where iPhone users ask for recommendations and developers show their apps.
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/iosapps/
+resource: https://www.reddit.com/r/iosapps/
 notes: Developers must use the Dev - Self Promotion flair; posts with promo codes or a free tier get noticeably better reception. rules change often — read the sidebar and recent posts before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/iosapps

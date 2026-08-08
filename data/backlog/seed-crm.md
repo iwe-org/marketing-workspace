@@ -1,9 +1,13 @@
 ---
 type: task
-status: planned
+description: 'Add the first ~10 people to data/people/: existing users, friendly testers, anyone who ever said something nice about the product, and the two or three community voices your audience listens to.'
+stage: planned
 priority: medium
 effort: 20 min
 created: 2026-07-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Seed the CRM with people you already know

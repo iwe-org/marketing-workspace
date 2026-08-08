@@ -1,7 +1,11 @@
 ---
 type: tracker
-status: living
+description: Atomic, single-sitting tasks, linked here by state.
+stage: living
 created: 2026-07-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Backlog
@@ -17,25 +21,25 @@ iwe find --filter '{type: task, status: planned, priority: high}'
 
 ## High
 
-[Fill in the product doc](backlog/fill-product-doc)
+[Fill in the product doc](backlog/fill-product-doc.md)
 
-[Set the strategy](backlog/set-strategy)
+[Set the strategy](backlog/set-strategy.md)
 
-[Prune the venue list to your ICP](backlog/prune-venues)
+[Prune the venue list to your ICP](backlog/prune-venues.md)
 
 ## Medium
 
-[Pick and schedule the first launch venue](backlog/pick-first-launch-venue)
+[Pick and schedule the first launch venue](backlog/pick-first-launch-venue.md)
 
-[Seed the CRM with people you already know](backlog/seed-crm)
+[Seed the CRM with people you already know](backlog/seed-crm.md)
 
-[Record your baseline numbers](backlog/record-baselines)
+[Record your baseline numbers](backlog/record-baselines.md)
 
-[Profile your top competitors](backlog/profile-competitors)
+[Profile your top competitors](backlog/profile-competitors.md)
 
 ## Low
 
-[Set up mention alerts](backlog/set-up-mention-alerts)
+[Set up mention alerts](backlog/set-up-mention-alerts.md)
 
 ## Done
 

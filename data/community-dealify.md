@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: A lifetime-deal platform with a lean toward growth-hacking and marketing tools, selling deep-discount LTD campaigns to its buyer list.
+stage: planned
 category: deals
 platform: web
-url: https://dealify.com/
+resource: https://dealify.com/
 notes: Lifetime-deal platform historically focused on growth/marketing SaaS; founders arrange campaigns with the operators on discount-plus-revenue-share terms. Fetch was rate-limited (server responding); rules unverified — check before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Dealify

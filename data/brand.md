@@ -1,7 +1,11 @@
 ---
 type: tracker
-status: living
+description: Voice, visuals, and the reusable description variants copy and creative work start from.
+stage: living
 created: 2026-07-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Brand

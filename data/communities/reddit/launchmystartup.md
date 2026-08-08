@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: A subreddit whose entire feed is startup launch announcements.
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/LaunchMyStartup/
+resource: https://www.reddit.com/r/LaunchMyStartup/
 notes: Open promo dump for startup launches; effectively no moderation friction and effectively no readers. rules change often — read the sidebar and recent posts before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/LaunchMyStartup

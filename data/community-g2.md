@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: The dominant B2B software review platform — a profile here is table stakes for anything sold to businesses, and G2 category pages rank hard in search.
+stage: planned
 category: directory
 platform: web
-url: https://www.g2.com/
+resource: https://www.g2.com/
 notes: 'Vendors can claim a basic profile at no charge, but visibility is review-gated: rankings and grid placement come from verified user reviews, and expanded profiles plus buyer-intent data sit behind paid subscriptions. Site blocks automated fetching; rules unverified — check before submitting.'
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # G2

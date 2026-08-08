@@ -1,10 +1,20 @@
 ---
 type: competitor
-status: active
-url: https://billingbear.example.com
+description: 'Example competitor profile: a fictional web-first invoicing suite, the default our trial users compare against.'
+stage: active
+resource: https://billingbear.example.com
 updated: 2026-07-26
 notes: The default choice our trial users compare against — wins on integrations, loses on speed.
 created: 2026-07-26
+stale_after: 2026-10-26
+sources:
+- id: pricing-page
+  resource: https://billingbear.example.com/pricing
+  title: BillingBear pricing
+  last_modified: 2026-07-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # BillingBear

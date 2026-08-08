@@ -21,8 +21,8 @@ the campaign's memory and system of record. The division of labor:
    setup flow (`.claude/skills/setup/SKILL.md`) before anything else — marketing
    work without positioning is guessing.
 2. Check the backlog and plan:
-   `iwe find --filter '{type: task, status: planned, priority: high}'` and
-   `iwe find --filter '{type: plan, status: in-progress}'`.
+   `iwe find --filter '{type: task, stage: planned, priority: high}'` and
+   `iwe find --filter '{type: plan, stage: in-progress}'`.
 
 ## The operating loop
 
@@ -34,10 +34,10 @@ the campaign's memory and system of record. The division of labor:
 3. **Execute** — draft the post, prepare the outreach, file the research.
 4. **Record** — write the state back:
    - New draft → `data/drafts/<platform>/YYYY-MM-DD-<slug>.md` (`type: post`,
-     `status: draft`), plus a link under the venue's `## Posts` heading and an
+     `stage: draft`), plus a link under the venue's `## Posts` heading and an
      inclusion link from its pillar hub (`data/pillars/<pillar>.md`).
    - Published → `iwe rename` the draft from `data/drafts/...` to
-     `data/posts/...`, set `status: published`, `published`, `url`.
+     `data/posts/...`, set `stage: published`, `published`, `resource`.
    - New contact/reply → update the person's entry, or create one in
      `data/people/`.
    - Mention spotted → `data/mentions/YYYY-MM-DD-<slug>.md` + link from
@@ -47,15 +47,15 @@ the campaign's memory and system of record. The division of labor:
      distill the best language into `data/product.md`.
    - Launch plan step finished → append a `## Retro` section (numbers, what
      worked) before closing it.
-   - Venue worked → flip its `status` (`planned` → `active`, or `cancelled` with
+   - Venue worked → flip its `stage` (`planned` → `active`, or `cancelled` with
      a note).
-   - Task finished → set `status: done` and `completed` on the task doc, and
-     move its link in `data/backlog.md` to the `## Done` section.
+   - Task finished → set `stage: done` and `completed` on the task doc, and move
+     its link in `data/backlog.md` to the `## Done` section.
    - Something tried (a test, a price change, a new popup) →
      `data/experiments/<slug>.md` with hypothesis and metric; on conclusion set
      `verdict` and `result`. Before proposing any experiment, check what's
      already been tried:
-     `iwe find --filter '{type: experiment}' --project '$title,status,verdict'`.
+     `iwe find --filter '{type: experiment}' --project '$title,stage,verdict'`.
    - Competitor fact learned (pricing change, new positioning) → update
      `data/competitors/<slug>.md`, dated entry in its Changelog, bump `updated`.
    - Baseline number learned → `data/metrics.md` (current value + dated
@@ -63,7 +63,15 @@ the campaign's memory and system of record. The division of labor:
    - Positioning/messaging changed → update `data/product.md` **and log it in
      its Changelog**, then regenerate `.agents/product-marketing.md` (see
      below).
-5. **Validate & commit** — `iwe schema validate` must pass; then commit with a
+5. **Stamp** — every document you create or meaningfully change gets
+   `generated: { by: claude-code/opus-5, at: <ISO 8601 now> }`, a one-sentence
+   `description` if it has none, and — when you researched it from an external
+   page — a `sources` entry with that page's `resource`. Whenever you set
+   `stage`, derive OKF `status` from the table in `SCHEMA.md` and set or clear
+   it in the same edit. Append a line to `data/log.md` under today's
+   `## YYYY-MM-DD` group (create the group if it isn't there); if the top-level
+   set of documents changed, update `data/index.md` too.
+6. **Validate & commit** — `iwe schema validate` must pass; then commit with a
    short message describing the state change.
 
 ## Conventions
@@ -97,6 +105,18 @@ the campaign's memory and system of record. The division of labor:
 - **Frontmatter shapes are enforced** — `.iwe/schemas/*.yaml`, human reference
   in `SCHEMA.md`. Run `iwe schema validate -k <key>` after editing a doc; fix
   violations before committing.
+- **`data/` is an OKF v0.2 bundle** — the graph is portable knowledge any [Open
+  Knowledge
+  Format](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
+  consumer can read, and CI checks conformance on every commit. Three rules keep
+  it true: every document under `data/` has frontmatter with a non-empty `type`;
+  `data/index.md` carries no frontmatter beyond `okf_version` and stays sections
+  of link bullets; `data/log.md` stays date-grouped bullets under
+  `## YYYY-MM-DD`. `okf.yaml`, `okf-index.yaml`, and `okf-log.yaml` enforce all
+  three — never work around them by unbinding a schema.
+- **Links carry `.md`** — `refs_extension = ".md"`, so a link resolves for
+  readers outside iwe. Run `iwe normalize` after bulk edits rather than hand-
+  writing link targets.
 - **The `.agents/product-marketing.md` bridge**: marketing skill packs read that
   file for product context before asking questions. It is *generated* from
   `data/product.md` (+ brand voice/descriptions, current offer) by the setup
@@ -124,12 +144,12 @@ know:
 ## iwe CLI cheatsheet
 
 ``` bash
-iwe find --filter '{type: community, status: planned}' -f json   # filter docs (YAML expr)
-iwe find --filter 'status: draft' -f keys                        # keys only
-iwe count --filter '{type: post, status: published}'             # count matches
+iwe find --filter '{type: community, stage: planned}' -f json   # filter docs (YAML expr)
+iwe find --filter 'stage: draft' -f keys                        # keys only
+iwe count --filter '{type: post, stage: published}'             # count matches
 iwe retrieve -k data/product                                     # read a doc
 iwe tree -k data/index                                           # graph overview
-iwe update -k <key> --set status=published --set 'published="2026-08-01"'
+iwe update -k <key> --set stage=published --set 'published="2026-08-01"'
 iwe rename data/drafts/reddit/x data/posts/reddit/x              # move; references auto-update
 iwe schema validate                                              # validate all bound docs
 ```

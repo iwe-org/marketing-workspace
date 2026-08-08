@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: A developer-facing platform that tracks open-source projects and libraries and ranks them by mentions on social networks (notably Hacker News and Reddit) and repository activity.
+stage: planned
 category: directory
 platform: web
-url: https://www.libhunt.com/
+resource: https://www.libhunt.com/
 notes: Free 'Add a project' submission form, plus automatic indexing — LibHunt also picks up projects from social-network mentions on its own. Ranking is driven by mentions and repo activity, so a bare listing does little by itself.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # LibHunt

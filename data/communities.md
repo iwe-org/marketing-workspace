@@ -1,7 +1,11 @@
 ---
 type: hub
-status: living
+description: Every venue this campaign targets or tracks, from launch platforms to subreddits.
+stage: living
 created: 2026-07-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Communities
@@ -22,152 +26,152 @@ long one.
 
 ## Launch platforms
 
-[Product Hunt](community-producthunt)
+[Product Hunt](community-producthunt.md)
 
-[Hacker News (Show HN)](community-hn)
+[Hacker News (Show HN)](community-hn.md)
 
-[BetaList](community-betalist)
+[BetaList](community-betalist.md)
 
-[Uneed](community-uneed)
+[Uneed](community-uneed.md)
 
-[Microlaunch](community-microlaunch)
+[Microlaunch](community-microlaunch.md)
 
-[Peerlist](community-peerlist)
+[Peerlist](community-peerlist.md)
 
-[Indie Hackers (products)](community-indiehackers)
+[Indie Hackers (products)](community-indiehackers.md)
 
-[Fazier](community-fazier)
+[Fazier](community-fazier.md)
 
-[LaunchIgniter](community-launchigniter)
+[LaunchIgniter](community-launchigniter.md)
 
-[PeerPush](community-peerpush)
+[PeerPush](community-peerpush.md)
 
-[SideProjectors](community-sideprojectors)
+[SideProjectors](community-sideprojectors.md)
 
 ## Directories
 
-[G2](community-g2)
+[G2](community-g2.md)
 
-[Capterra](community-capterra)
+[Capterra](community-capterra.md)
 
-[Trustpilot](community-trustpilot)
+[Trustpilot](community-trustpilot.md)
 
-[AlternativeTo](community-alternativeto)
+[AlternativeTo](community-alternativeto.md)
 
-[SaaSHub](community-saashub)
+[SaaSHub](community-saashub.md)
 
-[OpenAlternative](community-openalternative)
+[OpenAlternative](community-openalternative.md)
 
-[LibHunt](community-libhunt)
+[LibHunt](community-libhunt.md)
 
-[SourceForge](community-sourceforge)
+[SourceForge](community-sourceforge.md)
 
-[There's An AI For That](community-theresanaiforthat)
+[There's An AI For That](community-theresanaiforthat.md)
 
-[Softonic](community-softonic)
+[Softonic](community-softonic.md)
 
-[Toolfolio](community-toolfolio)
+[Toolfolio](community-toolfolio.md)
 
-[toools.design](community-toools-design)
+[toools.design](community-toools-design.md)
 
-[SaaS Genius](community-saasgenius)
+[SaaS Genius](community-saasgenius.md)
 
-[TrustMRR](community-trustmrr)
+[TrustMRR](community-trustmrr.md)
 
 ## Deal platforms
 
-[AppSumo](community-appsumo)
+[AppSumo](community-appsumo.md)
 
-[StackSocial](community-stacksocial)
+[StackSocial](community-stacksocial.md)
 
-[RocketHub](community-rockethub)
+[RocketHub](community-rockethub.md)
 
-[Dealify](community-dealify)
+[Dealify](community-dealify.md)
 
-[DealMirror](community-dealmirror)
+[DealMirror](community-dealmirror.md)
 
-[Prime Club](community-primeclub)
+[Prime Club](community-primeclub.md)
 
-[SaaSPirate](community-saaspirate)
+[SaaSPirate](community-saaspirate.md)
 
-[ProductCanyon](community-productcanyon)
+[ProductCanyon](community-productcanyon.md)
 
-[SaasZilla](community-saaszilla)
+[SaasZilla](community-saaszilla.md)
 
-[SaaS Mantra](community-saasmantra)
+[SaaS Mantra](community-saasmantra.md)
 
-[SaaS Warrior](community-saas-warrior)
+[SaaS Warrior](community-saas-warrior.md)
 
-[LTD Hunt](community-ltd-hunt)
+[LTD Hunt](community-ltd-hunt.md)
 
-[KEN Moo](community-ken-moo)
+[KEN Moo](community-ken-moo.md)
 
-[Lifetimo](community-lifetimo)
+[Lifetimo](community-lifetimo.md)
 
 ## Subreddits
 
 High-signal, strict rules — read each venue's notes before posting:
 
-[r/selfhosted](communities/reddit/selfhosted)
+[r/selfhosted](communities/reddit/selfhosted.md)
 
-[r/webdev](communities/reddit/webdev)
+[r/webdev](communities/reddit/webdev.md)
 
-[r/InternetIsBeautiful](communities/reddit/internetisbeautiful)
+[r/InternetIsBeautiful](communities/reddit/internetisbeautiful.md)
 
-[r/macapps](communities/reddit/macapps)
+[r/macapps](communities/reddit/macapps.md)
 
-[r/androidapps](communities/reddit/androidapps)
+[r/androidapps](communities/reddit/androidapps.md)
 
-[r/iOSProgramming](communities/reddit/iosprogramming)
+[r/iOSProgramming](communities/reddit/iosprogramming.md)
 
-[r/developersIndia](communities/reddit/developersindia)
+[r/developersIndia](communities/reddit/developersindia.md)
 
-[r/BuyFromEU](communities/reddit/buyfromeu)
+[r/BuyFromEU](communities/reddit/buyfromeu.md)
 
 Maker and founder communities:
 
-[r/SideProject](communities/reddit/sideproject)
+[r/SideProject](communities/reddit/sideproject.md)
 
-[r/indiehackers](communities/reddit/indiehackers)
+[r/indiehackers](communities/reddit/indiehackers.md)
 
-[r/buildinpublic](communities/reddit/buildinpublic)
+[r/buildinpublic](communities/reddit/buildinpublic.md)
 
-[r/iosapps](communities/reddit/iosapps)
+[r/iosapps](communities/reddit/iosapps.md)
 
-[r/apps](communities/reddit/apps)
+[r/apps](communities/reddit/apps.md)
 
-[r/chrome_extensions](communities/reddit/chrome-extensions)
+[r/chrome_extensions](communities/reddit/chrome-extensions.md)
 
-[r/ProductivityApps](communities/reddit/productivityapps)
+[r/ProductivityApps](communities/reddit/productivityapps.md)
 
-[r/roastmystartup](communities/reddit/roastmystartup)
+[r/roastmystartup](communities/reddit/roastmystartup.md)
 
-[r/alphaandbetausers](communities/reddit/alphaandbetausers)
+[r/alphaandbetausers](communities/reddit/alphaandbetausers.md)
 
-[r/Startup_Ideas](communities/reddit/startup-ideas)
+[r/Startup_Ideas](communities/reddit/startup-ideas.md)
 
-[r/ShowMeYourSaaS](communities/reddit/showmeyoursaas)
+[r/ShowMeYourSaaS](communities/reddit/showmeyoursaas.md)
 
-[r/TheFounders](communities/reddit/thefounders)
+[r/TheFounders](communities/reddit/thefounders.md)
 
-[r/TestMyApp](communities/reddit/testmyapp)
+[r/TestMyApp](communities/reddit/testmyapp.md)
 
 Low-signal promo boards — cheap to post, little readership; treat as a checklist
 sweep:
 
-[r/saasbuild](communities/reddit/saasbuild)
+[r/saasbuild](communities/reddit/saasbuild.md)
 
-[r/scaleinpublic](communities/reddit/scaleinpublic)
+[r/scaleinpublic](communities/reddit/scaleinpublic.md)
 
-[r/MVPLaunch](communities/reddit/mvplaunch)
+[r/MVPLaunch](communities/reddit/mvplaunch.md)
 
-[r/LaunchMyStartup](communities/reddit/launchmystartup)
+[r/LaunchMyStartup](communities/reddit/launchmystartup.md)
 
-[r/ProductHunters](communities/reddit/producthunters)
+[r/ProductHunters](communities/reddit/producthunters.md)
 
-[r/startups_promotion](communities/reddit/startups-promotion)
+[r/startups_promotion](communities/reddit/startups-promotion.md)
 
-[r/ShowYourApp](communities/reddit/showyourapp)
+[r/ShowYourApp](communities/reddit/showyourapp.md)
 
 ## Your spaces
 

@@ -1,12 +1,17 @@
 ---
 type: community
-status: planned
+description: A community that grew explosively in early 2025 around deliberately choosing European products and services over US alternatives.
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/BuyFromEU/
+resource: https://www.reddit.com/r/BuyFromEU/
 size: ~200k subscribers
 notes: European Product flair required and the product must genuinely be EU-based — company, hosting, ownership all get scrutinized; non-EU products are removed. rules change often — read the sidebar and recent posts before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/BuyFromEU

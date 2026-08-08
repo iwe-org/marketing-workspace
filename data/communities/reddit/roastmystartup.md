@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: 'A small community built around one format: post your startup and invite people to tear it apart.'
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/roastmystartup/
+resource: https://www.reddit.com/r/roastmystartup/
 notes: 'Feedback-framed: you must ask for a roast, not announce a launch; expect blunt critique of your landing page, pricing, and pitch. rules change often — read the sidebar and recent posts before submitting.'
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/roastmystartup

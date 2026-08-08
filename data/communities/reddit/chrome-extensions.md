@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: The gathering place for browser-extension developers and power users who collect extensions.
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/chrome_extensions/
+resource: https://www.reddit.com/r/chrome_extensions/
 notes: Use the Self Promotion flair for your own extension; the feed is promo-heavy since the AI-extension wave, so a concrete demo GIF matters more than copy. rules change often — read the sidebar and recent posts before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/chrome_extensions

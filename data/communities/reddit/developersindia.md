@@ -1,12 +1,17 @@
 ---
 type: community
-status: planned
+description: A large, fast-growing, and unusually well-moderated community of Indian software developers — careers, tech discussion, and a strong culture of members showing their work.
+stage: planned
 category: subreddit
 platform: reddit
-url: https://www.reddit.com/r/developersIndia/
+resource: https://www.reddit.com/r/developersIndia/
 size: ~200k subscribers
 notes: Use the I made this flair for project showcases; the sub is community-first and actively moderated — blatant marketing or engagement-bait gets removed. rules change often — read the sidebar and recent posts before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # r/developersIndia

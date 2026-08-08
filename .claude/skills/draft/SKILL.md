@@ -34,11 +34,10 @@ record.
    pillar: <slug or null>
    goal: <goal>
    success: "<one line>"
-   status: draft
+   stage: draft
    platform: <platform>
    created: <today>
    published: null
-   url: null
    ---
    # <Post title>
 
@@ -51,8 +50,8 @@ record.
    post stays reachable in the tree.
 6. **Validate & commit.** `iwe schema validate` must pass; commit
    `draft: <venue> — <title>`.
-7. **On publish** (when the user reports it's live): set `url`, `published`,
-   `status: published`, and move the doc:
+7. **On publish** (when the user reports it's live): set `resource`, `published`,
+   `stage: published`, and move the doc:
    `iwe rename data/drafts/<platform>/<file> data/posts/<platform>/<file>`.
 
 ## Rules

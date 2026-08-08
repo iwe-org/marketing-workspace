@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: A mid-size lifetime-deal platform aimed at entrepreneurs and small businesses buying SaaS at one-time prices.
+stage: planned
 category: deals
 platform: web
-url: https://www.rockethub.com/
+resource: https://www.rockethub.com/
 notes: Lifetime-deal platform where founders apply to run a deal; expect the standard LTD structure — deep one-time discount plus a platform revenue share. Site blocks automated fetching; rules unverified — check before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # RocketHub

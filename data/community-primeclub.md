@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: 'A curated lifetime-deal marketplace that positions itself upmarket: it claims to list only vetted, already-successful SaaS products and sells to a paying membership of buyers.'
+stage: planned
 category: deals
 platform: web
-url: https://primeclub.co/
+resource: https://primeclub.co/
 notes: Founders apply via the 'Launch on Prime' / partner form; the platform vets products through multiple rounds of testing before approval, and deals are sold to a membership-based buyer club. Revenue-share terms not published on the homepage.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Prime Club

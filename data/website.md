@@ -1,7 +1,11 @@
 ---
 type: tracker
-status: living
+description: The web properties' living record — what exists, what it targets, and what still needs writing.
+stage: living
 created: 2026-07-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Website

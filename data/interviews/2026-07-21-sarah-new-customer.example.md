@@ -1,9 +1,19 @@
 ---
 type: interview
-status: done
+description: 'Example new-customer interview: why a freelance backend developer switched from a competitor.'
+stage: done
 kind: new-customer
 conducted: 2026-07-21
 created: 2026-07-21
+sources:
+- id: call
+  resource: interview call with Sarah K., 2026-07-21
+  title: New-customer interview, 35 minutes
+  author: human:author
+  last_modified: 2026-07-21
+generated:
+  by: human:author
+  at: 2026-07-21T00:00:00Z
 ---
 
 # Sarah K. (freelance backend dev) — why she switched from BillingBear

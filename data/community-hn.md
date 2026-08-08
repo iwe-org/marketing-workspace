@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: Show HN is the section of Hacker News for things you built that others can try, and it offers the largest and most technical audience of any venue on this list.
+stage: planned
 category: launch-platform
 platform: web
-url: https://news.ycombinator.com/show
+resource: https://news.ycombinator.com/show
 notes: Post a 'Show HN:' story from a regular HN account — free, no scheduling or queue; it must be something you built that visitors can actually try, per the official Show HN rules and tips linked at the top of the Show page. Effectively one serious shot per release; repeat posting of the same thing is penalized.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Hacker News (Show HN)

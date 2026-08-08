@@ -1,14 +1,24 @@
 ---
 type: mention
-status: published
+description: 'Example mention record: a customer recommending the product unprompted in a Hacker News invoicing-tools thread.'
+stage: published
 platform: hn
-url: https://news.ycombinator.com/item?id=00000000
+resource: https://news.ycombinator.com/item?id=00000000
 author: sarahk_dev
 kind: comment
 sentiment: positive
 quote: PlainInvoice is the only one that doesn't make me leave the terminal — templates are TOML in my repo, so invoices version like code.
 published: 2026-07-23
 created: 2026-07-23
+sources:
+- id: hn-thread
+  resource: https://news.ycombinator.com/item?id=00000000
+  title: Ask HN — what do you use for invoicing?
+  author: human:sarah-k
+  last_modified: 2026-07-23
+generated:
+  by: human:author
+  at: 2026-07-23T00:00:00Z
 ---
 
 # Sarah recommends PlainInvoice in an HN invoicing-tools thread

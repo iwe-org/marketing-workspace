@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: 'PeerPush is a product discovery directory built around explicit reciprocity: your listing''s visibility is driven by a score you earn through mutual support — upvoting, commenting on, and sharing other builders'' products…'
+stage: planned
 category: launch-platform
 platform: web
-url: https://peerpush.net/
+resource: https://peerpush.net/
 notes: peerpush.net 301-redirects to peerpush.com. Free listings wait in a publishing queue; paid tiers skip it ($35 instant publish, $89 seven-day boost, $189 thirty-day boost), and visibility depends on a reciprocal 'PeerPush score' earned by upvoting, commenting on, and sharing other members' products.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # PeerPush

@@ -1,11 +1,16 @@
 ---
 type: community
-status: planned
+description: Indie Hackers is a long-running community of bootstrapped founders, and its products directory lets you create a page for your product and attach milestone posts, revenue updates, and progress logs to it.
+stage: planned
 category: launch-platform
 platform: web
-url: https://www.indiehackers.com/products
+resource: https://www.indiehackers.com/products
 notes: Product listing is free with an Indie Hackers account; the value comes from posting milestones and updates into the community feed, not from the directory entry itself. Page is JS-rendered and could not be fetched — rules unverified — check before submitting.
 created: 2026-07-26
+stale_after: 2027-01-26
+generated:
+  by: human:author
+  at: 2026-07-26T00:00:00Z
 ---
 
 # Indie Hackers (products)

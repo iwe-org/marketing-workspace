@@ -1,18 +1,22 @@
 ---
 type: post
+description: 'Example published post: a first-paying-user retrospective on r/SideProject, with engagement recorded after the fact.'
 pillar: invoice-without-leaving-terminal
 goal: conversion
 success: 10+ signups within a week attributable to the post.
-status: published
+stage: published
 platform: reddit
 created: 2026-07-18
 published: 2026-07-20
-url: https://www.reddit.com/r/SideProject/comments/example000/
+resource: https://www.reddit.com/r/SideProject/comments/example000/
 engagement:
   upvotes: 47
   comments: 12
   views: null
   notes: '2026-07-26: steady trickle of signups; two commenters became beta users.'
+generated:
+  by: human:author
+  at: 2026-07-18T00:00:00Z
 ---
 
 # I got my first paying user for a CLI invoicing tool — what worked and what didn't
