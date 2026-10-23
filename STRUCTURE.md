@@ -45,7 +45,7 @@ founder tool and a living demo of IWE's agent-memory thesis.
 
 ## Layout
 
-One iwe project rooted at the repo root:
+One IWE project rooted at the repo root:
 
 ```
 marketing-workspace/
@@ -222,7 +222,7 @@ into the graph.
 
 1. Mark this repo as a GitHub **template repository**.
 2. Website page on iwe.md: the workspace as the flagship agent-memory demo.
-3. README quickstart: use template → install iwe → install marketingskills →
+3. README quickstart: use template → install IWE → install marketingskills →
    `/setup`.
 
 ## Build plan

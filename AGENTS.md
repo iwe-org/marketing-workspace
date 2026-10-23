@@ -122,7 +122,7 @@ the campaign's memory and system of record. The division of labor:
   `data/product.md` (+ brand voice/descriptions, current offer) by the setup
   skill — never edit it directly; edit the source docs and regenerate.
 
-## iwe basics
+## IWE basics
 
 The graph is managed by [IWE](https://iwe.md) — the `iwe` CLI. What you must
 know:
@@ -141,7 +141,7 @@ know:
   validation need the CLI. Ask the user to install it
   (https://iwe.md/quick-start/) before restructuring anything.
 
-## iwe CLI cheatsheet
+## IWE CLI cheatsheet
 
 ``` bash
 iwe find --filter '{type: community, stage: planned}' -f json   # filter docs (YAML expr)

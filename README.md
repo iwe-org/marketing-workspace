@@ -48,7 +48,7 @@ idea for a software project.
 
 1. **Use this template** (or clone) and open the folder in your editor.
 
-2. **Install the iwe CLI** (manages the graph, validates the schemas):
+2. **Install the IWE CLI** (manages the graph, validates the schemas):
 
    ``` bash
    brew tap iwe-org/iwe && brew install iwe   # Homebrew
