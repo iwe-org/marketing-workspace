@@ -21,12 +21,13 @@ iwe find --filter '{type: selling-point, stage: {$in: [validated, promoted]}}' -
 
 ## Differentiators
 
-[Invoices version like code](selling-points/invoices-version-like-code.example)
+[Invoices version like
+code](selling-points/invoices-version-like-code-example.md)
 
 ## Outcomes
 
 [The first invoice takes under two
-minutes](selling-points/first-invoice-in-two-minutes.example)
+minutes](selling-points/first-invoice-in-two-minutes-example.md)
 
 ## Workflows
 

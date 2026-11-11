@@ -27,5 +27,5 @@ assets, and budget genuine preparation time for it.
 ## Mentions
 
 - [maple_and_mortar on
-  PlainInvoice](mentions/2026-07-30-maple-and-mortar-producthunt-review.example)
+  PlainInvoice](mentions/2026-07-30-maple-and-mortar-producthunt-review-example.md)
   — 2026-07-30

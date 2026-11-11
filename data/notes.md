@@ -22,11 +22,11 @@ iwe find --filter '{type: note, stage: active}' --project '$title,kind'
 ## Decisions
 
 [The founder writes the final words of every
-reply](notes/founder-writes-replies.example)
+reply](notes/founder-writes-replies-example.md)
 
 ## Learnings
 
 [Commenters' phrases make better headlines than
-ours](notes/commenter-phrases-make-headlines.example)
+ours](notes/commenter-phrases-make-headlines-example.md)
 
 ## Gotchas

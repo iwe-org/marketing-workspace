@@ -13,8 +13,8 @@ generated:
 People who use the product. The most valuable list in the CRM: sources of
 testimonials, case studies, referrals, and honest feedback. Keep it warm.
 
-[Sarah K.](sarah-k.example)
+[Sarah K.](sarah-k-example.md)
 
-[Marco (agency owner)](marco.example)
+[Marco (agency owner)](marco-example.md)
 
-[Ola B.](ola-b.example)
+[Ola B.](ola-b-example.md)

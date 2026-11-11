@@ -14,4 +14,4 @@ Everyone else worth remembering — journalists, community moderators, potential
 partners, helpful strangers. If you might talk to them twice, they belong in the
 CRM.
 
-[Devon (Tools Weekly)](devon-tools-weekly.example)
+[Devon (Tools Weekly)](devon-tools-weekly-example.md)

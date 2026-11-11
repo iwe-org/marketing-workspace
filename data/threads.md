@@ -20,40 +20,41 @@ page first, then the lead, then the reply.
 iwe find --filter '{type: thread, platform: reddit}' --project '$title,opened'
 ```
 
-[Ask HN — what do you use for invoicing?](threads/hn-ask-hn-invoicing.example)
+[Ask HN — what do you use for
+invoicing?](threads/hn-ask-hn-invoicing-example.md)
 
 [How do you invoice clients without paying for another
-SaaS?](threads/reddit-webdev-invoicing-without-saas.example)
+SaaS?](threads/reddit-webdev-invoicing-without-saas-example.md)
 
 [What tools do you actually pay for as a solo
-developer?](threads/reddit-sideproject-tools-you-pay-for.example)
+developer?](threads/reddit-sideproject-tools-you-pay-for-example.md)
 
 [Ask HN: What's your freelance back-office
-stack?](threads/hn-ask-hn-freelance-back-office.example)
+stack?](threads/hn-ask-hn-freelance-back-office-example.md)
 
 [Client disputes an invoice from March, how do you keep
-records?](threads/reddit-webdev-disputed-invoice.example)
+records?](threads/reddit-webdev-disputed-invoice-example.md)
 
 [How did you handle invoicing for your first
-clients?](threads/ih-invoicing-first-clients.example)
+clients?](threads/ih-invoicing-first-clients-example.md)
 
 [Self-hosted invoicing that isn't a whole
-ERP?](threads/reddit-selfhosted-light-invoicing.example)
+ERP?](threads/reddit-selfhosted-light-invoicing-example.md)
 
 [Week 12 of building a CLI tool: what I'd
-change](threads/reddit-buildinpublic-cli-week-twelve.example)
+change](threads/reddit-buildinpublic-cli-week-twelve-example.md)
 
 [Show HN: A plain-text ledger for
-freelancers](threads/hn-show-hn-plain-text-ledger.example)
+freelancers](threads/hn-show-hn-plain-text-ledger-example.md)
 
 [When did you add a paid
-plan?](threads/reddit-indiehackers-when-to-charge.example)
+plan?](threads/reddit-indiehackers-when-to-charge-example.md)
 
 [Do you keep non-code stuff in
-git?](threads/reddit-webdev-non-code-in-git.example)
+git?](threads/reddit-webdev-non-code-in-git-example.md)
 
 [Would you use a CLI-only
-product?](threads/reddit-sideproject-cli-only-product.example)
+product?](threads/reddit-sideproject-cli-only-product-example.md)
 
 [Pricing a tool for developers who hate
-subscriptions](threads/ih-pricing-for-developers.example)
+subscriptions](threads/ih-pricing-for-developers-example.md)

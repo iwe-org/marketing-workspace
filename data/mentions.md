@@ -55,50 +55,51 @@ hconcat:
 Atomic mentions:
 
 [maple_and_mortar on PlainInvoice,
-2026-07-30](mentions/2026-07-30-maple-and-mortar-producthunt-review.example)
+2026-07-30](mentions/2026-07-30-maple-and-mortar-producthunt-review-example.md)
 
 [Sarah recommends PlainInvoice in an HN invoicing-tools
-thread](mentions/2026-07-23-sarah-hn-invoicing-thread.example)
+thread](mentions/2026-07-23-sarah-hn-invoicing-thread-example.md)
 
 [u/the_other_tab on PlainInvoice,
-2026-07-22](mentions/2026-07-22-the-other-tab-sideproject-currency.example)
+2026-07-22](mentions/2026-07-22-the-other-tab-sideproject-currency-example.md)
 
 [u/freelance_fern on PlainInvoice,
-2026-07-21](mentions/2026-07-21-freelance-fern-sideproject-launch.example)
+2026-07-21](mentions/2026-07-21-freelance-fern-sideproject-launch-example.md)
 
 [u/shipping_sundays on PlainInvoice,
-2026-07-18](mentions/2026-07-18-shipping-sundays-buildinpublic.example)
+2026-07-18](mentions/2026-07-18-shipping-sundays-buildinpublic-example.md)
 
 [@latte_lambda on PlainInvoice,
-2026-07-11](mentions/2026-07-11-latte-lambda-x-invoice-day.example)
+2026-07-11](mentions/2026-07-11-latte-lambda-x-invoice-day-example.md)
 
 [pinecone_parser on PlainInvoice,
-2026-07-04](mentions/2026-07-04-pinecone-parser-hn-diffable.example)
+2026-07-04](mentions/2026-07-04-pinecone-parser-hn-diffable-example.md)
 
 [u/rack_and_roll_rhea on PlainInvoice,
-2026-06-26](mentions/2026-06-26-rack-and-roll-selfhosted-payment-api.example)
+2026-06-26](mentions/2026-06-26-rack-and-roll-selfhosted-payment-api-example.md)
 
 [Terminal Craft on PlainInvoice,
-2026-06-19](mentions/2026-06-19-terminal-craft-newsletter-listing.example)
+2026-06-19](mentions/2026-06-19-terminal-craft-newsletter-listing-example.md)
 
 [u/semicolon_sally on PlainInvoice,
-2026-06-12](mentions/2026-06-12-semicolon-sally-webdev-spreadsheet.example)
+2026-06-12](mentions/2026-06-12-semicolon-sally-webdev-spreadsheet-example.md)
 
 [tidepool_studio on PlainInvoice,
-2026-06-06](mentions/2026-06-06-tidepool-studio-ih-bookkeeper.example)
+2026-06-06](mentions/2026-06-06-tidepool-studio-ih-bookkeeper-example.md)
 
 [@quietcommit_dev on PlainInvoice,
-2026-05-30](mentions/2026-05-30-quietcommit-x-between-reviews.example)
+2026-05-30](mentions/2026-05-30-quietcommit-x-between-reviews-example.md)
 
 [fennel_and_fig on PlainInvoice,
-2026-05-22](mentions/2026-05-22-fennel-and-fig-hn-cli-billing.example)
+2026-05-22](mentions/2026-05-22-fennel-and-fig-hn-cli-billing-example.md)
 
 [u/ledgerless_lou on PlainInvoice,
-2026-05-15](mentions/2026-05-15-ledgerless-lou-sideproject-two-clients.example)
+2026-05-15](mentions/2026-05-15-ledgerless-lou-sideproject-two-clients-example.md)
 
 Articles:
 
-[Terminal freelance stack roundup](external-terminal-invoicing-roundup.example)
+[Terminal freelance stack
+roundup](external-terminal-invoicing-roundup-example.md)
 
 ## Watchlist
 

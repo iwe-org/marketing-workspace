@@ -6,6 +6,17 @@ All notable changes to this template are documented here. The format is based on
 This is a template you clone, so the entries below double as migration notes: if
 you cloned an earlier copy, they tell you what to change in your own workspace.
 
+## [1.2.1]
+
+### Fixed
+
+- The hubs include their example documents. A link such as
+  `experiments/annual-plan-discount.example` reads to iwe as a file with the
+  extension `.example`, not as a document, so no example was a child of its hub
+  and most hubs dropped out of the iWe sidebar. Example documents are now named
+  `<name>-example.md`. If you cloned an earlier copy and kept the examples,
+  rename them the same way and update the links to them.
+
 ## [1.2.0]
 
 ### Added

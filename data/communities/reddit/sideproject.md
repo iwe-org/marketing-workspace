@@ -28,17 +28,17 @@ removed; the sub is tolerant but jaded.
 ## Posts
 
 - [I got my first paying user for a CLI invoicing tool — what worked and what
-  didn't](../../posts/reddit/sideproject/2026-07-20-plaininvoice-first-paying-user.example)
+  didn't](../../posts/reddit/sideproject/2026-07-20-plaininvoice-first-paying-user-example.md)
   — published 2026-07-20
 
 ## Mentions
 
 - [u/ledgerless_lou on
-  PlainInvoice](../../mentions/2026-05-15-ledgerless-lou-sideproject-two-clients.example)
+  PlainInvoice](../../mentions/2026-05-15-ledgerless-lou-sideproject-two-clients-example.md)
   — 2026-05-15
 - [u/freelance_fern on
-  PlainInvoice](../../mentions/2026-07-21-freelance-fern-sideproject-launch.example)
+  PlainInvoice](../../mentions/2026-07-21-freelance-fern-sideproject-launch-example.md)
   — 2026-07-21
 - [u/the_other_tab on
-  PlainInvoice](../../mentions/2026-07-22-the-other-tab-sideproject-currency.example)
+  PlainInvoice](../../mentions/2026-07-22-the-other-tab-sideproject-currency-example.md)
   — 2026-07-22

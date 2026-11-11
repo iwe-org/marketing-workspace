@@ -20,6 +20,6 @@ ruled out stay, as `inactive`, with the reason.
 iwe find --filter '{type: audience, stage: active}' --project '$title,fit,pillar'
 ```
 
-[Freelance backend developers](audiences/freelance-backend-devs.example)
+[Freelance backend developers](audiences/freelance-backend-devs-example.md)
 
-[Small agencies](audiences/small-agencies.example)
+[Small agencies](audiences/small-agencies-example.md)

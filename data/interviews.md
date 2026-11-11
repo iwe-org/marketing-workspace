@@ -29,7 +29,7 @@ iwe find --filter '{type: interview, stage: planned}'    # scheduled research
 ```
 
 [Marco (agency owner) — churned after two
-months](interviews/2026-07-24-marco-churned.example)
+months](interviews/2026-07-24-marco-churned-example.md)
 
 [Sarah K. (freelance backend dev) — why she switched from
-BillingBear](interviews/2026-07-21-sarah-new-customer.example)
+BillingBear](interviews/2026-07-21-sarah-new-customer-example.md)

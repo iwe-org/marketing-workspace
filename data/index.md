@@ -16,7 +16,7 @@ okf_version: '0.2'
 # Pillars
 
 - [Invoice without leaving the
-  terminal](pillars/invoice-without-leaving-terminal.example)
+  terminal](pillars/invoice-without-leaving-terminal-example.md)
   - Example pillar hub collecting every publication that carries this messaging
     pillar.
 

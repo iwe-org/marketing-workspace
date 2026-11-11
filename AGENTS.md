@@ -156,7 +156,7 @@ the campaign's memory and system of record. The division of labor:
 - **Repurposing trail**: a dated post cut from an evergreen template links back
   to the template inline, so a template's real-world performance stays
   traceable.
-- **Example docs**: files suffixed `.example.md` demonstrate each directory's
+- **Example docs**: files suffixed `-example.md` demonstrate each directory's
   document shape (a fictional product; schema-validated so they can't rot).
   Ignore them when reporting real campaign state; the setup skill deletes them
   at the end of onboarding.

@@ -22,7 +22,7 @@ iwe find --filter '{type: reading, stage: {$ne: open}}' --project '$title,stage,
 ## Supported
 
 [Visitors hesitate because they can't tell whether real freelancers use
-PlainInvoice](readings/hesitation-is-about-real-users.example)
+PlainInvoice](readings/hesitation-is-about-real-users-example.md)
 
 ## Contradicted
 

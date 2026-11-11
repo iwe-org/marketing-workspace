@@ -21,4 +21,4 @@ iwe find --filter '{type: reference, ideas_for: {$in: [format]}}'       # format
 ```
 
 [What the best CLI READMEs show in their first
-screen](references/readme-demo-teardown.example)
+screen](references/readme-demo-teardown-example.md)

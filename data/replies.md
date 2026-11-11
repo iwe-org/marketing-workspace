@@ -203,64 +203,64 @@ hconcat:
 ## All replies, newest first
 
 [Replying to quillandport about an export
-format](replies/2026-08-02-hn-replying-to-quillandport-about-an.example)
+format](replies/2026-08-02-hn-replying-to-quillandport-about-an-example.md)
 
 [Answering u/two_monitor_tess on payment
-links](replies/2026-08-01-reddit-answering-u-two_monitor_tess-on-payment.example)
+links](replies/2026-08-01-reddit-answering-u-two_monitor_tess-on-payment-example.md)
 
 [Adding the per-client pricing argument to the
-thread](replies/2026-07-30-indiehackers-adding-the-per-client-pricing-argument.example)
+thread](replies/2026-07-30-indiehackers-adding-the-per-client-pricing-argument-example.md)
 
 [Answering bytesized_billing on pricing that suits a slow
-month](replies/2026-07-29-indiehackers-answering-bytesized_billing-on-pricing-that.example)
+month](replies/2026-07-29-indiehackers-answering-bytesized_billing-on-pricing-that-example.md)
 
 [Answering u/hourly_hana on keeping invoice templates in the
-repo](replies/2026-07-28-reddit-webdev-invoicing-without-saas.example)
+repo](replies/2026-07-28-reddit-webdev-invoicing-without-saas-example.md)
 
 [Thanking Sarah for the recommendation in the Ask HN invoicing
-thread](replies/2026-07-23-hn-ask-hn-invoicing.example)
+thread](replies/2026-07-23-hn-ask-hn-invoicing-example.md)
 
 [Answering u/two_monitor_tess on CLI-only
-products](replies/2026-07-15-reddit-answering-u-two_monitor_tess-on-cli-only.example)
+products](replies/2026-07-15-reddit-answering-u-two_monitor_tess-on-cli-only-example.md)
 
 [Answering u/ledger_in_a_jar on keeping invoices with the
-contracts](replies/2026-07-09-reddit-answering-u-ledger_in_a_jar-on-keeping.example)
+contracts](replies/2026-07-09-reddit-answering-u-ledger_in_a_jar-on-keeping-example.md)
 
 [Adding invoices to the list of non-code things in
-git](replies/2026-07-08-reddit-adding-invoices-to-the-list.example)
+git](replies/2026-07-08-reddit-adding-invoices-to-the-list-example.md)
 
 [Telling u/cobalt_freelance which tool it
-was](replies/2026-07-03-reddit-telling-u-cobalt_freelance-which-tool.example)
+was](replies/2026-07-03-reddit-telling-u-cobalt_freelance-which-tool-example.md)
 
 [Answering u/cobalt_freelance on whether a billing tool pays for
-itself](replies/2026-07-01-reddit-answering-u-cobalt_freelance-on-whether.example)
+itself](replies/2026-07-01-reddit-answering-u-cobalt_freelance-on-whether-example.md)
 
 [Asking quillandport how invoices fit a plain-text
-ledger](replies/2026-06-24-hn-asking-quillandport-how-invoices-fit.example)
+ledger](replies/2026-06-24-hn-asking-quillandport-how-invoices-fit-example.md)
 
 [Sharing what changed after week four of a CLI
-tool](replies/2026-06-17-reddit-sharing-what-changed-after-week.example)
+tool](replies/2026-06-17-reddit-sharing-what-changed-after-week-example.md)
 
 [Answering the offline invoicing question on
-r/selfhosted](replies/2026-06-10-reddit-answering-the-offline-invoicing-question.example)
+r/selfhosted](replies/2026-06-10-reddit-answering-the-offline-invoicing-question-example.md)
 
 [Answering kettle_studio on invoicing for two
-founders](replies/2026-06-03-indiehackers-answering-kettle_studio-on-invoicing-for.example)
+founders](replies/2026-06-03-indiehackers-answering-kettle_studio-on-invoicing-for-example.md)
 
 [Answering u/margin_notes_dev again, without the product
-name](replies/2026-05-28-reddit-answering-u-margin_notes_dev-again-without.example)
+name](replies/2026-05-28-reddit-answering-u-margin_notes_dev-again-without-example.md)
 
 [Pointing u/margin_notes_dev at PlainInvoice for invoice
-history](replies/2026-05-27-reddit-pointing-u-margin_notes_dev-at-plaininvoice.example)
+history](replies/2026-05-27-reddit-pointing-u-margin_notes_dev-at-plaininvoice-example.md)
 
 [Following up with u/tabs_and_totals after their first
-invoice](replies/2026-05-20-reddit-following-up-with-u-tabs_and_totals.example)
+invoice](replies/2026-05-20-reddit-following-up-with-u-tabs_and_totals-example.md)
 
 [Answering rivetcount on one tool for a whole
-agency](replies/2026-05-19-hn-answering-rivetcount-on-one-tool.example)
+agency](replies/2026-05-19-hn-answering-rivetcount-on-one-tool-example.md)
 
 [Listing PlainInvoice in the tools-you-pay-for
-roundup](replies/2026-05-13-reddit-listing-plaininvoice-in-the-tools-you-pay-for.example)
+roundup](replies/2026-05-13-reddit-listing-plaininvoice-in-the-tools-you-pay-for-example.md)
 
 [Answering u/tabs_and_totals on billing five clients from a
-spreadsheet](replies/2026-05-12-reddit-answering-u-tabs_and_totals-on-billing.example)
+spreadsheet](replies/2026-05-12-reddit-answering-u-tabs_and_totals-on-billing-example.md)

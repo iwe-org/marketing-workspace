@@ -29,11 +29,11 @@ than one launch spike.
 ## Posts
 
 - [Week four of building an invoicing CLI: 31 signups, no paying users
-  yet](../../posts/reddit/buildinpublic/2026-05-26-week-four-invoicing-cli.example)
+  yet](../../posts/reddit/buildinpublic/2026-05-26-week-four-invoicing-cli-example.md)
   — published 2026-05-26
 
 ## Mentions
 
 - [u/shipping_sundays on
-  PlainInvoice](../../mentions/2026-07-18-shipping-sundays-buildinpublic.example)
+  PlainInvoice](../../mentions/2026-07-18-shipping-sundays-buildinpublic-example.md)
   — 2026-07-18

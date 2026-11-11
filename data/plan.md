@@ -103,4 +103,4 @@ layer:
 
 ## Done
 
-[Launch on r/SideProject](plan/sideproject-launch.example)
+[Launch on r/SideProject](plan/sideproject-launch-example.md)

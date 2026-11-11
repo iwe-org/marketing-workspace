@@ -29,7 +29,7 @@ the schema and listed under each type below as **Conditional** — for example a
 
 Titles come from the H1 header; a `title` frontmatter field is kept only where
 the H1 doesn't carry it. Dates are ISO (`YYYY-MM-DD`). Most data directories
-ship `*.example.md` docs demonstrating their shape with one fictional product
+ship `*-example.md` docs demonstrating their shape with one fictional product
 (PlainInvoice) — the examples cross-link each other so the graph conventions are
 shown live, validate against the same schemas, and the setup skill deletes them
 after onboarding.

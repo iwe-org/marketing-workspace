@@ -14,4 +14,4 @@ YouTubers, streamers, podcast hosts, and course authors you might pitch for
 coverage or partnership. Note their format and audience in the person entry
 before reaching out.
 
-[Devon (Tools Weekly)](devon-tools-weekly.example)
+[Devon (Tools Weekly)](devon-tools-weekly-example.md)

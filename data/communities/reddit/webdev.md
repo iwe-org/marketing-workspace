@@ -29,11 +29,11 @@ audience.
 ## Posts
 
 - [Showoff Saturday: I bill my clients from
-  git](../../posts/reddit/webdev/2026-06-27-showoff-saturday-billing-from-git.example)
+  git](../../posts/reddit/webdev/2026-06-27-showoff-saturday-billing-from-git-example.md)
   — published 2026-06-27
 
 ## Mentions
 
 - [u/semicolon_sally on
-  PlainInvoice](../../mentions/2026-06-12-semicolon-sally-webdev-spreadsheet.example)
+  PlainInvoice](../../mentions/2026-06-12-semicolon-sally-webdev-spreadsheet-example.md)
   — 2026-06-12
