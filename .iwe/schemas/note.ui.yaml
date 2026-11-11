@@ -1,0 +1,26 @@
+name: Note
+description: A decision, learning or gotcha worth keeping
+columns: [kind, stage, origin]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  kind:
+    title: Kind
+    values:
+      decision: { title: Decision, color: purple }
+      learning: { title: Learning, color: blue }
+      gotcha: { title: Gotcha, color: orange }
+  stage:
+    title: Stage
+    values:
+      active: { title: Active, color: green }
+      superseded: { title: Superseded, color: gray }
+  origin:
+    title: Source
+    values:
+      human: { title: You said it }
+      agent: { title: Inferred by the agent }

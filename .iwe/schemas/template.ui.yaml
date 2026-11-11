@@ -1,0 +1,18 @@
+name: Evergreen template
+description: A reusable post draft
+columns: [goal, angle]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  goal:
+    title: Goal
+    values:
+      awareness: { title: Awareness, color: blue }
+      conversion: { title: Conversion, color: green }
+      positioning: { title: Positioning, color: purple }
+      credibility: { title: Credibility, color: teal }
+      retention: { title: Retention, color: orange }

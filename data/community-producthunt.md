@@ -23,3 +23,9 @@ galleries and videos, and mobilize their networks for the early-morning Pacific
 hours, so an unprepared launch simply disappears. Use it as the anchor event of
 a launch sequence, after the smaller directories have warmed up your copy and
 assets, and budget genuine preparation time for it.
+
+## Mentions
+
+- [maple_and_mortar on
+  PlainInvoice](mentions/2026-07-30-maple-and-mortar-producthunt-review.example)
+  — 2026-07-30

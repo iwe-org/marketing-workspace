@@ -1,0 +1,13 @@
+name: Thread
+description: A thread or post where you met people
+columns: [platform, opened]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  resource: { title: Link }
+  opened: { title: Started }
+  created: { title: Filed }

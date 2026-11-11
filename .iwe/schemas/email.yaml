@@ -1,0 +1,92 @@
+$schema: https://document-schema.org/draft/2026-06/schema
+description: one outreach email, sent or received (data/emails/YYYY-MM-DD-<slug>.md) — a pitch, follow-up or answer to a person; the recipient is an inline link to their person or lead record
+frontmatter:
+  type: object
+  required: [type, stage, direction, target, created]
+  additionalProperties: false
+  properties:
+    type: { const: email }
+    title: { type: string }
+    stage:
+      enum: [draft, scheduled, sent, archived]
+      description: draft until it goes out; sent once it has; archived when abandoned unsent
+    direction:
+      enum: [outbound, inbound]
+      description: outbound = you wrote it; inbound = you received it and are keeping it
+    target: { type: string, description: the recipient (outbound) or sender (inbound), as a name }
+    subject: { type: [string, "null"] }
+    pillar: { type: [string, "null"] }
+    goal:
+      enum: [awareness, conversion, positioning, credibility, retention]
+      description: why the outreach exists — the same axis as posts
+    success:
+      type: string
+      minLength: 1
+      description: the observable signal that means it worked
+    outcome:
+      enum: [none, replied, declined, accepted]
+      description: what came back — accepted = they agreed to what was asked
+    sent: { type: [string, "null"], format: date, description: when it went out or arrived }
+    created: { type: string, format: date }
+    resource:
+      type: string
+      description: canonical URI of the underlying asset this document describes (SPEC §4.1)
+    description:
+      type: string
+      description: one sentence summarizing this document — what OKF consumers and index entries show
+    tags: { type: array, items: { type: string } }
+    status:
+      enum: [draft, stable, deprecated]
+      description: OKF lifecycle (SPEC §5.4), derived from stage — set it only for the draft and deprecated cases in SCHEMA.md; absent means stable
+    stale_after:
+      type: string
+      format: date
+      description: the day this content goes stale (SPEC §5.5); set it on anything that rots
+    generated:
+      type: object
+      required: [by]
+      description: how the current content was produced (SPEC §5.2) — write it on every edit
+      properties:
+        by: { type: string, description: "actor (SPEC §7) — <producer>/<version>, human:<id>, or process:<id>" }
+        at: { type: string, description: ISO 8601 datetime of the last meaningful change }
+    verified:
+      description: who confirmed the content against its sources (SPEC §5.2); one mapping or a list
+      anyOf:
+        - $ref: '#/$defs/verification'
+        - { type: array, items: { $ref: '#/$defs/verification' } }
+    sources:
+      type: array
+      description: the materials this document derives from (SPEC §5.1); cite per claim with a footnote keyed to an entry id
+      items:
+        type: object
+        required: [resource]
+        properties:
+          id: { type: string, description: footnote label used to attribute a claim in the body }
+          resource: { type: string, description: a URL, a bundle path, or a scope descriptor }
+          title: { type: string }
+          author: { type: string, description: actor (SPEC §7) }
+          usage_count: { type: integer }
+          last_modified: { type: string, format: date }
+    usage_window:
+      type: object
+      description: the date range every usage_count is measured over
+      properties:
+        from: { type: string, format: date }
+        to: { type: string, format: date }
+  $defs:
+    verification:
+      type: object
+      required: [by]
+      properties:
+        by: { type: string, description: "actor (SPEC §7)" }
+        at: { type: string, description: ISO 8601 datetime }
+  allOf:
+    - if: { properties: { direction: { const: outbound } }, required: [direction] }
+      then:
+        required: [goal, success]
+        description: outbound email states its goal and success, like any publication
+    - if: { properties: { stage: { const: sent } }, required: [stage] }
+      then:
+        required: [sent]
+        description: a sent email carries its date
+maxDepth: 3

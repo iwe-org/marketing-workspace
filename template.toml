@@ -1,8 +1,8 @@
 format = 1
 id = "marketing-workspace"
 name = "Marketing Workspace"
-description = "A markdown campaign graph kept by your marketing agent: positioning, launch venues, people, posts, mentions, a plan and a backlog."
-version = "1.1.0"
+description = "A markdown campaign graph your marketing agent keeps: positioning, venues, people, leads, posts, replies, mentions, readings, plan, backlog."
+version = "1.2.0"
 authors = ["iWe"]
 license = "MIT"
 exclude = ["README.md", "CHANGELOG.md"]

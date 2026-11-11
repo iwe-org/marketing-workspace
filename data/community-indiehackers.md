@@ -23,3 +23,15 @@ milestone can reach the front page and a large founder audience. Treat it as a
 slow channel you join before launch and keep feeding afterward, not a launch-day
 event; the audience is founders and makers, which is ideal if they are your
 customers and merely sympathetic if they are not.
+
+## Posts
+
+- [How I priced a CLI tool for developers who hate
+  subscriptions](posts/indiehackers/2026-06-09-pricing-a-cli-tool.example) —
+  published 2026-06-09
+
+## Mentions
+
+- [tidepool_studio on
+  PlainInvoice](mentions/2026-06-06-tidepool-studio-ih-bookkeeper.example) —
+  2026-06-06

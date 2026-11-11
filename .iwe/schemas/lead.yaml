@@ -1,0 +1,88 @@
+$schema: https://document-schema.org/draft/2026-06/schema
+description: a person spotted in a thread who may want your product (data/leads/<handle-slug>.md) — who they are, what they need, how to approach them. Only facts that cannot be derived live here; whether they answered comes from the outcome of the replies that link to them. A lead you start a real relationship with graduates to data/people/
+frontmatter:
+  type: object
+  required: [type, stage, platform, handle, resource, fit, created]
+  additionalProperties: false
+  properties:
+    type: { const: lead }
+    title: { type: string, description: kept only when the H1 does not carry the title }
+    stage:
+      enum: [new, researched, active, converted, dropped]
+      description: the stage you decided, never one the replies already show — new = spotted in a thread; researched = profile read and approach written; active = in conversation; converted = they tried the product or became a real relationship (graduate them to data/people/); dropped = not a fit, or you stopped
+    platform:
+      enum: [reddit, hn, x.com, linkedin, threads, bluesky, mastodon, github, dev.to, indiehackers, producthunt, discord, slack, forum, other]
+    handle: { type: string, description: handle exactly as it appears at the venue }
+    resource: { type: string, description: profile URL }
+    pillar: { type: [string, "null"], description: the messaging pillar their problem fits }
+    fit:
+      enum: [high, medium, low]
+      description: how closely their stated problem matches what the product does today
+    notes: { type: string, description: one line on what they need, or why they were dropped }
+    created: { type: string, format: date }
+    description:
+      type: string
+      description: one sentence summarizing this document — what OKF consumers and index entries show
+    tags: { type: array, items: { type: string } }
+    status:
+      enum: [draft, stable, deprecated]
+      description: OKF lifecycle (SPEC §5.4), derived from stage — set it only for the draft and deprecated cases in SCHEMA.md; absent means stable
+    stale_after:
+      type: string
+      format: date
+      description: the day this content goes stale (SPEC §5.5); set it on anything that rots
+    generated:
+      type: object
+      required: [by]
+      description: how the current content was produced (SPEC §5.2) — write it on every edit
+      properties:
+        by: { type: string, description: "actor (SPEC §7) — <producer>/<version>, human:<id>, or process:<id>" }
+        at: { type: string, description: ISO 8601 datetime of the last meaningful change }
+    verified:
+      description: who confirmed the content against its sources (SPEC §5.2); one mapping or a list
+      anyOf:
+        - $ref: '#/$defs/verification'
+        - { type: array, items: { $ref: '#/$defs/verification' } }
+    sources:
+      type: array
+      description: the materials this document derives from (SPEC §5.1); cite per claim with a footnote keyed to an entry id
+      items:
+        type: object
+        required: [resource]
+        properties:
+          id: { type: string, description: footnote label used to attribute a claim in the body }
+          resource: { type: string, description: a URL, a bundle path, or a scope descriptor }
+          title: { type: string }
+          author: { type: string, description: actor (SPEC §7) }
+          usage_count: { type: integer }
+          last_modified: { type: string, format: date }
+    usage_window:
+      type: object
+      description: the date range every usage_count is measured over
+      properties:
+        from: { type: string, format: date }
+        to: { type: string, format: date }
+  $defs:
+    verification:
+      type: object
+      required: [by]
+      properties:
+        by: { type: string, description: "actor (SPEC §7)" }
+        at: { type: string, description: ISO 8601 datetime }
+  if: { properties: { stage: { const: dropped } }, required: [stage] }
+  then:
+    required: [notes]
+    description: a dropped lead says why in notes
+maxDepth: 3
+sections:
+  - header: { pattern: '.' }
+    description: the H1 carries the handle or name
+    maxContains: 1
+    sections:
+      - header: { const: Where we found them }
+        description: links the thread page they were spotted in, plus any other thread you saw them in
+        maxContains: 1
+      - header: { const: What they need }
+        description: their problem in their own words, with a short quote where one exists
+        maxContains: 1
+additionalSections: false

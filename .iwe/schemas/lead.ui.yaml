@@ -1,0 +1,25 @@
+name: Lead
+description: Someone met in a thread who may want the product
+columns: [platform, stage, fit, pillar]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  resource: { title: Profile }
+  stage:
+    title: Stage
+    values:
+      new: { title: New, color: blue }
+      researched: { title: Researched, color: teal }
+      active: { title: In conversation, color: orange }
+      converted: { title: Converted, color: green }
+      dropped: { title: Dropped, color: gray }
+  fit:
+    title: Fit
+    values:
+      high: { title: High, color: green }
+      medium: { title: Medium, color: yellow }
+      low: { title: Low, color: gray }

@@ -69,6 +69,11 @@ frontmatter:
       properties:
         by: { type: string, description: "actor (SPEC §7)" }
         at: { type: string, description: ISO 8601 datetime }
+  if: { properties: { stage: { const: done } }, required: [stage] }
+  then:
+    required: [completed]
+    properties: { completed: { type: string } }
+    description: a done plan step carries its completion date
 maxDepth: 3
 sections:
   - header: { pattern: '.' }
@@ -76,5 +81,9 @@ sections:
     sections:
       - header: { const: Definition of done }
         description: every plan step states its definition of done
+        maxContains: 1
+      - header: { const: Retro }
+        description: optional, written before closing a launch — the numbers, what worked, what to skip next time
+        minContains: 0
         maxContains: 1
 additionalSections: false

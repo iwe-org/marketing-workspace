@@ -1,0 +1,46 @@
+name: Reply
+description: A comment you posted in someone else's thread
+columns: [platform, published, outcome, names_product, origin]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  resource: { title: Link }
+  stage:
+    title: Stage
+    values:
+      published: { title: Live, color: green }
+      removed: { title: Removed by the venue, color: orange }
+      deleted: { title: Deleted by you, color: gray }
+  answers:
+    title: Answers
+    values:
+      post: { title: The thread }
+      comment: { title: A comment }
+  names_product: { title: Names product }
+  origin:
+    title: Written by
+    values:
+      human: { title: You, color: green, description: You wrote the words that went up. }
+      agent: { title: Agent draft, color: orange, description: Posted as the agent drafted it. }
+      agent-edited: { title: Agent draft, edited, color: yellow, description: An agent draft you rewrote. }
+  goal:
+    title: Goal
+    values:
+      awareness: { title: Awareness, color: blue }
+      conversion: { title: Conversion, color: green }
+      positioning: { title: Positioning, color: purple }
+      credibility: { title: Credibility, color: teal }
+      retention: { title: Retention, color: orange }
+  outcome:
+    title: Outcome
+    values:
+      none: { title: No response, color: gray }
+      replied: { title: Replied, color: blue }
+      asked: { title: Asked about it, color: teal }
+      will-try: { title: Will try, color: purple }
+      tried: { title: Tried it, color: green }
+  reviewed: { title: Outcome checked }

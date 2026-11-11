@@ -1,0 +1,101 @@
+$schema: https://document-schema.org/draft/2026-06/schema
+description: one concrete reason to buy (data/selling-points/<slug>.md) — a workflow, capability, differentiator or outcome, with the proof you can show and the copy it feeds
+frontmatter:
+  type: object
+  required: [type, kind, stage, strength, evidence, created]
+  additionalProperties: false
+  properties:
+    type: { const: selling-point }
+    title: { type: string, description: kept only when the H1 does not carry the title }
+    kind:
+      enum: [workflow, capability, differentiator, outcome]
+      description: workflow = a way of working the product enables, written as steps a reader can copy; capability = a feature that sells itself; differentiator = an advantage the alternatives lack; outcome = the result a customer gets, however they get it
+    stage:
+      enum: [candidate, validated, promoted, retired]
+      description: candidate = noticed, proof still missing; validated = you can show it; promoted = published copy already carries it; retired = no longer true, or no longer worth saying
+    pillar: { type: [string, "null"], description: the messaging pillar this point argues }
+    strength:
+      enum: [high, medium, low]
+      description: how far it moves a reader toward buying — high can lead a post on its own, low is a supporting line
+    evidence:
+      enum: [shipped, used, customer-reported, hypothesis]
+      description: what backs the claim — shipped (checkable in the product as released), used (you rely on it yourself), customer-reported (a customer said so, linked in Proof), hypothesis (plausible, unproven)
+    created: { type: string, format: date }
+    resource:
+      type: string
+      description: canonical URI of the underlying asset this document describes (SPEC §4.1)
+    description:
+      type: string
+      description: one sentence summarizing this document — what OKF consumers and index entries show
+    tags: { type: array, items: { type: string } }
+    status:
+      enum: [draft, stable, deprecated]
+      description: OKF lifecycle (SPEC §5.4), derived from stage — set it only for the draft and deprecated cases in SCHEMA.md; absent means stable
+    stale_after:
+      type: string
+      format: date
+      description: the day this content goes stale (SPEC §5.5); set it on anything that rots
+    generated:
+      type: object
+      required: [by]
+      description: how the current content was produced (SPEC §5.2) — write it on every edit
+      properties:
+        by: { type: string, description: "actor (SPEC §7) — <producer>/<version>, human:<id>, or process:<id>" }
+        at: { type: string, description: ISO 8601 datetime of the last meaningful change }
+    verified:
+      description: who confirmed the content against its sources (SPEC §5.2); one mapping or a list
+      anyOf:
+        - $ref: '#/$defs/verification'
+        - { type: array, items: { $ref: '#/$defs/verification' } }
+    sources:
+      type: array
+      description: the materials this document derives from (SPEC §5.1); cite per claim with a footnote keyed to an entry id
+      items:
+        type: object
+        required: [resource]
+        properties:
+          id: { type: string, description: footnote label used to attribute a claim in the body }
+          resource: { type: string, description: a URL, a bundle path, or a scope descriptor }
+          title: { type: string }
+          author: { type: string, description: actor (SPEC §7) }
+          usage_count: { type: integer }
+          last_modified: { type: string, format: date }
+    usage_window:
+      type: object
+      description: the date range every usage_count is measured over
+      properties:
+        from: { type: string, format: date }
+        to: { type: string, format: date }
+  $defs:
+    verification:
+      type: object
+      required: [by]
+      properties:
+        by: { type: string, description: "actor (SPEC §7)" }
+        at: { type: string, description: ISO 8601 datetime }
+  if: { properties: { evidence: { const: hypothesis } }, required: [evidence] }
+  then:
+    properties: { stage: { enum: [candidate, retired] } }
+    description: an unproven point never goes into copy, so evidence hypothesis keeps the stage at candidate or retired
+maxDepth: 3
+sections:
+  - header: { pattern: '.' }
+    maxContains: 1
+    sections:
+      - header: { const: The claim }
+        description: the sellable line — one or two sentences a reader could repeat to someone else
+        maxContains: 1
+      - header: { const: How it works }
+        description: the concrete steps, enough that a reader could do it
+        maxContains: 1
+      - header: { const: Why it matters }
+        description: the pain it removes, in the customer's words where you have them
+        maxContains: 1
+      - header: { const: Proof }
+        description: what you can show today, and what proof is still missing before it goes into copy
+        maxContains: 1
+      - header: { const: Where to use it }
+        description: the audiences, venues and posts it belongs to, and what already carries it
+        maxContains: 1
+    additionalSections: false
+additionalSections: false

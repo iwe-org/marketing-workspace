@@ -42,15 +42,20 @@ show.
    requires `goal` and `success` — set them retroactively with the user ("what
    was this post for?"). Link each post from its venue's `## Posts` heading
    and its pillar hub, and flip the venue's `stage` to `active`.
-5. **Competitor snapshots.** For each competitor named, fetch their public
+5. **Replies already posted.** If the user has answered people in others'
+   threads, ask for the links. File each as the draft skill's reply mode does
+   (thread page, lead if relevant, reply with the comment verbatim and
+   `origin` as the user says), with `outcome` read from the thread as it
+   stands and `reviewed: <today>`.
+6. **Competitor snapshots.** For each competitor named, fetch their public
    pages and fill `data/competitors/<slug>.md`: Positioning, Pricing,
    Strengths and Weaknesses honestly, a dated Changelog entry,
    `updated: <today>`.
-6. **Baselines.** Public numbers found along the way (stars, followers,
+7. **Baselines.** Public numbers found along the way (stars, followers,
    subscribers, review counts) → `data/metrics.md`, each with a dated
    snapshot line.
-7. **Report, validate, commit.** Summarize what was filed (n mentions, n
-   posts, n people, n competitor profiles, metrics captured) **and what could
+8. **Report, validate, commit.** Summarize what was filed (n mentions, n
+   posts, n replies, n people, n competitor profiles, metrics captured) **and what could
    not be searched** (auth-walled platforms, rate limits, dead links) so the
    user can fill those by hand. `iwe schema validate` must pass; commit
    `backfill: <n> mentions, <n> posts, <n> competitors`.

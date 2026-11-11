@@ -14,7 +14,7 @@ generated:
 
 # Thank Sarah for the HN mention
 
-*Example document — this shows a completed task (`status: done` + `completed`
+*Example document — this shows a completed task (`stage: done` + `completed`
 date). Done tasks stay in the graph: they are the campaign's action history. The
 setup skill deletes `*.example.md` files after onboarding.*
 

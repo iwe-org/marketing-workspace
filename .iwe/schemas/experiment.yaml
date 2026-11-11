@@ -14,6 +14,9 @@ frontmatter:
       description: what it touches — a page, channel, offer, email flow, pricing...
     hypothesis: { type: string, description: "we believe X will improve Y because Z" }
     metric: { type: string, description: the primary metric and its target }
+    stop_signal:
+      type: [string, "null"]
+      description: written before it starts — the observation that ends it early or calls it a loss, so the verdict is not argued after the fact
     impact: { type: [integer, "null"], minimum: 1, maximum: 10 }
     confidence: { type: [integer, "null"], minimum: 1, maximum: 10 }
     ease: { type: [integer, "null"], minimum: 1, maximum: 10 }
@@ -76,4 +79,18 @@ frontmatter:
       properties:
         by: { type: string, description: "actor (SPEC §7)" }
         at: { type: string, description: ISO 8601 datetime }
+  allOf:
+    - if: { properties: { stage: { const: concluded } }, required: [stage] }
+      then:
+        required: [verdict, result, concluded]
+        properties:
+          verdict: { enum: [win, loss, inconclusive] }
+          result: { type: string }
+          concluded: { type: string }
+        description: a concluded experiment records its verdict, the observed result and the date
+    - if: { properties: { stage: { const: running } }, required: [stage] }
+      then:
+        required: [started]
+        properties: { started: { type: string } }
+        description: a running experiment carries its start date
 maxDepth: 3

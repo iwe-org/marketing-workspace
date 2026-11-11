@@ -2,6 +2,8 @@
 type: competitor
 description: 'Example competitor profile: a fictional web-first invoicing suite, the default our trial users compare against.'
 stage: active
+relation: incumbent
+watch: true
 resource: https://billingbear.example.com
 updated: 2026-07-26
 notes: The default choice our trial users compare against — wins on integrations, loses on speed.
@@ -22,7 +24,10 @@ generated:
 *Example document — this shows the shape of a competitor profile (a fictional
 company): the centralized source of truth that comparison pages, pricing
 decisions, and SEO analysis all read. Refresh via dated Changelog entries and
-bump `updated`. The setup skill deletes `*.example.md` files after onboarding.*
+bump `updated`. `relation: incumbent` marks it as the tool customers switch
+from; `watch: true` puts it in the weekly digest; `threat` stays unset until
+there is a reason to write down. The setup skill deletes `*.example.md` files
+after onboarding.*
 
 ## Positioning
 

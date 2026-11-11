@@ -1,0 +1,34 @@
+name: Venue
+description: A venue you target or track
+columns: [stage, category, members]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  resource: { title: Link }
+  stage:
+    title: Stage
+    values:
+      planned: { title: Planned, color: gray }
+      active: { title: Active, color: green }
+      dormant: { title: Dormant, color: yellow }
+      blocked: { title: Blocked, color: orange }
+      cancelled: { title: Cancelled, color: red }
+  category:
+    title: Category
+    values:
+      launch-platform: { title: Launch platform }
+      directory: { title: Directory }
+      deals: { title: Deals }
+      subreddit: { title: Subreddit }
+      forum: { title: Forum }
+      community: { title: Community }
+      social: { title: Social }
+      newsletter: { title: Newsletter }
+      other: { title: Other }
+  members: { title: Members }
+  checked: { title: Members checked }
+  notes: { title: Posting rules, multiline: true }

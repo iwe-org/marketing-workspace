@@ -17,7 +17,7 @@ generated:
 # Devon (Tools Weekly)
 
 *Example document — this shows an outreach target mid-lifecycle
-(`status: contacted`; flip to `replied` or `declined` when the thread moves, and
+(`stage: contacted`; flip to `replied` or `declined` when the thread moves, and
 log each touch in the body so the next session knows where the conversation
 stands). This doc is inclusion-linked from `data/people/role-creator.md` and
 `data/people/role-contact.md`. The setup skill deletes `*.example.md` files
@@ -30,5 +30,7 @@ wrapper last year and called it "a browser app wearing a costume".
 Outreach log:
 
 - 2026-07-25 — emailed the two-minute demo GIF plus the "invoices version like
-  code" framing; offered an exclusive promo code for his readers. No reply yet;
-  follow up once, no sooner than 2026-08-04.
+  code" framing; offered an exclusive promo code for his readers
+  ([email](../emails/2026-07-25-devon-pitch.example)). No reply yet; follow up
+  once, no sooner than 2026-08-04
+  ([scheduled](../emails/2026-08-04-devon-follow-up.example)).

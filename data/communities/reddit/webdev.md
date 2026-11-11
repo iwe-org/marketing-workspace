@@ -25,3 +25,15 @@ to product pitches. Outside Saturday, anything that reads as marketing is
 removed quickly and the mods are not lenient with repeat offenders. Worth the
 constraint: a well-received Showoff Saturday post reaches an enormous, relevant
 audience.
+
+## Posts
+
+- [Showoff Saturday: I bill my clients from
+  git](../../posts/reddit/webdev/2026-06-27-showoff-saturday-billing-from-git.example)
+  — published 2026-06-27
+
+## Mentions
+
+- [u/semicolon_sally on
+  PlainInvoice](../../mentions/2026-06-12-semicolon-sally-webdev-spreadsheet.example)
+  — 2026-06-12

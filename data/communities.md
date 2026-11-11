@@ -12,17 +12,55 @@ generated:
 
 Every venue this campaign targets or tracks, seeded with launch platforms,
 directories, deal platforms, and self-promo-friendly subreddits. Work them as a
-checklist: each entity carries `status` (`planned` until you act), posting rules
+checklist: each entity carries `stage` (`planned` until you act), posting rules
 in `notes`, and links to the posts you made there under its `## Posts` heading.
 Venues are listed roughly highest-value first within each section.
 
 ``` bash
-iwe find --filter '{type: community, category: launch-platform, status: planned}'
+iwe find --filter '{type: community, category: launch-platform, stage: planned}'
 ```
 
 During setup, prune aggressively: `cancelled` (with a one-line reason) anything
 that doesn't reach your ideal customer. A short list you actually work beats a
 long one.
+
+Posts and mentions count here when they link their venue in the body, and
+replies when their `## Context` does.
+
+``` chart
+data:
+  query:
+    filter: {type: community, $referencedBy: {$size: {$gte: 1}}}
+    project: {venue: $title, back: $referencedBy}
+title: What happened at each venue
+transform:
+  - flatten: [back]
+    as: [item]
+  - calculate: "indexof(datum.item.key, 'data/posts/') == 0 ? 'published posts' : indexof(datum.item.key, 'data/drafts/') == 0 ? 'drafts' : indexof(datum.item.key, 'data/replies/') == 0 ? 'replies' : indexof(datum.item.key, 'data/mentions/') == 0 ? 'mentions' : null"
+    as: kind
+  - filter: "datum.kind != null"
+  - joinaggregate: [{op: count, as: total}]
+    groupby: [venue]
+  - window: [{op: dense_rank, as: place}]
+    sort: [{field: total, order: descending}, {field: venue}]
+  - filter: "datum.place <= 12"
+  - calculate: "indexof(['published posts', 'drafts', 'replies', 'mentions'], datum.kind)"
+    as: rank
+mark: {type: bar, cornerRadiusEnd: 2}
+encoding:
+  y: {field: venue, type: nominal, title: null, sort: {field: total, op: max, order: descending}}
+  x: {aggregate: count, type: quantitative, title: items, axis: {tickMinStep: 1}}
+  color:
+    field: kind
+    type: nominal
+    title: null
+    legend: {orient: top}
+    scale:
+      domain: [published posts, drafts, replies, mentions]
+      range: ["#2f7de1", "#9aa5b1", "#2e9d5b", "#e8a33d"]
+  order: {field: rank, aggregate: min, sort: ascending}
+  tooltip: [{field: venue}, {field: kind}, {aggregate: count, title: items}]
+```
 
 ## Launch platforms
 

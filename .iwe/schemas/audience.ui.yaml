@@ -1,0 +1,23 @@
+name: Audience
+description: An audience segment you market to
+columns: [stage, fit, pillar]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  stage:
+    title: Stage
+    values:
+      active: { title: Working now, color: green }
+      planned: { title: Next, color: blue }
+      inactive: { title: Ruled out, color: gray }
+  fit:
+    title: Fit
+    values:
+      high: { title: High, color: green }
+      medium: { title: Medium, color: yellow }
+      low: { title: Low, color: gray }
+  notes: { multiline: true }

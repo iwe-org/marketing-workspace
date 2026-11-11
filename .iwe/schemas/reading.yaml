@@ -1,0 +1,111 @@
+$schema: https://document-schema.org/draft/2026-06/schema
+description: one reading of the campaign record (data/readings/<slug>.md) — the facts with the queries that produced them, what you think they mean, at least one other explanation, and the evidence that would decide between them
+frontmatter:
+  type: object
+  required: [type, question, stage, checked, created]
+  additionalProperties: false
+  properties:
+    type: { const: reading }
+    title: { type: string }
+    question:
+      type: string
+      minLength: 1
+      description: the question this reading answers, agreed with the user before it was written
+    area:
+      enum: [channels, venues, content, replies, audience, product, pricing, other]
+      description: the part of the campaign the question is about
+    stage:
+      enum: [open, supported, contradicted, retired]
+      description: open = the alternatives are not yet told apart; supported or contradicted = the deciding evidence came in; retired = the question stopped mattering. Leaving open moves the reading to the archive hub
+    impact:
+      enum: [high, medium, low]
+      description: guessed effect on the campaign if the reading holds and is acted on; sets the review order on the readings hub
+    impact_estimate:
+      type: string
+      minLength: 1
+      description: one line sizing that effect, with the numbers it rests on
+    checked: { type: string, format: date, description: date the facts were last re-queried }
+    created: { type: string, format: date }
+    resource:
+      type: string
+      description: canonical URI of the underlying asset this document describes (SPEC §4.1)
+    description:
+      type: string
+      description: one sentence summarizing this document — what OKF consumers and index entries show
+    tags: { type: array, items: { type: string } }
+    status:
+      enum: [draft, stable, deprecated]
+      description: OKF lifecycle (SPEC §5.4), derived from stage — set it only for the draft and deprecated cases in SCHEMA.md; absent means stable
+    stale_after:
+      type: string
+      format: date
+      description: the day this content goes stale (SPEC §5.5); set it on anything that rots
+    generated:
+      type: object
+      required: [by]
+      description: how the current content was produced (SPEC §5.2) — write it on every edit
+      properties:
+        by: { type: string, description: "actor (SPEC §7) — <producer>/<version>, human:<id>, or process:<id>" }
+        at: { type: string, description: ISO 8601 datetime of the last meaningful change }
+    verified:
+      description: who confirmed the content against its sources (SPEC §5.2); one mapping or a list
+      anyOf:
+        - $ref: '#/$defs/verification'
+        - { type: array, items: { $ref: '#/$defs/verification' } }
+    sources:
+      type: array
+      description: the materials this document derives from (SPEC §5.1); cite per claim with a footnote keyed to an entry id
+      items:
+        type: object
+        required: [resource]
+        properties:
+          id: { type: string, description: footnote label used to attribute a claim in the body }
+          resource: { type: string, description: a URL, a bundle path, or a scope descriptor }
+          title: { type: string }
+          author: { type: string, description: actor (SPEC §7) }
+          usage_count: { type: integer }
+          last_modified: { type: string, format: date }
+    usage_window:
+      type: object
+      description: the date range every usage_count is measured over
+      properties:
+        from: { type: string, format: date }
+        to: { type: string, format: date }
+  $defs:
+    verification:
+      type: object
+      required: [by]
+      properties:
+        by: { type: string, description: "actor (SPEC §7)" }
+        at: { type: string, description: ISO 8601 datetime }
+  if: { required: [impact] }
+  then:
+    required: [impact_estimate]
+    description: an impact rating states the estimate it rests on
+maxDepth: 2
+sections:
+  - header: { pattern: '.' }
+    description: the H1 states the reading as a claim
+    maxContains: 1
+    sections:
+      - header: { const: Facts }
+        description: observations only, each with the query or document it came from and the date it was run
+        maxContains: 1
+      - header: { const: Reading }
+        description: what you think the facts mean
+        maxContains: 1
+      - header: { const: Alternatives }
+        description: at least one other explanation of the same facts
+        maxContains: 1
+      - header: { const: Would decide it }
+        description: the evidence or test that would tell the reading and its alternatives apart
+        maxContains: 1
+      - header: { const: Phase }
+        description: optional; where the thing in question stands in time — entry, growth, saturation, decline
+        minContains: 0
+        maxContains: 1
+      - header: { const: Next step }
+        description: a step that answers back and can be undone, usually a linked experiment
+        maxContains: 1
+    additionalSections: false
+additionalSections: false

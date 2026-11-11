@@ -16,3 +16,5 @@ testimonials, case studies, referrals, and honest feedback. Keep it warm.
 [Sarah K.](sarah-k.example)
 
 [Marco (agency owner)](marco.example)
+
+[Ola B.](ola-b.example)

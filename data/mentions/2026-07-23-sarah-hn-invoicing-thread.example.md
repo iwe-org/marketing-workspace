@@ -7,6 +7,7 @@ resource: https://news.ycombinator.com/item?id=00000000
 author: sarahk_dev
 kind: comment
 sentiment: positive
+pillar: invoice-without-leaving-terminal
 quote: PlainInvoice is the only one that doesn't make me leave the terminal — templates are TOML in my repo, so invoices version like code.
 published: 2026-07-23
 created: 2026-07-23
@@ -28,13 +29,16 @@ of a spontaneous third-party mention, with the direct `url` and the verbatim
 `quote` (deliberate research you conducted is `type: interview` instead). The
 setup skill deletes `*.example.md` files after onboarding.*
 
-An "Ask HN: invoicing for freelancers?" thread; [Sarah
-K.](../people/sarah-k.example) recommended us unprompted, third comment from the
-top. Note she repeated the "invoices version like code" framing back — the exact
-success signal the git-native-workflow evergreen template names.
+An "Ask HN: invoicing for freelancers?" thread on [Hacker
+News](../community-hn.md); [Sarah K.](../people/sarah-k.example) recommended us
+unprompted, third comment from the top. Note she repeated the "invoices version
+like code" framing back — the exact success signal the git-native-workflow
+evergreen template names.
 
 Follow-up: thanked her in-thread and by email the same day
-([task](../backlog/thank-sarah-for-hn-mention.example)).
+([task](../backlog/thank-sarah-for-hn-mention.example)); the in-thread comment
+is filed as a [reply](../replies/2026-07-23-hn-ask-hn-invoicing.example) under
+the [thread page](../threads/hn-ask-hn-invoicing.example).
 
 *Convention notes: filename is `YYYY-MM-DD-<author>-<venue>-<gist>`. Three graph
 edges accompany a mention, all live for this example: an inclusion link from

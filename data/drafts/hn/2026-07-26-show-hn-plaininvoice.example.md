@@ -16,9 +16,11 @@ generated:
 
 # Show HN: PlainInvoice – invoicing for freelance developers, entirely in the terminal
 
-*Example document — this shows the shape of a draft post (note `status: draft`,
+*Example document — this shows the shape of a draft post (note `stage: draft`,
 null `published`/`url`, and the goal/success pair). The setup skill deletes
 `*.example.md` files after onboarding.*
+
+For [Hacker News](../../community-hn.md), on the launch sequence's HN day.
 
 I freelance as a backend dev and hated switching to a browser app every time I
 needed to bill a client. PlainInvoice is a CLI: `pi new`, answer three prompts,
@@ -33,4 +35,4 @@ onboarding flow — first invoice should take under two minutes.
 linking this doc under the `## Posts` heading of `data/community-hn.md` — not by
 a frontmatter field. The pillar hub in `data/pillars/` inclusion-links this doc,
 keeping it reachable in the tree. When published: set `url` and `published`,
-flip `status`, and `iwe rename` it into `data/posts/hn/`.*
+flip `stage`, and `iwe rename` it into `data/posts/hn/`.*

@@ -25,3 +25,9 @@ setup can get hundreds of upvotes and real adopters; closed-source or
 cloud-tethered products get picked apart in the comments. A marketing-smell
 post, or a "self-hostable" claim that turns out to require an account, will be
 removed and remembered.
+
+## Mentions
+
+- [u/rack_and_roll_rhea on
+  PlainInvoice](../../mentions/2026-06-26-rack-and-roll-selfhosted-payment-api.example)
+  — 2026-06-26

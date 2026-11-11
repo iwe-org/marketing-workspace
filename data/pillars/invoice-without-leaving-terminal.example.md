@@ -29,3 +29,21 @@ didn't](../posts/reddit/sideproject/2026-07-20-plaininvoice-first-paying-user.ex
 
 [Your invoices should live in git, like everything else you
 make](../evergreen/git-native-workflow.example)
+
+[Week four of building an invoicing CLI: 31 signups, no paying users
+yet](../posts/reddit/buildinpublic/2026-05-26-week-four-invoicing-cli.example)
+
+[How I priced a CLI tool for developers who hate
+subscriptions](../posts/indiehackers/2026-06-09-pricing-a-cli-tool.example)
+
+[Showoff Saturday: I bill my clients from
+git](../posts/reddit/webdev/2026-06-27-showoff-saturday-billing-from-git.example)
+
+[Why my invoices live in my
+repo](../posts/linkedin/2026-07-08-why-invoices-live-in-my-repo.example)
+
+[From zero to three paying users: what the first launch taught
+me](../posts/reddit/indiehackers/2026-07-29-zero-to-three-paying-users.example)
+
+[Rendering invoice PDFs from TOML in a small
+CLI](../posts/dev.to/2026-07-31-pdfs-from-toml.example)

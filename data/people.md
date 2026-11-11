@@ -12,11 +12,11 @@ generated:
 
 The campaign's CRM. One document per person (`data/people/<slug>.md`); their
 roles are inclusion links from the role hubs below — a person can hold several.
-Track outreach state in the person's `status` field
+Track outreach state in the person's `stage` field
 (`planned → contacted → replied/declined`).
 
 ``` bash
-iwe find --included-by data/people/role-prospect --filter 'status: contacted'
+iwe find --included-by data/people/role-prospect --filter 'stage: contacted'
 ```
 
 [Customers](people/role-customer.md)

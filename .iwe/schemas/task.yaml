@@ -67,4 +67,9 @@ frontmatter:
       properties:
         by: { type: string, description: "actor (SPEC §7)" }
         at: { type: string, description: ISO 8601 datetime }
+  if: { properties: { stage: { const: done } }, required: [stage] }
+  then:
+    required: [completed]
+    properties: { completed: { type: string } }
+    description: a done task carries its completion date
 maxDepth: 3
