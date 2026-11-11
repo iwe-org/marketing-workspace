@@ -21,8 +21,11 @@ onboarding.*
 The messaging claim: billing belongs in the workflow you already live in —
 `pi new` between commits, templates in git, no browser tab.
 
-[Show HN: PlainInvoice – invoicing for freelance developers, entirely in the terminal](../drafts/hn/2026-07-26-show-hn-plaininvoice.example)
+[Show HN: PlainInvoice – invoicing for freelance developers, entirely in the
+terminal](../drafts/hn/2026-07-26-show-hn-plaininvoice.example)
 
-[I got my first paying user for a CLI invoicing tool — what worked and what didn't](../posts/reddit/sideproject/2026-07-20-plaininvoice-first-paying-user.example)
+[I got my first paying user for a CLI invoicing tool — what worked and what
+didn't](../posts/reddit/sideproject/2026-07-20-plaininvoice-first-paying-user.example)
 
-[Your invoices should live in git, like everything else you make](../evergreen/git-native-workflow.example)
+[Your invoices should live in git, like everything else you
+make](../evergreen/git-native-workflow.example)

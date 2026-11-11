@@ -80,6 +80,13 @@ What happens next — the setup interview, the internet backfill, the daily loop
 is described below. No agent? The workspace is still a well-organized markdown
 KB you can work by hand.
 
+## In the iWe app
+
+This template is listed in the [iWe template
+registry](https://github.com/iwe-org/templates). In the iWe app, choose **File ▸
+New Workspace from Template…** to create a workspace from it; the app copies the
+template into a new folder, so there is nothing to clone.
+
 ## How you use it
 
 The workspace is designed to be operated *by the agent, with you*: most of the

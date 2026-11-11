@@ -30,4 +30,5 @@ iwe find --filter '{type: experiment, verdict: win}'                      # the 
 
 ## Concluded
 
-[Landing page social proof above the fold](experiments/landing-social-proof.example)
+[Landing page social proof above the
+fold](experiments/landing-social-proof.example)

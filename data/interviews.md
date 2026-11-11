@@ -28,6 +28,8 @@ iwe find --filter '{type: interview, kind: churned}'      # every churn conversa
 iwe find --filter '{type: interview, status: planned}'    # scheduled research
 ```
 
-[Marco (agency owner) — churned after two months](interviews/2026-07-24-marco-churned.example)
+[Marco (agency owner) — churned after two
+months](interviews/2026-07-24-marco-churned.example)
 
-[Sarah K. (freelance backend dev) — why she switched from BillingBear](interviews/2026-07-21-sarah-new-customer.example)
+[Sarah K. (freelance backend dev) — why she switched from
+BillingBear](interviews/2026-07-21-sarah-new-customer.example)

@@ -28,10 +28,10 @@ of a spontaneous third-party mention, with the direct `url` and the verbatim
 `quote` (deliberate research you conducted is `type: interview` instead). The
 setup skill deletes `*.example.md` files after onboarding.*
 
-An "Ask HN: invoicing for freelancers?" thread;
-[Sarah K.](../people/sarah-k.example) recommended us unprompted, third comment
-from the top. Note she repeated the "invoices version like code" framing back —
-the exact success signal the git-native-workflow evergreen template names.
+An "Ask HN: invoicing for freelancers?" thread; [Sarah
+K.](../people/sarah-k.example) recommended us unprompted, third comment from the
+top. Note she repeated the "invoices version like code" framing back — the exact
+success signal the git-native-workflow evergreen template names.
 
 Follow-up: thanked her in-thread and by email the same day
 ([task](../backlog/thank-sarah-for-hn-mention.example)).

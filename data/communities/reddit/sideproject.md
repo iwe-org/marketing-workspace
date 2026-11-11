@@ -27,5 +27,6 @@ removed; the sub is tolerant but jaded.
 
 ## Posts
 
-- [I got my first paying user for a CLI invoicing tool — what worked and what didn't](../../posts/reddit/sideproject/2026-07-20-plaininvoice-first-paying-user.example)
+- [I got my first paying user for a CLI invoicing tool — what worked and what
+  didn't](../../posts/reddit/sideproject/2026-07-20-plaininvoice-first-paying-user.example)
   — published 2026-07-20
