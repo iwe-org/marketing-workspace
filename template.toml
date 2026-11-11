@@ -1,0 +1,8 @@
+format = 1
+id = "marketing-workspace"
+name = "Marketing Workspace"
+description = "A markdown campaign graph kept by your marketing agent: positioning, launch venues, people, posts, mentions, a plan and a backlog."
+version = "1.0.0"
+authors = ["iWe"]
+license = "MIT"
+exclude = ["README.md", "CHANGELOG.md"]

@@ -18,8 +18,8 @@ generated:
 date). Done tasks stay in the graph: they are the campaign's action history. The
 setup skill deletes `*.example.md` files after onboarding.*
 
-Spun off from the
-[HN mention](../mentions/2026-07-23-sarah-hn-invoicing-thread.example): reply
+Spun off from the [HN
+mention](../mentions/2026-07-23-sarah-hn-invoicing-thread.example): reply
 in-thread, email a personal thank-you, and ask permission to quote her line on
 the landing page.
 

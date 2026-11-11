@@ -26,10 +26,10 @@ a launch sequence, on its own day.
 
 ## Posts
 
-- [Show HN: PlainInvoice – invoicing for freelance developers, entirely in the terminal](drafts/hn/2026-07-26-show-hn-plaininvoice.example)
-  — draft
+- [Show HN: PlainInvoice – invoicing for freelance developers, entirely in the
+  terminal](drafts/hn/2026-07-26-show-hn-plaininvoice.example) — draft
 
 ## Mentions
 
-- [Sarah recommends PlainInvoice in an HN invoicing-tools thread](mentions/2026-07-23-sarah-hn-invoicing-thread.example)
-  — 2026-07-23
+- [Sarah recommends PlainInvoice in an HN invoicing-tools
+  thread](mentions/2026-07-23-sarah-hn-invoicing-thread.example) — 2026-07-23

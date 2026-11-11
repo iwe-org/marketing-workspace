@@ -23,9 +23,9 @@ inclusion-linked from `data/people/role-customer.md`. The setup skill deletes
 
 Ran a three-person design agency; used PlainInvoice for two months while solo,
 cancelled when bookkeeping moved to an assistant who doesn't live in the
-terminal. Exit conversation filed as a
-[churned interview](../interviews/2026-07-24-marco-churned.example) — his quotes
-shaped the anti-persona in `data/product.md`.
+terminal. Exit conversation filed as a [churned
+interview](../interviews/2026-07-24-marco-churned.example) — his quotes shaped
+the anti-persona in `data/product.md`.
 
 Re-engage if: a web view for delegates ever ships, or he goes back to solo side
 work ("I'd come back in a heartbeat").

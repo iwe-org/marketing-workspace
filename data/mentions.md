@@ -18,7 +18,8 @@ follow up.
 
 Atomic mentions:
 
-[Sarah recommends PlainInvoice in an HN invoicing-tools thread](mentions/2026-07-23-sarah-hn-invoicing-thread.example)
+[Sarah recommends PlainInvoice in an HN invoicing-tools
+thread](mentions/2026-07-23-sarah-hn-invoicing-thread.example)
 
 Articles:
 

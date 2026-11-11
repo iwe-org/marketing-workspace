@@ -32,8 +32,8 @@ day, learnings and commenter language filed into the graph.
 
 ## Retro
 
-Shipped as
-[the launch post](../posts/reddit/sideproject/2026-07-20-plaininvoice-first-paying-user.example)
+Shipped as [the launch
+post](../posts/reddit/sideproject/2026-07-20-plaininvoice-first-paying-user.example)
 — 47 upvotes, 12 comments, and the first paying user within 24 hours.
 
 - **What worked**: answering every comment within the hour (the top comment
