@@ -1,0 +1,12 @@
+name: Weekly report
+description: A weekly digest kept on file
+columns: [window_start, window_end]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  window_start: { title: From }
+  window_end: { title: To }

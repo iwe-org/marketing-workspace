@@ -1,6 +1,6 @@
 ---
 name: weekly
-description: Compose a weekly campaign digest from the workspace — what shipped, engagement numbers, pipeline and outreach state, and ranked next-week priorities. Read-only; prints the digest without writing files. Use when the user asks for a "weekly digest", "weekly report", or a start-of-week review.
+description: Compose a weekly campaign digest from the workspace — what shipped, engagement numbers, pipeline and outreach state, and ranked next-week priorities. Prints the digest and appends the week to data/log.md; saves it under data/weekly/ only when the user asks to keep it. Use when the user asks for a "weekly digest", "weekly report", or a start-of-week review.
 ---
 
 # Weekly digest
@@ -17,22 +17,32 @@ after the update skill has refreshed engagement.
    (`completed` in window); plan steps whose stage changed; venues newly
    worked (`planned` → `active`).
 3. **Engagement.** Current `engagement.*` for posts published in the last ~14
-   days, with notable movers called out. If numbers look stale, suggest
-   running the update skill first.
+   days, with notable movers called out, and the week's replies counted by
+   `outcome` (and by `names_product`). Posts whose `verdict` was set this week,
+   against their `success` line. If numbers look stale, suggest running the
+   update skill first.
 4. **Pipeline & outreach.** Drafts in flight (`stage: draft`), scheduled
-   posts, people with `stage: contacted` awaiting reply (with days-waiting),
-   mentions filed in the window, experiments `running` (and any that should
-   have concluded by now).
+   posts and emails, people with `stage: contacted` and sent emails with
+   `outcome: none` awaiting reply (with days-waiting), replies due their
+   three-day review (no `outcome`), leads at `new` or `researched` with
+   `fit: high`, mentions filed in the window, experiments `running` (and any
+   that should have concluded by now or hit their `stop_signal`), and
+   competitors with `watch: true` whose `updated` is more than a month old.
 5. **Next week.** Ranked shortlist: high-priority `planned` tasks, the active
    plan's unmet Definition-of-done items, and any follow-ups implied by 2–4 (a
-   reply to chase, a mention author to contact). Keep it executable — 5 items
-   max.
-6. **Print** the digest with those five sections.
+   reply to chase, a mention author to contact, an open reading whose
+   deciding evidence is now on file). Each item names the fact it rests on.
+   Keep it executable — 5 items max.
+6. **Print** the digest with those five sections. If the user asks to keep
+   it, also write `data/weekly/YYYY-MM-DD.md` (`type: weekly-report`,
+   `window_start`, `window_end`, `created`, a `description`, and the sections
+   `## Shipped`, `## Engagement`, `## Pipeline and outreach`, `## Next week`)
+   and inclusion-link it at the top of `data/weekly.md`.
 7. **Log.** Append the week's shipped items to `data/log.md` as bullets under a
    `## YYYY-MM-DD` group for today (create the group if it isn't there, newest
    group first). One line per state change, each linking the document it
    describes — `- **Update**: [Post title](posts/reddit/....md) published.`
-   This is the only write the digest makes.
+   Apart from a kept report, this is the only write the digest makes.
 
 ## Rules
 

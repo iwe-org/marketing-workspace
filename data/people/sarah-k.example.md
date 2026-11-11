@@ -26,7 +26,9 @@ Freelance backend developer, ~30 invoices/month. Switched from BillingBear in
 May. Her trail through the graph, newest first:
 
 - 2026-07-23 — recommended PlainInvoice unprompted on HN:
-  [mention](../mentions/2026-07-23-sarah-hn-invoicing-thread.example)
+  [mention](../mentions/2026-07-23-sarah-hn-invoicing-thread.example); we
+  thanked her in-thread
+  ([reply](../replies/2026-07-23-hn-ask-hn-invoicing.example))
 - 2026-07-21 — gave a new-customer interview:
   [interview](../interviews/2026-07-21-sarah-new-customer.example)
 - 2026-07-01 — her testimonial ("Sarah K., 31 invoices sent") anchors the
@@ -34,5 +36,5 @@ May. Her trail through the graph, newest first:
 
 *Convention notes: one document per person, body accumulates the relationship
 history as inline links (soft references, not inclusion links). Track outreach
-in `status` (`planned → contacted → replied/declined`); customers in good
+in `stage` (`planned → contacted → replied/declined`); customers in good
 standing stay `active`.*

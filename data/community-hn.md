@@ -33,3 +33,9 @@ a launch sequence, on its own day.
 
 - [Sarah recommends PlainInvoice in an HN invoicing-tools
   thread](mentions/2026-07-23-sarah-hn-invoicing-thread.example) — 2026-07-23
+- [fennel_and_fig on
+  PlainInvoice](mentions/2026-05-22-fennel-and-fig-hn-cli-billing.example) —
+  2026-05-22
+- [pinecone_parser on
+  PlainInvoice](mentions/2026-07-04-pinecone-parser-hn-diffable.example) —
+  2026-07-04

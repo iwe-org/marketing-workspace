@@ -1,0 +1,32 @@
+name: Competitor
+description: One competitor's profile, refreshed through dated snapshots
+columns: [stage, relation, threat, updated]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  resource: { title: Website }
+  stage:
+    title: Stage
+    values:
+      active: { title: Active, color: green }
+      dormant: { title: Dormant, color: yellow }
+      archived: { title: Archived, color: gray }
+  relation:
+    title: Relation
+    values:
+      direct: { title: Direct }
+      adjacent: { title: Adjacent }
+      incumbent: { title: Incumbent }
+      substitute: { title: Substitute }
+  threat:
+    title: Threat
+    values:
+      high: { title: High, color: red }
+      medium: { title: Medium, color: orange }
+      low: { title: Low, color: gray }
+  watch: { title: In weekly watch }
+  updated: { title: Last snapshot }

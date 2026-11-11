@@ -1,0 +1,19 @@
+name: External article
+description: Article-length third-party content you track
+columns: [relation, source, published]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  resource: { title: Link }
+  stage: { hidden: true }
+  relation:
+    title: Relation
+    values:
+      mentions-us: { title: Mentions us, color: green }
+      similar-thesis: { title: Similar thesis, color: blue }
+      adjacent: { title: Adjacent, color: gray }
+      contrasts: { title: Contrasts, color: orange }

@@ -8,8 +8,17 @@ frontmatter:
     type: { const: competitor }
     title: { type: string }
     stage:
-      enum: [active, archived]
-      description: archived when no longer worth tracking
+      enum: [active, dormant, archived]
+      description: active = shipping; dormant = no visible release or change in about six months; archived = discontinued, or no longer worth tracking
+    relation:
+      enum: [direct, adjacent, incumbent, substitute]
+      description: direct = same job for the same customer; adjacent = overlaps on one axis; incumbent = the established tool your customers come from; substitute = solves the job a different way (a spreadsheet, an agency, doing nothing)
+    threat:
+      enum: [high, medium, low]
+      description: optional — how much it can take your customers or your story in the next two quarters; set it only with the reason written in the body, and leave it unset rather than guess
+    watch:
+      type: boolean
+      description: true puts it in the weekly digest's competitor watch
     resource: { type: string }
     updated: { type: [string, "null"], format: date, description: date of the last snapshot/refresh }
     notes: { type: string, description: one-line stance — why this competitor matters }
@@ -64,3 +73,21 @@ frontmatter:
         by: { type: string, description: "actor (SPEC §7)" }
         at: { type: string, description: ISO 8601 datetime }
 maxDepth: 3
+sections:
+  - header: { pattern: '.' }
+    description: the H1 carries the competitor's name
+    maxContains: 1
+    sections:
+      - header: { const: Positioning }
+        maxContains: 1
+      - header: { const: Pricing }
+        maxContains: 1
+      - header: { const: Strengths }
+        description: what they are genuinely better at
+        maxContains: 1
+      - header: { const: Weaknesses }
+        maxContains: 1
+      - header: { const: Changelog }
+        description: dated snapshots, newest first
+        maxContains: 1
+additionalSections: false

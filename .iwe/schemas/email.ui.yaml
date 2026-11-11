@@ -1,0 +1,38 @@
+name: Email
+description: An outreach email, sent or received
+columns: [stage, target, sent, outcome]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  stage:
+    title: Stage
+    values:
+      draft: { title: Draft, color: gray }
+      scheduled: { title: Scheduled, color: blue }
+      sent: { title: Sent, color: green }
+      archived: { title: Archived, color: gray }
+  direction:
+    title: Direction
+    values:
+      outbound: { title: Sent by you }
+      inbound: { title: Received }
+  target: { title: With }
+  goal:
+    title: Goal
+    values:
+      awareness: { title: Awareness, color: blue }
+      conversion: { title: Conversion, color: green }
+      positioning: { title: Positioning, color: purple }
+      credibility: { title: Credibility, color: teal }
+      retention: { title: Retention, color: orange }
+  outcome:
+    title: Outcome
+    values:
+      none: { title: No answer, color: gray }
+      replied: { title: Replied, color: blue }
+      declined: { title: Declined, color: red }
+      accepted: { title: Accepted, color: green }

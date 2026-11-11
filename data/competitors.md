@@ -21,7 +21,7 @@ changes are the most volatile and the most valuable to catch). Set the `updated`
 field on each refresh.
 
 ``` bash
-iwe find --filter '{type: competitor, status: active}' --project '$title,url,updated' -f json
+iwe find --filter '{type: competitor, stage: active}' --project '$title,relation,watch,updated' -f json
 ```
 
 [BillingBear](competitors/billingbear.example)

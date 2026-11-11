@@ -4,9 +4,10 @@
 v0.2](https://img.shields.io/badge/OKF-v0.2%20conformant-blue)](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
 
 **Memory for your marketing agent.** A plain-markdown campaign graph — your
-positioning, launch venues, people, posts, mentions, plan, and backlog — that
-your AI agent reads to decide what to do next and writes back what happened.
-Part CRM, part editorial calendar, part system of record.
+positioning, launch venues, people and leads, posts and replies, mentions,
+readings, plan, and backlog — that your AI agent reads to decide what to do next
+and writes back what happened. Part CRM, part editorial calendar, part system of
+record.
 
 It is also a conformant [Open Knowledge
 Format](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md)
@@ -26,7 +27,9 @@ for the memory:
 - **A campaign graph** (`data/`) — product positioning and messaging pillars,
   **~65 pre-seeded launch venues with posting rules**, a people CRM (customers,
   prospects, amplifiers), the post pipeline (drafts → published, with engagement
-  tracking), third-party mentions, a plan, and a backlog.
+  tracking), the replies you post in other people's threads and the leads you
+  meet there, third-party mentions, audience segments, selling points with their
+  proof, readings of what the record means, a plan, and a backlog.
 - **Typed, validated, portable** — every document carries frontmatter checked by
   `iwe schema validate`, so agent writes stay consistent across sessions.
   Provenance (`generated`, `sources`) and lifecycle (`status`, `stale_after`)
@@ -121,6 +124,9 @@ plausible fiction.
 - *"draft a Show HN post"* — venue rules + positioning + pack technique, filed
   as a draft with its goal recorded
 - *"log this mention: <url>"* / *"I published it, here's the link"*
+- *"find threads worth answering"* — a shortlist and talking points; you write
+  the comment, the agent files the thread, the lead, and the reply, and checks
+  its outcome three days later
 - *"we talked to a churned customer, here are my notes"* — filed as an
   interview, best quotes distilled into the product doc
 - *"weekly digest"* — what shipped, what moved, what to do next week
@@ -162,6 +168,7 @@ iwe find --filter '{type: community, category: launch-platform, stage: planned}'
 iwe find --filter '{type: post, stage: draft}' -f keys                            # drafts in flight
 iwe find --filter '{type: person, stage: contacted}'                              # outreach awaiting reply
 iwe find --filter '{type: task, stage: planned, priority: high}'                  # what to do next
+iwe find --filter '{type: reply, outcome: {$in: [asked, will-try, tried]}}'       # replies that started something
 iwe schema validate                                                                # is every doc well-formed?
 ```
 
@@ -184,10 +191,18 @@ data/
   drafts/ posts/   the editorial pipeline, engagement tracked in frontmatter
   evergreen/       reusable platform-independent post templates
   mentions/        third-party mentions of your product
+  threads/ replies/ leads/   conversations in others' threads, judged by outcome
+  emails/          outreach email, sent and received
+  audiences/       one segment each: what resonates, what to avoid, where they are
+  selling-points/  reasons to buy, each with its proof and what proof is missing
+  readings/        what the record means, facts kept apart, open ones first
+  references/      outside material to take ideas from
+  notes/           short decisions, learnings, gotchas
+  weekly/          weekly digests you chose to keep
   interviews/      customer research records: quotes, learnings, per interview
   plan/ backlog/   campaign moves and atomic tasks
 .claude/skills/    setup · backfill · draft · update · weekly
-.iwe/              graph config + frontmatter schemas
+.iwe/              graph config, frontmatter schemas, and table views (*.ui.yaml)
 ```
 
 `SCHEMA.md` documents every document type; `AGENTS.md` is the agent's operating

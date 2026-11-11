@@ -25,3 +25,15 @@ a product mention rides along naturally. A straight advertisement with no
 journey, no numbers, and no vulnerability is off-culture and gets ignored or
 reported. Good for accumulating a founder audience over repeated posts rather
 than one launch spike.
+
+## Posts
+
+- [Week four of building an invoicing CLI: 31 signups, no paying users
+  yet](../../posts/reddit/buildinpublic/2026-05-26-week-four-invoicing-cli.example)
+  — published 2026-05-26
+
+## Mentions
+
+- [u/shipping_sundays on
+  PlainInvoice](../../mentions/2026-07-18-shipping-sundays-buildinpublic.example)
+  — 2026-07-18

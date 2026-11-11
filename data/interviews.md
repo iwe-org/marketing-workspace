@@ -25,7 +25,7 @@ ask), `survey`.
 
 ``` bash
 iwe find --filter '{type: interview, kind: churned}'      # every churn conversation
-iwe find --filter '{type: interview, status: planned}'    # scheduled research
+iwe find --filter '{type: interview, stage: planned}'    # scheduled research
 ```
 
 [Marco (agency owner) — churned after two

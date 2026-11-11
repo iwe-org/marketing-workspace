@@ -1,0 +1,41 @@
+name: Post
+description: A post, drafted or published
+columns: [platform, stage, goal, published, verdict]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  resource: { title: Link }
+  stage:
+    title: Stage
+    values:
+      draft: { title: Draft, color: gray }
+      scheduled: { title: Scheduled, color: blue }
+      published: { title: Published, color: green }
+      removed: { title: Removed, color: red }
+      archived: { title: Archived, color: gray }
+  goal:
+    title: Goal
+    values:
+      awareness: { title: Awareness, color: blue }
+      conversion: { title: Conversion, color: green }
+      positioning: { title: Positioning, color: purple }
+      credibility: { title: Credibility, color: teal }
+      retention: { title: Retention, color: orange }
+  success_evidence:
+    title: Evidence
+    values:
+      on-file: { title: In the workspace }
+      fetchable: { title: Outside source }
+      unobservable: { title: Not observable }
+  verdict:
+    title: Verdict
+    values:
+      met: { title: Met, color: green }
+      partly-met: { title: Partly met, color: yellow }
+      not-met: { title: Not met, color: red }
+      undecidable: { title: Undecidable, color: gray }
+  verdict_date: { title: Verdict checked }

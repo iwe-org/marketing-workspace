@@ -1,0 +1,26 @@
+name: Experiment
+description: Something tried, with its hypothesis and verdict
+columns: [stage, area, verdict, concluded]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  stage:
+    title: Stage
+    values:
+      idea: { title: Idea, color: gray }
+      planned: { title: Planned, color: blue }
+      running: { title: Running, color: orange }
+      concluded: { title: Concluded, color: green }
+      abandoned: { title: Abandoned, color: gray }
+  hypothesis: { multiline: true }
+  stop_signal: { title: Stop signal }
+  verdict:
+    title: Verdict
+    values:
+      win: { title: Win, color: green }
+      loss: { title: Loss, color: red }
+      inconclusive: { title: Inconclusive, color: gray }

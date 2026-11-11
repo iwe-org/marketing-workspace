@@ -11,12 +11,12 @@ generated:
 # Backlog
 
 Atomic, single-sitting tasks (`data/backlog/<slug>.md`), linked here by
-priority. The agent picks from the top; status lives in each task's frontmatter
+priority. The agent picks from the top; stage lives in each task's frontmatter
 (`planned → in-progress → done`). When a task finishes or is discarded, move its
 link to `## Done` so the priority sections stay a true to-do list.
 
 ``` bash
-iwe find --filter '{type: task, status: planned, priority: high}'
+iwe find --filter '{type: task, stage: planned, priority: high}'
 ```
 
 ## High

@@ -1,15 +1,14 @@
-# marketing-workspace — structure design
+# Structure
 
-Design doc for this repository. The repo itself is the deliverable: a clonable
-GitHub template. This doc records the intended structure and the reasoning; the
-README carries the user-facing story.
+This document explains how the workspace is put together and why — the design
+rationale behind the layout. The README carries the user-facing story.
 
 ## What this is
 
 **marketing-workspace** — the **memory half** of an agent-run marketing
 operation, for founders. A plain-markdown campaign graph — positioning, venues,
-people, posts, mentions, plan, backlog — with typed, schema-validated
-frontmatter, managed by [IWE](https://iwe.md).
+people, leads, posts, replies, mentions, readings, plan, backlog — with typed,
+schema-validated frontmatter, managed by [IWE](https://iwe.md).
 
 It deliberately does **not** ship marketing know-how. Skill packs already do
 that well — [marketingskills](https://github.com/coreyhaines31/marketingskills)
@@ -26,9 +25,8 @@ was published where, which venues are exhausted, who replied to outreach, or why
 a post exists. This workspace is that record: part CRM, part editorial calendar,
 part system of record, readable and writable by the agent across sessions.
 
-**The pitch**: install marketingskills for the knowledge; clone
-marketing-workspace for the memory. It is simultaneously a genuinely useful
-founder tool and a living demo of IWE's agent-memory thesis.
+In short: install marketingskills for the knowledge; use this workspace for the
+memory.
 
 ## Sources & licensing
 
@@ -36,9 +34,8 @@ founder tool and a living demo of IWE's agent-memory thesis.
   [Marketing-for-Founders](https://github.com/EdoStra/Marketing-for-Founders)
   (CC BY-SA 4.0) but are an independent compilation: each venue rebuilt from its
   primary source (liveness check, posting rules read at the venue where
-  fetchable), our own annotations, selection, and grouping. No prose or
+  fetchable), with its own annotations, selection, and grouping. No prose or
   wholesale curation is copied.
-- The data-layer entity model generalizes the IWE marketing KB (our own work).
 - marketingskills is referenced as an install, never vendored — no license
   entanglement.
 - This repo ships **MIT**; acknowledgments live in the README.
@@ -57,7 +54,8 @@ marketing-workspace/
 ├── STRUCTURE.md            # this design doc
 ├── .iwe/
 │   ├── config.toml         # frontmatter_document_title + [schemas] bindings
-│   └── schemas/*.yaml      # machine-checked shape per type (13 schemas)
+│   └── schemas/            # machine-checked shape per type (23 types + 3 OKF
+│                           #   checks), and a *.ui.yaml table view per browsable type
 ├── .claude/skills/         # workspace skills (state workflows, not marketing technique)
 │   ├── setup/SKILL.md      # onboarding interview → fills product.md, prunes venue seeds
 │   ├── backfill/SKILL.md   # imports existing mentions/posts/competitor facts from the web
@@ -86,6 +84,17 @@ marketing-workspace/
     ├── evergreen/          # reusable template posts
     ├── mentions.md + mentions/   # third-party mention tracking (+ listening watchlist)
     ├── interviews.md + interviews/   # deliberate research records (customer interviews, surveys)
+    ├── threads.md + threads/     # threads where you met people; inclusion-link their replies
+    ├── replies.md + replies/     # comments you posted in others' threads, judged by outcome
+    ├── leads.md + leads/         # people met in threads; graduate to people/ on conversion
+    ├── emails.md + emails/       # outreach email, sent and received
+    ├── audiences.md + audiences/ # one audience segment each
+    ├── selling-points.md + selling-points/   # reasons to buy, with proof
+    ├── readings.md + readings/   # what the record means — open readings by impact
+    ├── readings-archive.md       # readings that left `open`, by verdict
+    ├── references.md + references/   # outside material to take ideas from
+    ├── notes.md + notes/         # short decisions, learnings, gotchas
+    ├── weekly.md + weekly/       # weekly digests kept on request
     ├── plan.md + plan/     # campaign moves — SEEDED with three stage plans
     └── backlog.md + backlog/     # atomic tasks — SEEDED with onboarding checklist
 ```
@@ -172,7 +181,7 @@ stage, the `plan` schema has a `stage` field, and the three seeded plan steps
 carry the stage guidance in their bodies ("nothing at this stage scales, and
 that's the point", etc.).
 
-## Data-layer design (inherited from the IWE marketing KB, generalized)
+## Data-layer design
 
 Types: `post`, `template` (evergreen), `community`, `person`, `mention`,
 `external`, `task`, `plan`, `hub`, `tracker`. Kept axes: `goal` + `success` on
@@ -181,7 +190,7 @@ venue-as-relationship (`## Posts` / `## Mentions` under the community file);
 roles-as-hubs
 (`data/people/role-{customer,prospect,amplifier,creator,contact}`).
 
-Changes vs. the IWE KB:
+Design choices:
 
 - **Pillars are founder-defined** — `pillar` is a free string validated only for
   presence; `data/product.md` instructs defining 3–5 and the setup skill fills
@@ -194,10 +203,68 @@ Changes vs. the IWE KB:
 - **`person` is CRM-flavored** — adds `email`, drops the influence-score rubric.
 - **Dropped for v1**: `discussion`, `feedback-report`, `weekly-report`,
   `submission`, `audience` types; directory submissions are `task`s against
-  seeded directory venues.
+  seeded directory venues. (1.2.0 brought back `audience` and `weekly-report`;
+  see below.)
 - **Seeds**: ~65 venues (`stage: planned`), three stage plan steps, onboarding
   backlog ("Fill in product.md", "Define pillars", "Prune venues to your ICP",
   "Pick your first launch venue").
+
+## The conversation and evidence pass (1.2.0)
+
+Lessons from running a campaign workspace day to day, carried over as generic
+types and rules:
+
+- **Replies are their own records.** Comments posted in other people's threads
+  were the most frequent action and had nowhere to live. They now form a small
+  graph: `thread` (where), `reply` (what was said and how it landed), `lead`
+  (who may want the product). Each fact is written once, on the record made when
+  it happened — a lead stores no reply count or "answered" flag, because those
+  drifted from the replies themselves; they are read from the replies' links.
+- **Outcome over score.** A reply is judged by what it started (`none` →
+  `replied` → `asked` → `will-try` → `tried`), set at a three-day review.
+  Upvotes stay as context. `names_product` and `origin` are recorded so outcomes
+  can be compared with and without the pitch, and by who wrote the words.
+- **The user writes the words in others' threads.** Drafted comments read as
+  drafted; the agent's job there is finding, reading, talking points and filing.
+- **Facts apart from readings.** A `reading` keeps observations (with the
+  queries that produced them) apart from what they are taken to mean, names an
+  alternative, and says what would decide it. Readings that leave `open` move to
+  an archive hub — the general pattern for closed items: hubs list what is open.
+- **Success lines get checked.** Posts gained `success_evidence`, `verdict` and
+  `verdict_date`, so "did it work?" is answered against the line written before
+  publishing.
+- **Arguments before copy.** `selling-point` records each reason to buy with its
+  `evidence`; a `hypothesis` cannot be marked as carried by copy.
+- **Conditional requirements** replace conventions that were only written down:
+  a done task carries `completed`, a concluded experiment its verdict and
+  result, a decision note `origin: human`, an outbound email its goal.
+- **Ratings need reasons.** Competitor `threat` is optional and set only with
+  the reason in the body; unexplained ratings proved worse than none.
+
+**Charts over the records.** The replies, leads, mentions, communities,
+experiments, plan, metrics and weekly hubs, and a new `data/posts.md` page,
+carry ```` ```chart ```` blocks: Vega-Lite specs whose data is a query over the
+graph or a CSV beside the notes (`data/metrics-weekly.csv`), composed with
+shared `datasets`, `lookup` joins and `hconcat` stat tiles. About eighty dummy
+`*.example.md` records spread over May to early August fill them, so a fresh
+workspace shows what each chart is for. Two notes on the joins:
+
+- A link to a `*.example.md` file is not a graph edge in iwe 0.32: the final
+  `.example` reads as a file extension, so the link is treated as a link to a
+  file, not to a document. Charts therefore use edges only to the seeded venue
+  pages (`$referencedBy` on a community), and key prefixes and fields everywhere
+  else.
+- The leads tiles join each reply to its lead by the handle on the reply's
+  `Person:` line, read from `$content`, rather than by the link, for the same
+  reason.
+
+Also added: `email`, `audience`, `reference` (outside craft material, distinct
+from `external`, which is about you or your thesis), `note`, `weekly-report`,
+competitor `relation`/`watch`, experiment `stop_signal`, community
+`members`/`checked`, and a `*.ui.yaml` table view for every type a person
+browses. Still left out: synced platform discussions, per-product docs (one
+product per workspace), directory `submission` (a task against a venue), and
+anything that needs a script.
 
 ## Workspace skills (v1: five)
 
@@ -205,34 +272,15 @@ State workflows, deliberately disjoint from marketingskills' technique skills.
 They live at `.claude/skills/` (Claude Code auto-discovers; other agents reach
 them via AGENTS.md).
 
-| Skill      | Reads                                 | Writes                                     |
-| ---------- | ------------------------------------- | ------------------------------------------ |
-| `setup`    | product.md gaps, seeded backlog       | product.md, strategy.md, venue pruning     |
-| `backfill` | the web: site, HN/Reddit, competitors | mentions, posts, people, competitor docs   |
-| `draft`    | product.md, venue rules, pack skills  | data/drafts/<platform>/*, venue `## Posts` |
-| `update`   | published posts' URLs                 | `engagement.*` frontmatter                 |
-| `weekly`   | engagement, plan, backlog             | nothing (prints digest)                    |
+| Skill      | Reads                                 | Writes                                                              |
+| ---------- | ------------------------------------- | ------------------------------------------------------------------- |
+| `setup`    | product.md gaps, seeded backlog       | product.md, strategy.md, venue pruning                              |
+| `backfill` | the web: site, HN/Reddit, competitors | mentions, posts, people, competitor docs                            |
+| `draft`    | product.md, venue rules, pack skills  | data/drafts/<platform>/*, venue `## Posts`; threads, leads, replies |
+| `update`   | published posts' and replies' URLs    | `engagement.*`, reply `outcome`, post `verdict`                     |
+| `weekly`   | engagement, replies, plan, backlog    | `data/log.md`; `data/weekly/` on request                            |
 
 `draft` is the composition point: it pulls positioning from `data/product.md`,
 posting rules from the venue's `notes`, and — when marketingskills is installed
 — delegates copy technique to the matching pack skill, then files the result
 into the graph.
-
-## Publishing
-
-1. Mark this repo as a GitHub **template repository**.
-2. Website page on iwe.md: the workspace as the flagship agent-memory demo.
-3. README quickstart: use template → install IWE → install marketingskills →
-   `/setup`.
-
-## Build plan
-
-1. **Scaffold** — `.iwe/` config + 13 schemas, root docs, data hubs + fill-ins.
-   Validate.
-2. **Pairing docs** — README/AGENTS.md rewritten around the
-   extend-marketingskills architecture.
-3. **Data seeds** — ~65 venue entities rebuilt from primary sources + grouped
-   communities hub + three stage plans + onboarding backlog.
-4. **Skills** — setup, backfill, draft, update, weekly at `.claude/skills/`.
-5. **Validation** — `iwe schema validate` clean; smoke-test quickstart queries.
-6. **Publish** — template repo flag, website page.

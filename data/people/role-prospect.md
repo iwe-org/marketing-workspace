@@ -11,5 +11,5 @@ generated:
 # Prospects
 
 People who match the ideal customer profile but don't use the product yet.
-Outreach targets — track state in each person's `status`
+Outreach targets — track state in each person's `stage`
 (`planned → contacted → replied`).

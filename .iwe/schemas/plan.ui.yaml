@@ -1,0 +1,24 @@
+name: Plan step
+description: A campaign-level move with its definition of done
+columns: [stage, growth_stage, estimated, completed]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  stage:
+    title: Stage
+    values:
+      planned: { title: Planned, color: gray }
+      in-progress: { title: In progress, color: blue }
+      done: { title: Done, color: green }
+      discarded: { title: Discarded, color: gray }
+  growth_stage:
+    title: Growth stage
+    values:
+      first-10: { title: First 10 users }
+      first-100: { title: First 100 users }
+      first-1000: { title: First 1000 users }
+  notes: { multiline: true }

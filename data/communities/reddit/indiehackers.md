@@ -22,3 +22,9 @@ feedback, distribution ideas, and credibility than for finding customers. The
 posts that do well are transparent journey posts ("$0 to $2k MRR, here's what
 worked") rather than feature announcements. Flair your promo correctly;
 unflaired drive-by launch posts get reported and removed.
+
+## Posts
+
+- [From zero to three paying users: what the first launch taught
+  me](../../posts/reddit/indiehackers/2026-07-29-zero-to-three-paying-users.example)
+  — published 2026-07-29

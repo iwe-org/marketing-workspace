@@ -1,0 +1,26 @@
+name: Reading
+description: What you think the record means, with the evidence that would decide it
+columns: [impact, impact_estimate, stage, checked]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  question: { multiline: true }
+  stage:
+    title: Stage
+    values:
+      open: { title: Open, color: blue }
+      supported: { title: Supported, color: green }
+      contradicted: { title: Contradicted, color: red }
+      retired: { title: Retired, color: gray }
+  impact:
+    title: Impact
+    values:
+      high: { title: High, color: red }
+      medium: { title: Medium, color: orange }
+      low: { title: Low, color: gray }
+  impact_estimate: { title: Estimate }
+  checked: { title: Facts checked }

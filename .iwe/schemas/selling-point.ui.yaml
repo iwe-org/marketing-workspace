@@ -1,0 +1,37 @@
+name: Selling point
+description: A concrete reason to buy, with its proof
+columns: [kind, stage, strength, evidence]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  kind:
+    title: Kind
+    values:
+      workflow: { title: Workflow }
+      capability: { title: Capability }
+      differentiator: { title: Differentiator }
+      outcome: { title: Outcome }
+  stage:
+    title: Stage
+    values:
+      candidate: { title: Candidate, color: yellow, description: Noticed; proof still missing. }
+      validated: { title: Validated, color: blue, description: You can show it. }
+      promoted: { title: In copy, color: green, description: Published copy already carries it. }
+      retired: { title: Retired, color: gray }
+  strength:
+    title: Strength
+    values:
+      high: { title: Can lead, color: green }
+      medium: { title: Supports, color: yellow }
+      low: { title: Minor, color: gray }
+  evidence:
+    title: Evidence
+    values:
+      shipped: { title: Shipped, color: blue }
+      used: { title: You use it, color: teal }
+      customer-reported: { title: Customer said so, color: green }
+      hypothesis: { title: Hypothesis, color: orange, description: Unproven; stays out of copy. }

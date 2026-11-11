@@ -1,0 +1,25 @@
+name: Interview
+description: A customer interview or survey
+columns: [kind, stage, conducted]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  stage:
+    title: Stage
+    values:
+      planned: { title: Planned, color: blue }
+      done: { title: Done, color: green }
+      cancelled: { title: Cancelled, color: gray }
+  kind:
+    title: Kind
+    values:
+      discovery: { title: Discovery }
+      new-customer: { title: New customer }
+      happy: { title: Happy customer }
+      churned: { title: Churned }
+      feature-request: { title: Feature request }
+      survey: { title: Survey }

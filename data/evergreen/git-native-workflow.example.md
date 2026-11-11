@@ -14,7 +14,7 @@ generated:
 # Your invoices should live in git, like everything else you make
 
 *Example document — this shows the shape of an evergreen template: a reusable,
-platform-independent post organized by `angle`, with no `status` (evergreen is
+platform-independent post organized by `angle`, with no `stage` (evergreen is
 implied by the type). Copy it into a dated draft under `data/drafts/<platform>/`
 when using it, then adapt to the venue's rules. The setup skill deletes
 `*.example.md` files after onboarding.*

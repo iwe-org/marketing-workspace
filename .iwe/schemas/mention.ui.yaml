@@ -1,0 +1,24 @@
+name: Mention
+description: A third-party mention of the product
+columns: [platform, author, kind, sentiment, published]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  resource: { title: Link }
+  stage:
+    title: Stage
+    values:
+      published: { title: Live, color: green }
+      removed: { title: Removed, color: gray }
+  sentiment:
+    title: Sentiment
+    values:
+      positive: { title: Positive, color: green }
+      neutral: { title: Neutral, color: gray }
+      negative: { title: Negative, color: red }
+      mixed: { title: Mixed, color: yellow }
+  quote: { multiline: true }

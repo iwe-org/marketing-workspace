@@ -16,7 +16,7 @@ you write here — optimize for the founder's own language, not marketing-speak.
    everything is filled, ask what to revise instead of re-interviewing.
    Also check whether a marketing skill pack is installed (technique skills
    present in `.claude/skills/` or `.agents/skills/` beyond this workspace's
-   four). If not, offer — once — to install the recommended one:
+   five). If not, offer — once — to install the recommended one:
    `npx skills add coreyhaines31/marketingskills -a claude-code`
    (the `-a` flag matters when running from inside an agent session). If
    declined, offline, or it fails: continue without comment — the pack is
@@ -49,10 +49,15 @@ you write here — optimize for the founder's own language, not marketing-speak.
    statement of the messaging claim) and inclusion-link each from the Pillars
    section of `data/index.md` — every future publication gets an inclusion
    link from its pillar hub, which is what keeps posts reachable in the tree.
-4. **Create competitor stubs.** For each competitor named in the interview,
-   create `data/competitors/<slug>.md` (stage: active, resource, one-line stance
-   in `notes`) and link it from the competitors hub; deep profiling stays a
-   backlog task.
+4. **Create competitor stubs and segments.** For each competitor named in the
+   interview, create `data/competitors/<slug>.md` (stage: active, resource,
+   `relation`, one-line stance in `notes`, and the five body sections with ✏️
+   where unknown) and link it from the competitors hub; deep profiling stays a
+   backlog task. For each audience segment the founder named, create
+   `data/audiences/<slug>.md` (`stage: active` or `planned`) with the five
+   sections, and link it from `data/audiences.md`. Each proof point the
+   founder can show becomes a `data/selling-points/<slug>.md` stub with its
+   `evidence`.
 5. **Prune venues.** Walk
    `iwe find --filter '{type: community, stage: planned}' -f json`
    against the ICP. Propose a shortlist (~10 to keep) and the cancellations
@@ -76,10 +81,14 @@ you write here — optimize for the founder's own language, not marketing-speak.
    `set-strategy`, `prune-venues`): `stage: done`, `completed: <today>`, and
    move their links in `data/backlog.md` to the `## Done` section. Delete the
    example docs — every `*.example.md` under `data/` — now that real documents
-   replace their job. `iwe delete` removes their inclusion links from hubs
-   automatically but *flattens* inline links to plain text: sweep the venue
-   files' `## Posts`/`## Mentions` sections and remove the leftover de-linked
-   example lines.
+   replace their job, with `iwe delete`. Links to an `*.example.md` file are
+   not graph edges (the `.example` reads as a file extension), so `iwe delete`
+   leaves them in place: afterwards, `grep -rn '\.example)' data/` and remove
+   every line it finds — the hubs' lists, the venue files' `## Posts` and
+   `## Mentions` bullets, and the example bullet in `data/index.md`'s Pillars
+   section. Then reset `data/metrics-weekly.csv` to its header row
+   (`week,visits,signups,activated,paying_users,mrr`) plus the founder's real
+   weeks, if they have any — its current rows are dummy numbers.
 9. **Validate & commit.** `iwe schema validate` must pass. Commit with a
    message like
    `setup: product/strategy/brand/offer filled, venues pruned to <n>, <stage> plan activated`.

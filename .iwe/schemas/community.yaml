@@ -18,6 +18,12 @@ frontmatter:
       description: mechanical platform if relevant (reddit, facebook, discord, web...)
     resource: { type: string }
     size: { type: [string, "null"], description: free text audience size, if known }
+    members:
+      type: [integer, "null"]
+      minimum: 0
+      description: audience size as a number (members, subscribers, followers) as the venue shows it, expanded from any rounding, read on checked
+    checked: { type: [string, "null"], format: date, description: date members was read }
+    pillar: { type: [string, "null"], description: the messaging pillar this venue's audience responds to, if one stands out }
     notes: { type: string, description: posting rules, flair requirements, caveats }
     created: { type: string, format: date }
     description:

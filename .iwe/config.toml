@@ -88,6 +88,36 @@ match = "data/competitors/[a-z]*"
 [schemas.experiment]
 match = "data/experiments/[a-z]*"
 
+[schemas.thread]
+match = "data/threads/*"
+
+[schemas.reply]
+match = "data/replies/*"
+
+[schemas.lead]
+match = "data/leads/*"
+
+[schemas.email]
+match = "data/emails/*"
+
+[schemas.audience]
+match = "data/audiences/*"
+
+[schemas.selling-point]
+match = "data/selling-points/*"
+
+[schemas.reading]
+match = "data/readings/*"
+
+[schemas.reference]
+match = "data/references/*"
+
+[schemas.note]
+match = "data/notes/*"
+
+[schemas.weekly-report]
+match = "data/weekly/*"
+
 [schemas.hub]
 match = [
   "data/communities",
@@ -96,6 +126,17 @@ match = [
   "data/interviews",
   "data/competitors",
   "data/experiments",
+  "data/threads",
+  "data/replies",
+  "data/leads",
+  "data/emails",
+  "data/audiences",
+  "data/selling-points",
+  "data/readings",
+  "data/readings-archive",
+  "data/references",
+  "data/notes",
+  "data/weekly",
   "data/people/role-*",
   "data/pillars/*",
 ]
@@ -107,6 +148,7 @@ match = [
   "data/strategy",
   "data/plan",
   "data/backlog",
+  "data/posts",
   "data/metrics",
   "data/brand",
   "data/website",

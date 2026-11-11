@@ -1,0 +1,28 @@
+name: Person
+description: A CRM entry
+columns: [stage, platform, reach]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  resource: { title: Profile }
+  stage:
+    title: Stage
+    values:
+      active: { title: Active, color: green }
+      planned: { title: To contact, color: gray }
+      contacted: { title: Contacted, color: blue }
+      replied: { title: Replied, color: teal }
+      declined: { title: Declined, color: red }
+      inactive: { title: Inactive, color: gray }
+  reach:
+    title: Reach
+    values:
+      high: { title: High, color: green }
+      medium: { title: Medium, color: yellow }
+      low: { title: Low, color: gray }
+      unknown: { title: Unknown, color: gray }
+  notes: { multiline: true }

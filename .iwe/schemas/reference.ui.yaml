@@ -1,0 +1,19 @@
+name: Reference
+description: Outside material you take ideas from
+columns: [kind, stage, ideas_for]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  resource: { title: Link }
+  stage:
+    title: Stage
+    values:
+      new: { title: To read, color: blue }
+      reviewed: { title: Reviewed, color: orange }
+      used: { title: Used, color: green }
+      dropped: { title: Dropped, color: gray }
+  ideas_for: { title: Ideas for }

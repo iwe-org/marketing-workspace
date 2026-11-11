@@ -1,0 +1,25 @@
+name: Task
+description: A single-sitting backlog task
+columns: [stage, priority, completed]
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  usage_window: { hidden: true }
+  stage:
+    title: Stage
+    values:
+      planned: { title: Planned, color: gray }
+      in-progress: { title: In progress, color: blue }
+      done: { title: Done, color: green }
+      blocked: { title: Blocked, color: orange }
+      discarded: { title: Discarded, color: gray }
+  priority:
+    title: Priority
+    values:
+      high: { title: High, color: red }
+      medium: { title: Medium, color: orange }
+      low: { title: Low, color: gray }
+  notes: { multiline: true }
