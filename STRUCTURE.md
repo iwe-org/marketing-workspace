@@ -51,7 +51,7 @@ One IWE project rooted at the repo root:
 marketing-workspace/
 ├── README.md               # human quickstart
 ├── AGENTS.md               # agent operating manual (portable convention)
-├── CLAUDE.md               # thin pointer to AGENTS.md (Claude Code entry)
+├── index.md                # the start page the iWe app opens first
 ├── LICENSE.md              # MIT
 ├── SCHEMA.md               # frontmatter reference for all types
 ├── STRUCTURE.md            # this design doc
