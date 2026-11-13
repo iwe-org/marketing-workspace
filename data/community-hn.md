@@ -27,15 +27,15 @@ a launch sequence, on its own day.
 ## Posts
 
 - [Show HN: PlainInvoice – invoicing for freelance developers, entirely in the
-  terminal](drafts/hn/2026-07-26-show-hn-plaininvoice.example) — draft
+  terminal](drafts/hn/2026-07-26-show-hn-plaininvoice-example.md) — draft
 
 ## Mentions
 
 - [Sarah recommends PlainInvoice in an HN invoicing-tools
-  thread](mentions/2026-07-23-sarah-hn-invoicing-thread.example) — 2026-07-23
+  thread](mentions/2026-07-23-sarah-hn-invoicing-thread-example.md) — 2026-07-23
 - [fennel_and_fig on
-  PlainInvoice](mentions/2026-05-22-fennel-and-fig-hn-cli-billing.example) —
+  PlainInvoice](mentions/2026-05-22-fennel-and-fig-hn-cli-billing-example.md) —
   2026-05-22
 - [pinecone_parser on
-  PlainInvoice](mentions/2026-07-04-pinecone-parser-hn-diffable.example) —
+  PlainInvoice](mentions/2026-07-04-pinecone-parser-hn-diffable-example.md) —
   2026-07-04

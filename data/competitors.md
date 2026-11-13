@@ -24,4 +24,4 @@ field on each refresh.
 iwe find --filter '{type: competitor, stage: active}' --project '$title,relation,watch,updated' -f json
 ```
 
-[BillingBear](competitors/billingbear.example)
+[BillingBear](competitors/billingbear-example.md)

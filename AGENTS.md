@@ -156,7 +156,7 @@ the campaign's memory and system of record. The division of labor:
 - **Repurposing trail**: a dated post cut from an evergreen template links back
   to the template inline, so a template's real-world performance stays
   traceable.
-- **Example docs**: files suffixed `.example.md` demonstrate each directory's
+- **Example docs**: files suffixed `-example.md` demonstrate each directory's
   document shape (a fictional product; schema-validated so they can't rot).
   Ignore them when reporting real campaign state; the setup skill deletes them
   at the end of onboarding.
@@ -209,23 +209,9 @@ know:
   markdown — reading and editing work fine — but renames, queries, and
   validation need the CLI. Ask the user to install it
   (https://iwe.md/quick-start/) before restructuring anything.
-
-## IWE CLI cheatsheet
-
-``` bash
-iwe find --filter '{type: community, stage: planned}' -f json   # filter docs (YAML expr)
-iwe find --filter 'stage: draft' -f keys                        # keys only
-iwe count --filter '{type: post, stage: published}'             # count matches
-iwe retrieve -k data/product                                     # read a doc
-iwe tree -k data/index                                           # graph overview
-iwe update -k <key> --set stage=published --set 'published="2026-08-01"'
-iwe rename data/drafts/reddit/x data/posts/reddit/x              # move; references auto-update
-iwe schema validate                                              # validate all bound docs
-```
-
-Filters are YAML (`$eq`, `$ne`, `$in`, `$gte`, `$exists`, …), not jq. Structural
-anchors: `--includes`, `--included-by`, `--references`, `--referenced-by`,
-`--roots`.
+- The commands and the query syntax are in the `iwe` skill
+  (`.claude/skills/iwe/SKILL.md`); read it before a query or a restructuring you
+  have not run this session.
 
 ## Workspace skills
 
@@ -238,3 +224,4 @@ State workflows (distinct from the skill pack's technique skills):
 | `.claude/skills/draft/SKILL.md`    | Drafts a post, or talking points for a thread reply, then files it |
 | `.claude/skills/update/SKILL.md`   | Refreshes engagement on published posts and replies                |
 | `.claude/skills/weekly/SKILL.md`   | Prints a weekly digest; keeps it in `data/weekly/` when asked      |
+| `.claude/skills/iwe/SKILL.md`      | The `iwe` CLI reference: reading, querying, renaming, validating   |

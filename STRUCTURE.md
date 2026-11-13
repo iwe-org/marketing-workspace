@@ -61,7 +61,8 @@ marketing-workspace/
 │   ├── backfill/SKILL.md   # imports existing mentions/posts/competitor facts from the web
 │   ├── draft/SKILL.md      # draft a post for a venue (positioning + venue rules + pack skills)
 │   ├── update/SKILL.md     # engagement refresh on published posts
-│   └── weekly/SKILL.md     # weekly digest
+│   ├── weekly/SKILL.md     # weekly digest
+│   └── iwe/SKILL.md        # the iwe CLI reference, read on demand
 └── data/                   # the campaign graph (agent reads AND writes)
     ├── index.md            # KB root
     ├── product.md          # FILL-IN: 11-section positioning/ICP/personas/objections/
@@ -246,14 +247,14 @@ experiments, plan, metrics and weekly hubs, and a new `data/posts.md` page,
 carry ```` ```chart ```` blocks: Vega-Lite specs whose data is a query over the
 graph or a CSV beside the notes (`data/metrics-weekly.csv`), composed with
 shared `datasets`, `lookup` joins and `hconcat` stat tiles. About eighty dummy
-`*.example.md` records spread over May to early August fill them, so a fresh
+`*-example.md` records spread over May to early August fill them, so a fresh
 workspace shows what each chart is for. Two notes on the joins:
 
-- A link to a `*.example.md` file is not a graph edge in iwe 0.32: the final
-  `.example` reads as a file extension, so the link is treated as a link to a
-  file, not to a document. Charts therefore use edges only to the seeded venue
-  pages (`$referencedBy` on a community), and key prefixes and fields everywhere
-  else.
+- In 1.2.0 the examples were named `*.example.md`, and a link to one was not a
+  graph edge: the final `.example` read as a file extension, so iwe treated the
+  link as a link to a file. 1.2.1 renamed them `*-example.md`, which makes the
+  links edges, but the charts still use edges only to the seeded venue pages
+  (`$referencedBy` on a community), and key prefixes and fields everywhere else.
 - The leads tiles join each reply to its lead by the handle on the reply's
   `Person:` line, read from `$content`, rather than by the link, for the same
   reason.
@@ -266,7 +267,7 @@ browses. Still left out: synced platform discussions, per-product docs (one
 product per workspace), directory `submission` (a task against a venue), and
 anything that needs a script.
 
-## Workspace skills (v1: five)
+## Workspace skills (five workflows and a reference)
 
 State workflows, deliberately disjoint from marketingskills' technique skills.
 They live at `.claude/skills/` (Claude Code auto-discovers; other agents reach

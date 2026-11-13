@@ -26,5 +26,5 @@ unflaired drive-by launch posts get reported and removed.
 ## Posts
 
 - [From zero to three paying users: what the first launch taught
-  me](../../posts/reddit/indiehackers/2026-07-29-zero-to-three-paying-users.example)
+  me](../../posts/reddit/indiehackers/2026-07-29-zero-to-three-paying-users-example.md)
   — published 2026-07-29

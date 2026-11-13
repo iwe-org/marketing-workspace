@@ -21,6 +21,6 @@ iwe find --filter '{type: email, stage: sent, outcome: none}'                  #
 ```
 
 [A terminal invoicing tool for your terminal
-corner](emails/2026-07-25-devon-pitch.example)
+corner](emails/2026-07-25-devon-pitch-example.md)
 
-[Follow-up to Devon](emails/2026-08-04-devon-follow-up.example)
+[Follow-up to Devon](emails/2026-08-04-devon-follow-up-example.md)

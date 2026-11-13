@@ -49,4 +49,4 @@ encoding:
   tooltip: [{field: date, timeUnit: utcyearweek, title: week of}, {field: kind}, {aggregate: count, title: items}]
 ```
 
-[Week of 2026-07-20](weekly/2026-07-27.example)
+[Week of 2026-07-20](weekly/2026-07-27-example.md)

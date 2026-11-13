@@ -27,7 +27,7 @@ iwe find --filter '{type: reading, stage: open}' --project '$title,impact,checke
 
 [Replies that leave the product out get answered more often, but replies that
 name it start more
-trials](readings/answering-without-naming-draws-questions.example)
+trials](readings/answering-without-naming-draws-questions-example.md)
 
 ## Low impact
 

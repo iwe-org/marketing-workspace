@@ -43,4 +43,4 @@ iwe find --filter '{type: task, stage: planned, priority: high}'
 
 ## Done
 
-[Thank Sarah for the HN mention](backlog/thank-sarah-for-hn-mention.example)
+[Thank Sarah for the HN mention](backlog/thank-sarah-for-hn-mention-example.md)

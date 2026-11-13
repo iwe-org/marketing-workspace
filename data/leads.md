@@ -106,32 +106,32 @@ encoding:
 
 ## Active
 
-[u/hourly_hana](leads/hourly-hana.example)
+[u/hourly_hana](leads/hourly-hana-example.md)
 
-[u/margin_notes_dev](leads/margin-notes-dev.example)
+[u/margin_notes_dev](leads/margin-notes-dev-example.md)
 
-[u/cobalt_freelance](leads/cobalt-freelance.example)
+[u/cobalt_freelance](leads/cobalt-freelance-example.md)
 
-[u/two_monitor_tess](leads/two-monitor-tess.example)
+[u/two_monitor_tess](leads/two-monitor-tess-example.md)
 
-[bytesized_billing](leads/bytesized-billing.example)
+[bytesized_billing](leads/bytesized-billing-example.md)
 
-[u/ledger_in_a_jar](leads/ledger-in-a-jar.example)
+[u/ledger_in_a_jar](leads/ledger-in-a-jar-example.md)
 
 ## Researched
 
-[kettle_studio](leads/kettle-studio.example)
+[kettle_studio](leads/kettle-studio-example.md)
 
-[quillandport](leads/quillandport.example)
+[quillandport](leads/quillandport-example.md)
 
 ## New
 
-[u/homelab_harriet](leads/homelab-harriet.example)
+[u/homelab_harriet](leads/homelab-harriet-example.md)
 
 ## Converted
 
-[u/tabs_and_totals](leads/tabs-and-totals.example)
+[u/tabs_and_totals](leads/tabs-and-totals-example.md)
 
 ## Dropped
 
-[rivetcount](leads/rivetcount.example)
+[rivetcount](leads/rivetcount-example.md)

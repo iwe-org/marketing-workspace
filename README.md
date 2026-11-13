@@ -201,7 +201,7 @@ data/
   weekly/          weekly digests you chose to keep
   interviews/      customer research records: quotes, learnings, per interview
   plan/ backlog/   campaign moves and atomic tasks
-.claude/skills/    setup · backfill · draft · update · weekly
+.claude/skills/    setup · backfill · draft · update · weekly · iwe
 .iwe/              graph config, frontmatter schemas, and table views (*.ui.yaml)
 ```
 

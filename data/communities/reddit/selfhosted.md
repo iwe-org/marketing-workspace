@@ -29,5 +29,5 @@ removed and remembered.
 ## Mentions
 
 - [u/rack_and_roll_rhea on
-  PlainInvoice](../../mentions/2026-06-26-rack-and-roll-selfhosted-payment-api.example)
+  PlainInvoice](../../mentions/2026-06-26-rack-and-roll-selfhosted-payment-api-example.md)
   — 2026-06-26

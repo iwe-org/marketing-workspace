@@ -55,22 +55,23 @@ encoding:
 ## Backlog
 
 [Say "solo only" on the pricing
-page](experiments/pricing-page-solo-only.example)
+page](experiments/pricing-page-solo-only-example.md)
 
 [Name the product in first replies, or
-don't](experiments/reply-without-link.example)
+don't](experiments/reply-without-link-example.md)
 
 ## Running
 
-[Send a day-two onboarding email](experiments/onboarding-email-day-two.example)
+[Send a day-two onboarding
+email](experiments/onboarding-email-day-two-example.md)
 
 ## Abandoned
 
-[Put a demo video above the fold](experiments/landing-demo-video.example)
+[Put a demo video above the fold](experiments/landing-demo-video-example.md)
 
 ## Concluded
 
-[Discount the annual plan](experiments/annual-plan-discount.example)
+[Discount the annual plan](experiments/annual-plan-discount-example.md)
 
 [Landing page social proof above the
-fold](experiments/landing-social-proof.example)
+fold](experiments/landing-social-proof-example.md)
