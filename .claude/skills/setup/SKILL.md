@@ -16,7 +16,7 @@ you write here — optimize for the founder's own language, not marketing-speak.
    everything is filled, ask what to revise instead of re-interviewing.
    Also check whether a marketing skill pack is installed (technique skills
    present in `.claude/skills/` or `.agents/skills/` beyond this workspace's
-   five). If not, offer — once — to install the recommended one:
+   six). If not, offer — once — to install the recommended one:
    `npx skills add coreyhaines31/marketingskills -a claude-code`
    (the `-a` flag matters when running from inside an agent session). If
    declined, offline, or it fails: continue without comment — the pack is
@@ -58,14 +58,28 @@ you write here — optimize for the founder's own language, not marketing-speak.
    sections, and link it from `data/audiences.md`. Each proof point the
    founder can show becomes a `data/selling-points/<slug>.md` stub with its
    `evidence`.
-5. **Prune venues.** Walk
-   `iwe find --filter '{type: community, stage: planned}' -f json`
-   against the ICP. Propose a shortlist (~10 to keep) and the cancellations
-   with one-line reasons; on confirmation set `stage: cancelled` and append
-   the reason to `notes` for each cut venue
-   (`iwe update -k <venue key> --set stage=cancelled` — keys are
-   `data/community-<slug>` for standalone sites,
-   `data/communities/reddit/<name>` for subreddits).
+5. **Prune venues.** The seeded list is a menu, not a plan: nothing on it is
+   worked until the founder picks it.
+   - *Deal platforms first.* The fourteen `category: deals` venues sell
+     lifetime access at a steep one-time discount. Ask one question: is a
+     lifetime deal something this product would ever run? Unless the answer
+     is yes, cancel the whole category with that reason
+     (`iwe find --filter '{type: community, category: deals}' -f keys`) and
+     do not raise them again.
+   - *Then the rest.* Walk
+     `iwe find --filter '{type: community, stage: planned}' -f json`
+     against the ICP. Propose a shortlist (~10 to keep) and the
+     cancellations with one-line reasons; on confirmation set
+     `stage: cancelled` and append the reason to `notes` for each cut venue
+     (`iwe update -k <venue key> --set stage=cancelled` — keys are
+     `data/community-<slug>` for standalone sites,
+     `data/communities/reddit/<name>` for subreddits).
+   - *Refresh what stays.* The seeds were researched on their `created`
+     date. For each venue kept whose `stale_after` has passed, or falls
+     within the next month, open its `resource`, correct the posting rules
+     in `notes` and the body, and set `stale_after` six months out with a
+     `verified` stamp. If the page cannot be reached, leave the date and say
+     so in `notes`. Cancelled venues are not refreshed.
 6. **Activate the plan.** In `data/plan.md`, put the matching stage plan under
    `## Now` (others under Next/Later in stage order) and set its frontmatter
    `stage: in-progress`.

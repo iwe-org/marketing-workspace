@@ -61,7 +61,8 @@ marketing-workspace/
 │   ├── backfill/SKILL.md   # imports existing mentions/posts/competitor facts from the web
 │   ├── draft/SKILL.md      # draft a post for a venue (positioning + venue rules + pack skills)
 │   ├── update/SKILL.md     # engagement refresh on published posts
-│   └── weekly/SKILL.md     # weekly digest
+│   ├── weekly/SKILL.md     # weekly digest
+│   └── iwe/SKILL.md        # the iwe CLI reference, read on demand
 └── data/                   # the campaign graph (agent reads AND writes)
     ├── index.md            # KB root
     ├── product.md          # FILL-IN: 11-section positioning/ICP/personas/objections/
@@ -266,7 +267,7 @@ browses. Still left out: synced platform discussions, per-product docs (one
 product per workspace), directory `submission` (a task against a venue), and
 anything that needs a script.
 
-## Workspace skills (v1: five)
+## Workspace skills (five workflows and a reference)
 
 State workflows, deliberately disjoint from marketingskills' technique skills.
 They live at `.claude/skills/` (Claude Code auto-discovers; other agents reach

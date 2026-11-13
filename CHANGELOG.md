@@ -6,6 +6,27 @@ All notable changes to this template are documented here. The format is based on
 This is a template you clone, so the entries below double as migration notes: if
 you cloned an earlier copy, they tell you what to change in your own workspace.
 
+## [1.3.0]
+
+### Changed
+
+- **Setup asks about lifetime deals before anything else on the venue list.**
+  The fourteen deal platforms are cancelled in one step unless the founder says
+  a lifetime deal is on the table, instead of being weighed one by one.
+- **Setup refreshes the venues it keeps.** A kept venue whose `stale_after` has
+  passed, or is about to, is re-read at its `resource`, its posting rules are
+  corrected, and it gets a new `stale_after` and a `verified` stamp. The seeds
+  were researched in July 2026; a workspace created later no longer starts from
+  rules nobody rechecked.
+- The `iwe` command reference moved out of `AGENTS.md` into a skill,
+  `.claude/skills/iwe/SKILL.md`, read when the agent is about to query or
+  restructure the graph instead of at the start of every session. If you cloned
+  an earlier copy, add the skill and drop the `## IWE CLI cheatsheet` section
+  from your `AGENTS.md`.
+- The repository validates with the registry's shared workflow, which adds the
+  template's structural rules to the schema and normalization checks, and a `v*`
+  tag opens the registry update pull request.
+
 ## [1.2.1]
 
 ### Fixed
