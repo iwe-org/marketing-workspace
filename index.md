@@ -7,10 +7,23 @@ happened, so every session picks up where the last one stopped.
 
 ## Start here
 
+The agent works on the graph with the `iwe` command-line tool: queries, renames
+that keep links intact, and validation all need it. Install it once, then check
+with `iwe --version`:
+
+``` bash
+brew tap iwe-org/iwe && brew install iwe   # Homebrew
+cargo install iwe                          # or with Rust
+```
+
+The folder is plain files, not a git repository. Setup offers to run `git init`
+if you want a history of the campaign; everything works without it.
+
 1. Ask the agent to **run the setup**. It interviews you about the product, the
    ideal customer, pricing, and your stage, writes the
-   [product](data/product.md) and [strategy](data/strategy.md) docs, and prunes
-   the seeded launch venues to the ones that fit your customer.
+   [product](data/product.md) and [strategy](data/strategy.md) docs, prunes the
+   67 seeded launch venues to the ones that fit your customer, and deletes the
+   example documents.
 2. Ask it to **backfill the workspace**. It researches what already exists —
    your website, mentions, published posts, competitors — and files each find
    where the graph expects it, asking you when it can't verify something.
@@ -43,6 +56,6 @@ happened, so every session picks up where the last one stopped.
   [Emails](data/emails.md) and [Weekly reports](data/weekly.md) — decisions and
   learnings, outside ideas, outreach email, and the weeks you kept on file.
 
-The [graph root](data/index.md) links every hub. [Structure](STRUCTURE.md)
-explains the layout, [Schema](SCHEMA.md) lists the frontmatter each kind of
-document carries, and the [agent manual](AGENTS.md) is what the agent follows.
+The [graph root](data/index.md) links every hub. [Structure](STRUCTURE.md) maps
+the folders, [Schema](SCHEMA.md) lists the frontmatter each kind of document
+carries, and the [agent manual](AGENTS.md) is what the agent follows.

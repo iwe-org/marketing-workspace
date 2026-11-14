@@ -1,6 +1,6 @@
 ---
 name: backfill
-description: Backfill the workspace from the internet — read the product website to fill gaps in the product doc, sweep HN/Reddit/the web for existing mentions, file already-published posts with their engagement, and stub competitor profiles from public pages. Use when the user says "backfill the workspace", "import what already exists", or right after setup for a product with any public history.
+description: Backfill the workspace from the internet with web research — read the product website to fill gaps in the product doc, search HN, Reddit and the web for existing mentions, file already-published posts with their engagement, and stub competitor profiles from public pages. Use when the user says "backfill the workspace", "import what already exists", or right after setup for a product with any public history.
 ---
 
 # Backfill from the internet
@@ -36,7 +36,8 @@ show.
    (roles via the role hubs) — a positive mention is warmed-up outreach.
 4. **Published-post import.** From the user's links and their profile pages,
    file each already-published post as
-   `data/posts/<platform>/YYYY-MM-DD-<slug>.md` (`stage: published`, the real
+   `data/posts/<platform>/YYYY-MM-DD-<slug>.md` (Reddit nests per subreddit —
+   `AGENTS.md`, *What goes where*; `stage: published`, the real
    `published` date and `resource`; body = the actual post text, or a faithful
    summary when it's long). Record engagement numbers as displayed. The schema
    requires `goal` and `success` — set them retroactively with the user ("what
@@ -57,8 +58,8 @@ show.
 8. **Report, validate, commit.** Summarize what was filed (n mentions, n
    posts, n replies, n people, n competitor profiles, metrics captured) **and what could
    not be searched** (auth-walled platforms, rate limits, dead links) so the
-   user can fill those by hand. `iwe schema validate` must pass; commit
-   `backfill: <n> mentions, <n> posts, <n> competitors`.
+   user can fill those by hand. `iwe schema validate` must pass. In a git
+   repository, commit `backfill: <n> mentions, <n> posts, <n> competitors`.
 
 ## Rules
 

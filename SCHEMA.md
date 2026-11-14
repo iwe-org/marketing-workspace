@@ -11,11 +11,10 @@ schema. The shapes below are machine-enforced by `iwe schema validate` (schemas
 in `.iwe/schemas/`, bound by path globs in `.iwe/config.toml`). This file is the
 human summary.
 
-Types you browse as a table also have a UI sidecar,
-`.iwe/schemas/<name>.ui.yaml` — the columns an inclusion row shows, the display
-titles and colors of enum values, and the fields hidden from the properties
-band. The validator never reads it; it only changes how the iWe app displays the
-type.
+Every type also has a UI sidecar, `.iwe/schemas/<name>.ui.yaml` — the columns an
+inclusion row shows, the display titles and colors of enum values, and the
+fields hidden from the properties band. The validator never reads it; it only
+changes how the iWe app displays the type.
 
 Hubs draw live charts from these fields: ```` ```chart ```` blocks whose data is
 a query over the documents (`$key: {$startsWith: data/replies/}`, a `type`
@@ -49,8 +48,9 @@ checked by `.iwe/schemas/okf.yaml`:
 - `description` — one sentence. Every document has one; it is what an OKF
   consumer and `data/index.md` show before opening the file.
 - `generated` — `{ by, at }`. Write it on **every** edit. `by` is an actor (SPEC
-  §7): `claude-code/opus-5` for agent writes, `human:<handle>` for hand-authored
-  or human-confirmed content, `process:<id>` for automation.
+  §7): `<your agent>/<your model>` for agent writes, as you are actually running
+  (e.g. `claude-code/opus-5`), `human:<handle>` for hand-authored or
+  human-confirmed content, `process:<id>` for automation.
 - `sources` — the materials a document derives from, each
   `{ id, resource, title, author, usage_count, last_modified }` with `resource`
   required. Write it on anything researched from an external page, and attribute
@@ -108,24 +108,36 @@ documents — they carry no `type` and are checked by `okf-index.yaml` and
   markdown link to a document followed by `-` and that document's `description`.
   Keep it current when adding or retiring a top-level document.
 - `data/log.md` — the update history. A title section over `## YYYY-MM-DD`
-  groups of bullets, newest first. The `weekly` skill appends to it.
+  groups of bullets, newest first. Every state change adds its line when it
+  happens.
 
 ## post — `data/posts/**`, `data/drafts/**`
 
-A publication. `pillar` (your messaging pillar, null until defined), `goal`
+A publication, at `data/drafts/<platform>/YYYY-MM-DD-<slug>.md` until published
+and the same path under `data/posts/` after; Reddit nests per subreddit
+(`AGENTS.md`, *What goes where*). `pillar` (your messaging pillar, null until
+defined), `goal`
 (`awareness | conversion | positioning | credibility | retention`), `success`
 (one line: the observable signal that means it worked), `stage`
-(`draft | scheduled | published | removed | archived`), `platform` (enum incl.
-`reddit`, `hn`, `producthunt`, `dev.to`, `linkedin`, `newsletter`, `other`, …),
-`created`, `published` (date or null), `resource`, `engagement`
-(`upvotes`/`comments`/`views`/`shares`/`notes`). Once the success line can be
-checked: `success_evidence` (`on-file | fetchable | unobservable` — where the
-evidence lives), `verdict` (`met | partly-met | not-met | undecidable`, the line
-checked literally) and `verdict_date`. **Conditional**: `published` needs a
-`published` date and a `resource`; a `verdict` needs `success_evidence` and
-`verdict_date`. The venue is a *relationship*: a link under the community file's
-`## Posts` heading, not a field. The pillar hub (`data/pillars/<pillar>.md`)
-inclusion-links every post carrying it, keeping posts reachable in the tree.
+(`draft | scheduled | published | removed | archived`), `platform` (the [shared
+platform list](#platform)), `created`, `published` (date or null), `resource`,
+`engagement` (`upvotes`/`comments`/`views`/`shares`/`notes`). Once the success
+line can be checked: `success_evidence` (`on-file | fetchable | unobservable` —
+where the evidence lives), `verdict`
+(`met | partly-met | not-met | undecidable`, the line checked literally) and
+`verdict_date`. **Conditional**: `published` needs a `published` date and a
+`resource`; a `verdict` needs `success_evidence` and `verdict_date`. The venue
+is a *relationship*: a link under the community file's `## Posts` heading, not a
+field. The pillar hub (`data/pillars/<pillar>.md`) inclusion-links every post
+carrying it, keeping posts reachable in the tree.
+
+### platform
+
+`post`, `thread`, `reply` and `lead` share one `platform` list, so a venue is
+spelled the same on all four:
+`reddit | hn | producthunt | indiehackers | x.com | linkedin | threads | bluesky | mastodon | github | dev.to | hashnode | medium | youtube | tiktok | instagram | facebook | discord | slack | forum | blog | newsletter | directory | email | other`.
+`reference` has its own shorter list; on `community`, `mention` and `person` the
+field is free text.
 
 ## template — `data/evergreen/*.md`
 
@@ -138,9 +150,10 @@ A venue. `stage` (`planned | active | dormant | blocked | cancelled`),
 `category`
 (`launch-platform | directory | deals | subreddit | forum | community | social | newsletter | other`),
 optional `platform`, `resource`, `size`, `notes` (posting rules live here),
-`members` (the audience size as a number) with `checked` (the date it was read),
-`pillar`, `created`. Body links posts made there under `## Posts` and mentions
-spotted there under `## Mentions`.
+`members` (the audience size as a number) with `checked` (the date it was read —
+the seeds carry the free-text `size` only), `pillar`, `created`. Body links
+posts made there under `## Posts` and mentions spotted there under
+`## Mentions`.
 
 ## person — `data/people/*.md` (except `role-*`)
 
@@ -170,9 +183,10 @@ their person doc; verbatim quotes live in the body and get distilled into
 
 ## external — `data/external-*.md`
 
-Article-length third-party content. `source`, `resource`, `relation`
-(`mentions-us | similar-thesis | adjacent | contrasts`), `takeaway` (one
-sentence: why you care), optional `author`, `published`, `pillar`.
+Article-length third-party content. `stage` (always `published`), `source`,
+`resource`, `relation` (`mentions-us | similar-thesis | adjacent | contrasts`),
+`takeaway` (one sentence: why you care), `created` (filing date), optional
+`author`, `published`, `pillar`.
 
 ## competitor — `data/competitors/*.md`
 
@@ -226,7 +240,8 @@ comment), `answers` (`post | comment`), `names_product` (boolean — did it name
 or link the product), `origin` (`human | agent | agent-edited` — who wrote the
 words that went up), `goal`, optional `success` and `pillar`, `published`,
 `created`, `engagement` (`upvotes`, `replies`, `thread_upvotes`,
-`thread_comments`, `notes`). `outcome`
+`thread_comments`, `notes`). File the thread page and the lead before the reply
+— the order is in the draft skill. `outcome`
 (`none | replied | asked | will-try | tried`) is the measure, set at a three-day
 review with the date in `reviewed`. **Conditional**: `outcome` needs `reviewed`.
 Body: `## Context` (opens with a `Person:` link), `## Our reply` (verbatim, as a
@@ -311,10 +326,12 @@ A landing page that inclusion-links its members (`data/communities`,
 `data/experiments`, `data/threads`, `data/replies`, `data/leads`, `data/emails`,
 `data/audiences`, `data/selling-points`, `data/readings`,
 `data/readings-archive`, `data/references`, `data/notes`, `data/weekly`,
-`data/people/role-*`, and `data/pillars/*` — one per messaging pillar, created
-by setup). `stage: living`, `created`.
+`data/pillars`, `data/people/role-*`, and `data/pillars/*` — one per messaging
+pillar, created by setup and inclusion-linked from `data/pillars`).
+`stage: living`, `created`.
 
 ## tracker — living reference docs
 
 `data/product`, `data/strategy`, `data/brand`, `data/offer`, `data/metrics`,
-`data/website`, `data/plan`, `data/backlog`, this file. `stage: living`.
+`data/website`, `data/plan`, `data/backlog`, `data/posts`, this file.
+`stage: living`.
