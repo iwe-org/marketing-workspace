@@ -1,6 +1,6 @@
 ---
 type: plan
-description: Nothing at this stage scales, and that's the point. The first ten users are found by hand, one conversation at a time — you're validating that the problem is real, the positioning lands, and someone will change their…
+description: The first ten users are found by hand, one conversation at a time, to validate that the problem is real, the positioning lands and someone will change their behavior.
 stage: planned
 growth_stage: first-10
 created: 2026-07-26

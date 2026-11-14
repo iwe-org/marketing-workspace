@@ -11,7 +11,7 @@ frontmatter:
       enum: [new, researched, active, converted, dropped]
       description: the stage you decided, never one the replies already show — new = spotted in a thread; researched = profile read and approach written; active = in conversation; converted = they tried the product or became a real relationship (graduate them to data/people/); dropped = not a fit, or you stopped
     platform:
-      enum: [reddit, hn, x.com, linkedin, threads, bluesky, mastodon, github, dev.to, indiehackers, producthunt, discord, slack, forum, other]
+      enum: [reddit, hn, producthunt, indiehackers, x.com, linkedin, threads, bluesky, mastodon, github, dev.to, hashnode, medium, youtube, tiktok, instagram, facebook, discord, slack, forum, blog, newsletter, directory, email, other]
     handle: { type: string, description: handle exactly as it appears at the venue }
     resource: { type: string, description: profile URL }
     pillar: { type: [string, "null"], description: the messaging pillar their problem fits }

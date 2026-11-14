@@ -137,6 +137,7 @@ match = [
   "data/references",
   "data/notes",
   "data/weekly",
+  "data/pillars",
   "data/people/role-*",
   "data/pillars/*",
 ]

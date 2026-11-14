@@ -27,7 +27,7 @@ frontmatter:
     stage:
       enum: [draft, scheduled, published, removed, archived]
     platform:
-      enum: [reddit, hn, producthunt, dev.to, hashnode, medium, twitter, linkedin, mastodon, bluesky, threads, youtube, tiktok, instagram, facebook, forum, blog, newsletter, github, discord, slack, directory, email, other]
+      enum: [reddit, hn, producthunt, indiehackers, x.com, linkedin, threads, bluesky, mastodon, github, dev.to, hashnode, medium, youtube, tiktok, instagram, facebook, discord, slack, forum, blog, newsletter, directory, email, other]
     created: { type: string, format: date }
     published:
       type: [string, "null"]

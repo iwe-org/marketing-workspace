@@ -33,9 +33,9 @@ hub. The setup skill deletes `*-example.md` files after onboarding.*
 Person: [kettle_studio](../leads/kettle-studio-example.md)
 
 In [How did you handle invoicing for your first
-clients?](../threads/ih-invoicing-first-clients-example.md) on [Indie Hackers
-(products)](../community-indiehackers.md). kettle_studio asked what two founders
-with different setups should use.
+clients?](../threads/indiehackers-invoicing-first-clients-example.md) on [Indie
+Hackers (products)](../community-indiehackers.md). kettle_studio asked what two
+founders with different setups should use.
 
 ## Our reply
 

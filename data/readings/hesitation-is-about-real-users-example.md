@@ -26,8 +26,8 @@ skill deletes `*-example.md` files after onboarding.*
   this" (June 2026).
 - The [social-proof experiment](../experiments/landing-social-proof-example.md)
   moved visitor-to-signup conversion from 2.1% to 2.9% over three weeks.
-- The winning variant named a customer and a count ("Sarah K., 31 invoices
-  sent"); the logo-strip variant tried first lifted less.
+- The winning variant named a user and a count ("Sarah K., 31 invoices sent");
+  the logo-strip variant tried first lifted less.
 
 ## Reading
 
@@ -45,8 +45,8 @@ lifted less than the named testimonials did. That settled it.
 
 ## Phase
 
-Entry: the product has its first ten paying users, so social proof is scarce and
-each named customer counts.
+Entry: the product is still short of its first ten paying users, so social proof
+is scarce and each named user counts.
 
 ## Next step
 

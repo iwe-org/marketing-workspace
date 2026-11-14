@@ -1,6 +1,6 @@
 ---
 type: community
-description: 'A small subreddit for announcing early-stage MVPs. Low-signal: because promotion is the explicit purpose and moderation friction is near zero, the feed is a stream of launch posts from founders who post and leave, and…'
+description: A small subreddit for announcing early-stage MVPs, with promotion as its purpose, almost no moderation and no resident audience reading the launch posts.
 stage: planned
 category: subreddit
 platform: reddit

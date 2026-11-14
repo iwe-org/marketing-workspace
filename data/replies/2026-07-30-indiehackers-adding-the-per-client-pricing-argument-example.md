@@ -31,9 +31,9 @@ hub. The setup skill deletes `*-example.md` files after onboarding.*
 ## Context
 
 In [Pricing a tool for developers who hate
-subscriptions](../threads/ih-pricing-for-developers-example.md) on [Indie
-Hackers (products)](../community-indiehackers.md). The post asks for pricing
-models that developers accept.
+subscriptions](../threads/indiehackers-pricing-for-developers-example.md) on
+[Indie Hackers (products)](../community-indiehackers.md). The post asks for
+pricing models that developers accept.
 
 ## Our reply
 

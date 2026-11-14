@@ -16,7 +16,7 @@ engagement:
   upvotes: 47
   comments: 12
   views: null
-  notes: '2026-07-26: steady trickle of signups; two commenters became beta users. 2026-07-27: 14 signups with the r/SideProject referrer in the first week, read in the analytics dashboard.'
+  notes: '2026-07-26: steady trickle of signups; two commenters became free-tier users. 2026-07-27: 14 signups with the r/SideProject referrer in the first week, read in the analytics dashboard.'
 generated:
   by: human:author
   at: 2026-07-18T00:00:00Z
@@ -24,7 +24,7 @@ generated:
 
 # I got my first paying user for a CLI invoicing tool — what worked and what didn't
 
-*Example document — this shows the shape of a published post: `url` and
+*Example document — this shows the shape of a published post: `resource` and
 `published` set, engagement tracked in frontmatter (refreshed by the update
 skill), and the deeper directory `posts/reddit/<subreddit>/` since Reddit posts
 nest per subreddit. The setup skill deletes `*-example.md` files after

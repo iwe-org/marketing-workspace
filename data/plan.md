@@ -22,8 +22,10 @@ step completes, append a `## Retro` section to it: the numbers, what worked,
 what to skip next time. You will launch again; the next one should start from
 evidence, not memory.
 
-Progress toward the current milestone, from the weekly numbers in
-`data/metrics-weekly.csv` and the plan steps' `stage`:
+Progress toward the active stage's target, from the weekly numbers in
+`data/metrics-weekly.csv` and the plan steps' `stage`. The target is written as
+`10` in three places below — the `calculate`, the `domain` and the dashed rule;
+setup changes it to 100 or 1000 when a later stage is the active one.
 
 ``` chart
 datasets:
@@ -42,7 +44,7 @@ hconcat:
       - filter: "datum.newest == 1"
     mark: {type: text, fontSize: 30, fontWeight: 600}
     encoding: {text: {field: paying_users, type: quantitative}}
-  - title: To the first 10
+  - title: Left to the target
     data: {name: weeks}
     height: 50
     transform:
@@ -75,7 +77,7 @@ hconcat:
 
 ``` chart
 data: {url: metrics-weekly.csv}
-title: Paying users toward the first 10
+title: Paying users toward the target
 height: 160
 encoding:
   x: {field: week, type: temporal, scale: {type: utc}, title: null, axis: {format: "%b %d"}}

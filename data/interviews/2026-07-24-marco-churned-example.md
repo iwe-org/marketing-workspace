@@ -8,7 +8,7 @@ created: 2026-07-24
 sources:
 - id: call
   resource: churn interview call with Marco, 2026-07-24
-  title: Churn interview, 25 minutes
+  title: Churn interview, 30 minutes
   author: human:author
   last_modified: 2026-07-24
 generated:
@@ -23,10 +23,10 @@ generated:
 verbatim quotes captured for reuse. The setup skill deletes `*-example.md` files
 after onboarding.*
 
-30-minute call with [Marco](../people/marco-example.md), who cancelled
-PlainInvoice after two months. Not a product rejection — a workflow mismatch:
-his agency grew and bookkeeping moved to an assistant who doesn't live in the
-terminal.
+30-minute call with [Marco](../people/marco-example.md), who stopped using
+PlainInvoice after two months on the free tier, before the paid tier opened. Not
+a product rejection — a workflow mismatch: his agency grew and bookkeeping moved
+to an assistant who doesn't live in the terminal.
 
 Verbatim quotes worth keeping:
 

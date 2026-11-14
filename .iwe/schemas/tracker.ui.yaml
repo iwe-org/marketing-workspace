@@ -1,0 +1,15 @@
+name: Tracker
+description: A living reference document
+columns: []
+fields:
+  type: { hidden: true }
+  title: { hidden: true }
+  stage: { hidden: true }
+  status: { hidden: true }
+  generated: { hidden: true }
+  verified: { hidden: true }
+  sources: { hidden: true }
+  usage_window: { hidden: true }
+  resource: { hidden: true }
+  description: { multiline: true }
+  stale_after: { title: Stale after }

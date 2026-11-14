@@ -8,7 +8,7 @@ author: '@latte_lambda'
 kind: post
 sentiment: positive
 pillar: invoice-without-leaving-terminal
-quote: Invoice day took four minutes. PlainInvoice paid for itself today.
+quote: Invoice day took four minutes. PlainInvoice earned its place in my dotfiles today.
 published: 2026-07-11
 created: 2026-07-11
 generated:

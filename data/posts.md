@@ -11,8 +11,9 @@ generated:
 # Posts
 
 Every publication is a document under `data/posts/<platform>/` once published
-and `data/drafts/<platform>/` before. Each is linked from its venue's `## Posts`
-and from its pillar hub; this page only charts them. A post's verdict is its
+and `data/drafts/<platform>/` before; Reddit nests per subreddit, as `AGENTS.md`
+says under *What goes where*. Each is linked from its venue's `## Posts` and
+from its pillar hub; this page only charts them. A post's verdict is its
 `success` line checked against the evidence (`success_evidence`, `verdict`,
 `verdict_date`).
 

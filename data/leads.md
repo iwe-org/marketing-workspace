@@ -20,7 +20,7 @@ lead who converts graduates to [People](people.md).
 
 ``` bash
 iwe find --filter '{type: lead, fit: high, stage: {$in: [new, researched]}}'   # who to approach next
-iwe find --referenced-by data/leads/<slug> --filter 'type: reply'               # every reply to one lead
+iwe find --references data/leads/<slug> --filter 'type: reply'                  # every reply to one lead
 ```
 
 ## Who answered

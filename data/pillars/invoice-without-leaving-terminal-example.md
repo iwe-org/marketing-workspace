@@ -12,11 +12,11 @@ generated:
 
 *Example document — this shows the shape of a pillar hub: one hub per messaging
 pillar (the setup skill creates them at `data/pillars/<slug>.md` when the
-founder defines pillars, and links them from `data/index.md`). Every publication
-carrying this pillar is inclusion-linked below — that link is what keeps posts
-reachable in the tree; the `pillar` frontmatter field is the filterable
-denormalization of it. The setup skill deletes `*-example.md` files after
-onboarding.*
+founder defines pillars, and inclusion-links them from `data/pillars.md`). Every
+publication carrying this pillar is inclusion-linked below — that link is what
+keeps posts reachable in the tree; the `pillar` frontmatter field is the
+filterable denormalization of it. The setup skill deletes `*-example.md` files
+after onboarding.*
 
 The messaging claim: billing belongs in the workflow you already live in —
 `pi new` between commits, templates in git, no browser tab.

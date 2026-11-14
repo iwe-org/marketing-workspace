@@ -1,8 +1,7 @@
 # Campaign Update Log
 
-The history of this workspace, newest first. The `weekly` skill appends a dated
-group on every run; any skill that creates or retires a document adds a line to
-the current day's group.
+The history of this workspace, newest first. Whatever creates, changes the state
+of or retires a document adds a line to the current day's group.
 
 ## 2026-07-26
 

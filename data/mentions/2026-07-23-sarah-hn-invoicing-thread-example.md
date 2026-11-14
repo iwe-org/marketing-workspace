@@ -25,9 +25,9 @@ generated:
 # Sarah recommends PlainInvoice in an HN invoicing-tools thread
 
 *Example document — this shows the shape of a mention: an atomic, dated record
-of a spontaneous third-party mention, with the direct `url` and the verbatim
-`quote` (deliberate research you conducted is `type: interview` instead). The
-setup skill deletes `*-example.md` files after onboarding.*
+of a spontaneous third-party mention, with the direct `resource` and the
+verbatim `quote` (deliberate research you conducted is `type: interview`
+instead). The setup skill deletes `*-example.md` files after onboarding.*
 
 An "Ask HN: invoicing for freelancers?" thread on [Hacker
 News](../community-hn.md); [Sarah K.](../people/sarah-k-example.md) recommended

@@ -8,7 +8,7 @@ frontmatter:
     type: { const: thread }
     title: { type: string, description: kept only when the H1 does not carry the title }
     platform:
-      enum: [reddit, hn, x.com, linkedin, threads, bluesky, mastodon, github, dev.to, indiehackers, producthunt, discord, slack, forum, other]
+      enum: [reddit, hn, producthunt, indiehackers, x.com, linkedin, threads, bluesky, mastodon, github, dev.to, hashnode, medium, youtube, tiktok, instagram, facebook, discord, slack, forum, blog, newsletter, directory, email, other]
     resource: { type: string, description: permalink to the thread or post }
     opened: { type: [string, "null"], format: date, description: when the thread was started at the venue }
     created: { type: string, format: date, description: when you filed it }

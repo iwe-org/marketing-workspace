@@ -1,13 +1,13 @@
 ---
 type: lead
-description: 'Example lead: solo contractor billing five clients; became a paying customer.'
+description: 'Example lead: solo contractor billing five clients; tried the free tier in May and pays since late July.'
 stage: converted
 platform: reddit
 handle: u/tabs_and_totals
 resource: https://www.reddit.com/user/tabs_and_totals
 pillar: invoice-without-leaving-terminal
 fit: high
-notes: Solo contractor billing five clients; became a paying customer.
+notes: Solo contractor billing five clients; tried the free tier in May and pays since late July.
 created: 2026-05-12
 generated:
   by: human:author
