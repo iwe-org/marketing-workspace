@@ -33,9 +33,9 @@ hub. The setup skill deletes `*-example.md` files after onboarding.*
 Person: [bytesized_billing](../leads/bytesized-billing-example.md)
 
 In [Pricing a tool for developers who hate
-subscriptions](../threads/ih-pricing-for-developers-example.md) on [Indie
-Hackers (products)](../community-indiehackers.md). bytesized_billing asked how
-to price for developers who hate subscriptions.
+subscriptions](../threads/indiehackers-pricing-for-developers-example.md) on
+[Indie Hackers (products)](../community-indiehackers.md). bytesized_billing
+asked how to price for developers who hate subscriptions.
 
 ## Our reply
 

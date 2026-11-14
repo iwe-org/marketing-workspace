@@ -23,9 +23,9 @@ conversation about what pushed them off the old tool and what pulled them here.
 Compare the `churned` example in this directory — same shape, opposite
 direction. The setup skill deletes `*-example.md` files after onboarding.*
 
-25-minute call with [Sarah K.](../people/sarah-k-example.md), a customer since
-May, previously on [BillingBear](../competitors/billingbear-example.md)'s Solo
-tier.
+35-minute call with [Sarah K.](../people/sarah-k-example.md), a free-tier user
+since May and, since 2026-07-20, the first paying customer. She was previously
+on [BillingBear](../competitors/billingbear-example.md)'s Solo tier.
 
 Push: invoice day meant a browser, a login, and six screens of clicking. Pull:
 billing from the repo she's already in. Verbatim quotes worth keeping:
@@ -35,7 +35,7 @@ billing from the repo she's already in. Verbatim quotes worth keeping:
   invoice out."
 - "The TOML templates sold me — I diffed my rate change like a code review."
 
-Learnings: the switching force is workflow interruption, not price — she paid
-the same. The upsell-fatigue quote went into product.md's Switching forces;
-"between commits" is headline material. Distilled into `data/product.md`
-Customer language same day.
+Learnings: the switching force is workflow interruption, not price — the paid
+tier costs her about what BillingBear did. The upsell-fatigue quote went into
+product.md's Switching forces; "between commits" is headline material. Distilled
+into `data/product.md` Customer language same day.

@@ -6,6 +6,98 @@ All notable changes to this template are documented here. The format is based on
 This is a template you clone, so the entries below double as migration notes: if
 you cloned an earlier copy, they tell you what to change in your own workspace.
 
+## [1.4.0]
+
+### Added
+
+- `data/pillars.md` — a hub that inclusion-links the pillar hubs. Setup links
+  each new pillar hub from it, and `data/index.md` lists it in place of the
+  example pillar. If you cloned an earlier copy, add the page, bind it with
+  `"data/pillars"` under `[schemas.hub]`, and move your pillar hubs' links out
+  of `data/index.md`.
+- Display sidecars for `hub` and `tracker`, so their bookkeeping fields are
+  hidden like every other type's, and display titles for `platform` on posts,
+  replies, leads, threads and references (`hn` shows as Hacker News, `x.com` as
+  X).
+- The start page says the `iwe` CLI is needed and how to install it.
+
+### Changed
+
+- **One platform list for posts, threads, replies and leads.** `post` had
+  `twitter` and no `indiehackers`; the other three had `x.com` and
+  `indiehackers`. All four now share one list, with `x.com`. If you cloned an
+  earlier copy, change `platform: twitter` to `platform: x.com` in your posts.
+- **Git is optional.** A workspace the iWe app creates is not a git repository.
+  `AGENTS.md` has one rule for it: outside a repository the agent skips every
+  commit and diff step, and setup offers `git init` once. The weekly digest
+  reads frontmatter dates and `data/log.md`, and `git log` only where there is
+  one.
+- **Setup no longer offers to install a skill pack.** It mentions once that a
+  pack exists and that you install it yourself; the agent never runs an
+  installer.
+- **"Skip for now" is a state.** A skipped section is marked
+  `✏️ skipped <date>`. The workspace counts as set up when What is it, Ideal
+  customer profile, Positioning and Messaging pillars in `data/product.md` have
+  content or are marked skipped, so a skipped section no longer sends the agent
+  back to setup or blocks a draft.
+- `AGENTS.md` is shorter: the Record step is a list of one line per kind of
+  event, and the thread, lead, reply filing order is written once, in the draft
+  skill. `data/threads.md` and `SCHEMA.md` point to it.
+- The Reddit nesting rule (`data/posts/reddit/<subreddit>/`) is stated once, in
+  `AGENTS.md`; the skills and `data/posts.md` point to it.
+- `generated.by` is written as the agent and model actually running, instead of
+  a fixed `claude-code/opus-5`.
+- The plan page's charts name "the target" instead of "the first 10", and setup
+  changes the target number when the active stage is first-100 or first-1000.
+- `STRUCTURE.md` is a short map of the folders and the seeds. The design history
+  it carried was out of date and is gone.
+- The weekly skill no longer logs the week a second time; state changes are
+  logged when they happen.
+- `template.toml` description names what the template does, including guided
+  setup and web research; version 1.4.0.
+- The venue table shows `size`, which the seeds fill, instead of `members`,
+  which none of them does.
+- The README says 67 seeded venues (39 sites and 28 subreddits) and that 20 of
+  them carry unverified rules, and its iWe app section says the folder is not a
+  git repository and still needs the `iwe` CLI.
+
+### Fixed
+
+- **Setup left the example product behind.** `iwe delete` turns an inline link
+  to a deleted document into plain text, so the grep for `-example.md)` found
+  nothing while eight venue files kept "PlainInvoice" bullets under `## Posts`
+  and `## Mentions`. Setup now removes those bullets before deleting, deletes
+  the examples one command each (a single `--filter` delete of documents that
+  link to each other fails part-way in iwe 0.32), and checks that no
+  `plaininvoice` or `-example` text is left.
+- Cancelling venues in setup and marking a post removed in the update skill now
+  set `status: deprecated` along with `stage`.
+- The "every reply to one lead" query on `data/leads.md` used `--referenced-by`
+  and returned nothing; it uses `--references`.
+- Example notes still said to set `url`; the field has been `resource` since
+  1.1.0.
+- The example Indie Hackers post had `platform: forum`, and the two Indie
+  Hackers thread pages were named `ih-…` where the convention is the platform
+  value; they are `indiehackers-…` now.
+- The example story contradicted itself about when the first customer paid. It
+  now follows the weekly numbers: every user was on the free tier until the paid
+  tier opened on 2026-07-20, the first paying user came that day, and there were
+  three a week later.
+- Nine `description` values ended mid-sentence with "…".
+- `community-peerpush` and `community-saasgenius` pointed at addresses that
+  redirect; they carry the current ones.
+- `SCHEMA.md`: `external` lists its required `stage` and `created`, and the
+  tracker list includes `data/posts`.
+- The `iwe` skill called `iwe tree -k data/index` a graph overview; it prints
+  one line. The overview is `iwe tree -d 2`.
+- The weekly skill said the digest has five sections; it has four.
+
+### Known issues
+
+- `preview.png` shows a "worked" badge, a "warm" lead and a "First 100 users
+  37%" card that the template does not have. Its source is not in the
+  repository, so it was not redrawn.
+
 ## [1.3.0]
 
 ### Changed

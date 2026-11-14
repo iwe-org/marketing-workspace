@@ -1,6 +1,6 @@
 ---
 type: community
-description: Peerlist is a professional network for tech people (a designer/developer-flavored LinkedIn alternative), and its Launchpad feature runs weekly product launch cycles where the community upvotes entries and winners get…
+description: Peerlist is a professional network for tech people whose Launchpad runs weekly product launches that the community upvotes.
 stage: planned
 category: launch-platform
 platform: web

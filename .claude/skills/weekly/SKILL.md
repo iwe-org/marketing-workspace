@@ -1,6 +1,6 @@
 ---
 name: weekly
-description: Compose a weekly campaign digest from the workspace — what shipped, engagement numbers, pipeline and outreach state, and ranked next-week priorities. Prints the digest and appends the week to data/log.md; saves it under data/weekly/ only when the user asks to keep it. Use when the user asks for a "weekly digest", "weekly report", or a start-of-week review.
+description: Compose a weekly campaign digest from the workspace — what shipped, engagement numbers, pipeline and outreach state, and ranked next-week priorities. Prints the digest; saves it under data/weekly/ only when the user asks to keep it. Use when the user asks for a "weekly digest", "weekly report", or a start-of-week review.
 ---
 
 # Weekly digest
@@ -10,9 +10,11 @@ after the update skill has refreshed engagement.
 
 ## Steps
 
-1. **Window.** Trailing 7 days (or the range the user asks for).
-   `git log --since` on the workspace is a reliable activity source alongside
-   frontmatter dates.
+1. **Window.** Trailing 7 days (or the range the user asks for). The activity
+   sources are the frontmatter dates (`published`, `completed`, `created`,
+   `reviewed`, `generated.at`) and the dated groups in `data/log.md`. In a git
+   repository `git log --since=<date> --name-status -- data` adds what changed;
+   without git, the first two are enough.
 2. **Shipped.** Posts with `published` in the window; tasks flipped to `done`
    (`completed` in window); plan steps whose stage changed; venues newly
    worked (`planned` → `active`).
@@ -33,16 +35,15 @@ after the update skill has refreshed engagement.
    reply to chase, a mention author to contact, an open reading whose
    deciding evidence is now on file). Each item names the fact it rests on.
    Keep it executable — 5 items max.
-6. **Print** the digest with those five sections. If the user asks to keep
+6. **Print** the digest with those four sections (Shipped, Engagement,
+   Pipeline and outreach, Next week). If the user asks to keep
    it, also write `data/weekly/YYYY-MM-DD.md` (`type: weekly-report`,
    `window_start`, `window_end`, `created`, a `description`, and the sections
    `## Shipped`, `## Engagement`, `## Pipeline and outreach`, `## Next week`)
-   and inclusion-link it at the top of `data/weekly.md`.
-7. **Log.** Append the week's shipped items to `data/log.md` as bullets under a
-   `## YYYY-MM-DD` group for today (create the group if it isn't there, newest
-   group first). One line per state change, each linking the document it
-   describes — `- **Update**: [Post title](posts/reddit/....md) published.`
-   Apart from a kept report, this is the only write the digest makes.
+   and inclusion-link it at the top of `data/weekly.md`. A kept report is the
+   only write the digest makes, and it gets its line in `data/log.md` like any
+   new document (`AGENTS.md`, step 5). The week's state changes were logged
+   when they happened; do not log them again.
 
 ## Rules
 

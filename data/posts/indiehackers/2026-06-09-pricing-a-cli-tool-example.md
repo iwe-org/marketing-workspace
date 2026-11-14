@@ -8,7 +8,7 @@ success_evidence: fetchable
 verdict: met
 verdict_date: 2026-06-16
 stage: published
-platform: forum
+platform: indiehackers
 created: 2026-06-09
 published: 2026-06-09
 resource: https://example.com/posts/2026-06-09-pricing-a-cli-tool

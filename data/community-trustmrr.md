@@ -1,6 +1,6 @@
 ---
 type: community
-description: 'Less a software directory than a marketplace of verified-revenue SaaS businesses: startups connect a payment provider and their MRR, growth rate, and valuation multiples are shown publicly, including to prospective…'
+description: A marketplace of verified-revenue SaaS businesses, where startups connect a payment provider and their MRR, growth rate and valuation multiples are shown publicly.
 stage: planned
 category: directory
 platform: web

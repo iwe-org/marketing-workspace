@@ -1,6 +1,6 @@
 name: Venue
 description: A venue you target or track
-columns: [stage, category, members]
+columns: [stage, category, size]
 fields:
   type: { hidden: true }
   title: { hidden: true }
@@ -29,6 +29,7 @@ fields:
       social: { title: Social }
       newsletter: { title: Newsletter }
       other: { title: Other }
+  size: { title: Size }
   members: { title: Members }
   checked: { title: Members checked }
   notes: { title: Posting rules, multiline: true }

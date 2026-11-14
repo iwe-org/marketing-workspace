@@ -9,6 +9,19 @@ fields:
   verified: { hidden: true }
   usage_window: { hidden: true }
   resource: { title: Link }
+  platform:
+    title: Platform
+    values:
+      youtube: { title: YouTube }
+      blog: { title: Blog }
+      newsletter: { title: Newsletter }
+      x.com: { title: X }
+      reddit: { title: Reddit }
+      hn: { title: Hacker News }
+      linkedin: { title: LinkedIn }
+      github: { title: GitHub }
+      podcast: { title: Podcast }
+      other: { title: Other }
   stage:
     title: Stage
     values:

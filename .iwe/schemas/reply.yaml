@@ -11,7 +11,7 @@ frontmatter:
       enum: [published, removed, deleted]
       description: published = live; removed = taken down by moderators or a spam filter; deleted = you deleted it yourself
     platform:
-      enum: [reddit, hn, x.com, linkedin, threads, bluesky, mastodon, github, dev.to, indiehackers, producthunt, discord, slack, forum, other]
+      enum: [reddit, hn, producthunt, indiehackers, x.com, linkedin, threads, bluesky, mastodon, github, dev.to, hashnode, medium, youtube, tiktok, instagram, facebook, discord, slack, forum, blog, newsletter, directory, email, other]
     resource: { type: string, description: permalink to your comment }
     answers:
       enum: [post, comment]

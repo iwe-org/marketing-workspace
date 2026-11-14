@@ -13,8 +13,8 @@ generated:
 One page per thread, post or comment chain where you met someone
 (`data/threads/<platform>-<slug>.md`). A thread page links its venue and
 inclusion-links the [replies](replies.md) you posted in it; a [lead](leads.md)'s
-"Where we found them" links the thread they were spotted in. File the thread
-page first, then the lead, then the reply.
+"Where we found them" links the thread they were spotted in. The filing order is
+in the draft skill (`.claude/skills/draft/SKILL.md`).
 
 ``` bash
 iwe find --filter '{type: thread, platform: reddit}' --project '$title,opened'
@@ -36,7 +36,7 @@ stack?](threads/hn-ask-hn-freelance-back-office-example.md)
 records?](threads/reddit-webdev-disputed-invoice-example.md)
 
 [How did you handle invoicing for your first
-clients?](threads/ih-invoicing-first-clients-example.md)
+clients?](threads/indiehackers-invoicing-first-clients-example.md)
 
 [Self-hosted invoicing that isn't a whole
 ERP?](threads/reddit-selfhosted-light-invoicing-example.md)
@@ -57,4 +57,4 @@ git?](threads/reddit-webdev-non-code-in-git-example.md)
 product?](threads/reddit-sideproject-cli-only-product-example.md)
 
 [Pricing a tool for developers who hate
-subscriptions](threads/ih-pricing-for-developers-example.md)
+subscriptions](threads/indiehackers-pricing-for-developers-example.md)

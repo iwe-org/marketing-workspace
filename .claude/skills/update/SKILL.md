@@ -22,8 +22,8 @@ but their measure is `outcome`, not score.
    guessing. Reddit blocks most server-side fetches: retry the post through
    `https://embed.reddit.com/<post-path>` — the embed route serves score and
    comment count when `reddit.com` refuses. If a post is gone at the source
-   (deleted/removed by moderators), set `stage: removed` and say so in the
-   report.
+   (deleted/removed by moderators), set `stage: removed` and
+   `status: deprecated`, and say so in the report.
 3. **Write back.** Update each post's `engagement.upvotes`,
    `engagement.comments`, `engagement.views` (only fields you actually
    observed), and a dated one-line `engagement.notes` when something needs
@@ -42,7 +42,7 @@ but their measure is `outcome`, not score.
    `success_evidence`, and a `verdict` with `verdict_date` when the evidence
    could be read. A line that cannot be observed gets `unobservable` and no
    verdict.
-6. **Validate & commit.** `iwe schema validate`; commit
+6. **Validate.** `iwe schema validate`. In a git repository, commit
    `update: engagement refresh — <n> posts, <n> replies`.
 7. **Report.** Print a table — post or reply title, venue, upvotes, comments,
    and the change since the last recorded values — then the outcomes set this

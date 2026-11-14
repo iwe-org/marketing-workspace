@@ -11,7 +11,8 @@ generated:
 # Strategy
 
 *The current campaign posture: where you are, which channels you're working, and
-what "working" means this quarter. Revisit monthly; history stays in git.*
+what "working" means this quarter. Revisit monthly, and note each change of
+stage or channel in `data/log.md`.*
 
 ## Current stage
 

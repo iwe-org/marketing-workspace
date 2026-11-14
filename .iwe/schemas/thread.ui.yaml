@@ -9,5 +9,33 @@ fields:
   verified: { hidden: true }
   usage_window: { hidden: true }
   resource: { title: Link }
+  platform:
+    title: Platform
+    values:
+      reddit: { title: Reddit }
+      hn: { title: Hacker News }
+      producthunt: { title: Product Hunt }
+      indiehackers: { title: Indie Hackers }
+      x.com: { title: X }
+      linkedin: { title: LinkedIn }
+      threads: { title: Threads }
+      bluesky: { title: Bluesky }
+      mastodon: { title: Mastodon }
+      github: { title: GitHub }
+      dev.to: { title: DEV }
+      hashnode: { title: Hashnode }
+      medium: { title: Medium }
+      youtube: { title: YouTube }
+      tiktok: { title: TikTok }
+      instagram: { title: Instagram }
+      facebook: { title: Facebook }
+      discord: { title: Discord }
+      slack: { title: Slack }
+      forum: { title: Forum }
+      blog: { title: Blog }
+      newsletter: { title: Newsletter }
+      directory: { title: Directory }
+      email: { title: Email }
+      other: { title: Other }
   opened: { title: Started }
   created: { title: Filed }

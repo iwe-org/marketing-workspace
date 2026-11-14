@@ -6,7 +6,7 @@ growth_stage: first-10
 estimated: 2026-07-20
 completed: 2026-07-21
 effort: 1 week
-notes: First public launch — produced the first paying user.
+notes: First public launch, on the day the paid tier opened — the first paying user came the same day.
 created: 2026-07-10
 generated:
   by: human:author
@@ -22,8 +22,9 @@ launch starts from evidence instead of memory. The setup skill deletes
 `*-example.md` files after onboarding.*
 
 First public launch of PlainInvoice: a build-in-public story post to
-r/SideProject, timed for a weekday morning US time, with the founder available
-all day to answer.
+r/SideProject on the day the paid tier opened, timed for a weekday morning US
+time, with the founder available all day to answer. Until then every user was on
+the free tier.
 
 ## Definition of done
 
@@ -34,7 +35,8 @@ day, learnings and commenter language filed into the graph.
 
 Shipped as [the launch
 post](../posts/reddit/sideproject/2026-07-20-plaininvoice-first-paying-user-example.md)
-— 47 upvotes, 12 comments, and the first paying user within 24 hours.
+— 47 upvotes, 12 comments, 14 signups in the first week. The first paying user
+upgraded on launch day, and two more followed the week after.
 
 - **What worked**: answering every comment within the hour (the top comment
   thanks us for it); DMing the two people who described the exact pain; stealing

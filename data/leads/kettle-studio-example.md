@@ -22,8 +22,8 @@ hub. The setup skill deletes `*-example.md` files after onboarding.*
 ## Where we found them
 
 In [How did you handle invoicing for your first
-clients?](../threads/ih-invoicing-first-clients-example.md) on [Indie Hackers
-(products)](../community-indiehackers.md), 2026-06-03.
+clients?](../threads/indiehackers-invoicing-first-clients-example.md) on [Indie
+Hackers (products)](../community-indiehackers.md), 2026-06-03.
 
 ## What they need
 

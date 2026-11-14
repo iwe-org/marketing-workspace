@@ -1,6 +1,6 @@
 ---
 type: community
-description: 'A long-running, crowd-sourced directory built around one question: "what can I use instead of X?" Its "alternatives to" pages rank very well in search, delivering steady high-intent traffic to listed apps — visitors are…'
+description: A long-running, crowd-sourced directory of software alternatives whose pages rank well in search and bring steady traffic from people shopping for a replacement.
 stage: planned
 category: directory
 platform: web

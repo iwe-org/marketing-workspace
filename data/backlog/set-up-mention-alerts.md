@@ -1,6 +1,6 @@
 ---
 type: task
-description: 'Arrange to hear about it when someone mentions your product or your problem space: keyword alerts on the platforms your audience uses (free tools exist for Hacker News and Reddit tracking), plus a periodic search on…'
+description: Set up keyword alerts and a periodic search so you hear when someone mentions your product or your problem space.
 stage: planned
 priority: low
 effort: 15 min

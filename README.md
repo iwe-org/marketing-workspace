@@ -25,16 +25,19 @@ This workspace is that record. Install the skills for the knowledge; clone this
 for the memory:
 
 - **A campaign graph** (`data/`) — product positioning and messaging pillars,
-  **~65 pre-seeded launch venues with posting rules**, a people CRM (customers,
-  prospects, amplifiers), the post pipeline (drafts → published, with engagement
-  tracking), the replies you post in other people's threads and the leads you
-  meet there, third-party mentions, audience segments, selling points with their
-  proof, readings of what the record means, a plan, and a backlog.
+  **67 pre-seeded launch venues with notes on how to post there** (20 are marked
+  "rules unverified" — the setup re-reads the ones you keep), a people CRM
+  (customers, prospects, amplifiers), the post pipeline (drafts → published,
+  with engagement tracking), the replies you post in other people's threads and
+  the leads you meet there, third-party mentions, audience segments, selling
+  points with their proof, readings of what the record means, a plan, and a
+  backlog.
 - **Typed, validated, portable** — every document carries frontmatter checked by
   `iwe schema validate`, so agent writes stay consistent across sessions.
   Provenance (`generated`, `sources`) and lifecycle (`status`, `stale_after`)
-  live in frontmatter as OKF families, and CI checks conformance on every
-  commit.
+  live in frontmatter as OKF families. This repository's CI checks conformance
+  on every commit; a workspace you create from it checks with
+  `iwe schema validate`.
 - **Workspace skills** (`.claude/skills/`) — the state workflows the packs don't
   have: guided setup, internet backfill, venue-aware drafting, engagement
   refresh, a weekly digest.
@@ -88,7 +91,15 @@ KB you can work by hand.
 This template is listed in the [iWe template
 registry](https://github.com/iwe-org/templates). In the iWe app, choose **File ▸
 New Workspace from Template…** to create a workspace from it; the app copies the
-template into a new folder, so there is nothing to clone.
+template into a new folder, so there is nothing to clone. Two things differ from
+a clone:
+
+- **The folder is not a git repository**, and this README, the changelog and the
+  CI workflow are not copied. The agent skips its commit steps; the setup offers
+  `git init` once if you want a history.
+- **The `iwe` CLI is still needed.** The agent's queries, renames and validation
+  run through it, so install it as in step 2 of the Quickstart. The workspace's
+  start page repeats the commands.
 
 ## How you use it
 
@@ -99,9 +110,9 @@ supply the judgment. A typical start:
 **Day one — the interview (~15 minutes).** Say *"run the setup"*. The agent
 interviews you about the product, the ideal customer, pricing, and your honest
 stage, then writes the foundation docs (`product.md`, `strategy.md`, `brand.md`,
-`offer.md`), creates your messaging-pillar hubs, and prunes the ~65 seeded
-venues down to the ones that fit your customer. You answer questions and
-confirm; it files.
+`offer.md`), creates your messaging-pillar hubs, and prunes the 67 seeded venues
+down to the ones that fit your customer. You answer questions and confirm; it
+files.
 
 **Day one — the backfill.** Your marketing didn't start today, so have the agent
 pull in what already exists. Say *"backfill the workspace"* — the backfill skill
@@ -144,8 +155,8 @@ the final yes before anything is published.
 | **Memory**    | your campaign's state (this repo)    | `data/`                       |
 
 The knowledge half is optional and swappable: we deliberately don't bundle a
-pack (design rationale in `STRUCTURE.md`) — install whichever one you like, or
-none. The memory half carries the workspace on its own.
+pack — install whichever one you like, or none. The agent never installs one for
+you. The memory half carries the workspace on its own.
 
 Example: *"draft a Show HN post."* The agent takes positioning from
 `data/product.md`, posting rules from `data/community-hn.md`, copy technique
@@ -183,7 +194,7 @@ data/
   metrics.md       baselines: unit economics, funnel, audience, authority
   website.md       page inventory, keyword map, org facts, redirect ledger
   pillars/         one hub per messaging pillar — links every post carrying it
-  community-*.md   ~65 seeded launch venues with posting rules
+  community-*.md   39 seeded standalone venues with posting notes
   communities/     platform-grouped venues (reddit/ holds the 28 subreddits)
   competitors/     one source-of-truth profile per competitor, dated snapshots
   experiments/     everything tried, with hypothesis, verdict, and learning
@@ -205,8 +216,8 @@ data/
 .iwe/              graph config, frontmatter schemas, and table views (*.ui.yaml)
 ```
 
-`SCHEMA.md` documents every document type; `AGENTS.md` is the agent's operating
-manual.
+`SCHEMA.md` documents every document type, `STRUCTURE.md` maps the folders, and
+`AGENTS.md` is the agent's operating manual.
 
 ## Built on IWE
 

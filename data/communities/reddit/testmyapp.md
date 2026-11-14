@@ -1,6 +1,6 @@
 ---
 type: community
-description: A small sub for recruiting app testers, populated largely by other developers who need testers themselves — much of the activity is reciprocal test-for-test arrangements (a pattern amplified by Google Play's…
+description: A small subreddit for recruiting app testers, populated largely by other developers who need testers themselves and trade test for test.
 stage: planned
 category: subreddit
 platform: reddit
